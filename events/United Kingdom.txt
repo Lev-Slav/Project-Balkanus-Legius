@@ -4,7 +4,7 @@
 
 add_namespace = britain
 
-# South Germany/Hungary Deny Reparations
+# South Germany/Hungary Deny Croatia
 country_event = {
 	id = britain.1
 	title = britain.1.t

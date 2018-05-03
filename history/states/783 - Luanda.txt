@@ -1,0 +1,26 @@
+
+state={
+	id=783
+	name="STATE_783" 
+	manpower = 76346
+	
+	state_category = rural
+
+	history={
+		owner = IBE
+		victory_points = {
+			8248 1
+		}
+		buildings = {
+			infrastructure = 3
+			8248 ={
+				naval_base = 1
+			}
+		}
+		add_core_of = IBE
+	}
+
+	provinces={
+		8248 
+	}
+}

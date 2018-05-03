@@ -1,0 +1,813 @@
+﻿###########################
+# British Events
+###########################
+
+add_namespace = britain
+
+# South Germany/Hungary Deny Reparations
+country_event = {
+	id = britain.1
+	title = britain.1.t
+	desc = britain.1.d
+	picture = GFX_report_event_explosion_1
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = ENG
+		has_global_flag = BAL_pushes_for_CRO
+		NOT = { has_global_flag = hungary_concedes }
+		NOT = { has_global_flag = south_germany }
+	}
+	
+	mean_time_to_happen = { days = 30 }
+	
+	option = {
+		name = britain.1.a
+		set_global_flag = offer_north_africa
+	}
+}
+
+# 
+country_event = {
+	id = britain.2
+	title = britain.2.t
+	desc = britain.2.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.2.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.3
+	title = britain.3.t
+	desc = britain.3.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.3.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.4
+	title = britain.4.t
+	desc = britain.4.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.4.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.5
+	title = britain.5.t
+	desc = britain.5.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.5.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.6
+	title = britain.6.t
+	desc = britain.6.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.6.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.7
+	title = britain.7.t
+	desc = britain.7.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.7.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.8
+	title = britain.8.t
+	desc = britain.8.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.8.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.9
+	title = britain.9.t
+	desc = britain.9.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.9.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.10
+	title = britain.10.t
+	desc = britain.10.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.1.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.11
+	title = britain.11.t
+	desc = britain.11.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.11.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.12
+	title = britain.12.t
+	desc = britain.12.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.12.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.13
+	title = britain.13.t
+	desc = britain.13.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.13.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.14
+	title = britain.14.t
+	desc = britain.14.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.14.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.15
+	title = britain.15.t
+	desc = britain.15.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.15.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.16
+	title = britain.16.t
+	desc = britain.16.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.16.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.17
+	title = britain.17.t
+	desc = britain.17.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.17.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.18
+	title = britain.18.t
+	desc = britain.18.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.18.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.19
+	title = britain.19.t
+	desc = britain.19.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.19.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.20
+	title = britain.20.t
+	desc = britain.20.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.20.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.21
+	title = britain.21.t
+	desc = britain.21.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.21.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.22
+	title = britain.22.t
+	desc = britain.22.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.22.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.23
+	title = britain.23.t
+	desc = britain.23.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.23.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.24
+	title = britain.24.t
+	desc = britain.24.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.24.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.25
+	title = britain.25.t
+	desc = britain.25.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.25.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.26
+	title = britain.26.t
+	desc = britain.26.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.26.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.27
+	title = britain.27.t
+	desc = britain.27.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.27.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.28
+	title = britain.28.t
+	desc = britain.28.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.28.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.29
+	title = britain.29.t
+	desc = britain.29.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.29.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.30
+	title = britain.30.t
+	desc = britain.30.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.30.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.31
+	title = britain.31.t
+	desc = britain.31.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.31.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.32
+	title = britain.32.t
+	desc = britain.32.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.3.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.33
+	title = britain.33.t
+	desc = britain.33.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.33.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.34
+	title = britain.34.t
+	desc = britain.34.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.34.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.35
+	title = britain.35.t
+	desc = britain.35.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.35.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.36
+	title = britain.36.t
+	desc = britain.36.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.36.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.37
+	title = britain.37.t
+	desc = britain.37.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.37.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.38
+	title = britain.38.t
+	desc = britain.38.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.38.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.39
+	title = britain.39.t
+	desc = britain.39.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.39.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.40
+	title = britain.40.t
+	desc = britain.40.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.40.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.41
+	title = britain.41.t
+	desc = britain.41.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.41.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.42
+	title = britain.42.t
+	desc = britain.42.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.42.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.43
+	title = britain.43.t
+	desc = britain.43.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.43.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.44
+	title = britain.44.t
+	desc = britain.44.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.44.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.45
+	title = britain.45.t
+	desc = britain.45.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.45.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.46
+	title = britain.46.t
+	desc = britain.46.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.46.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.47
+	title = britain.47.t
+	desc = britain.47.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.47.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.48
+	title = britain.48.t
+	desc = britain.48.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.48.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.49
+	title = britain.49.t
+	desc = britain.49.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.49.a
+	}
+}
+
+# 
+country_event = {
+	id = britain.50
+	title = britain.50.t
+	desc = britain.50.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = britain.50.a
+	}
+}

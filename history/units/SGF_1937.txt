@@ -1,0 +1,446 @@
+division_template = {
+	name = "Infanterie Division"					
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+   		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+  		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Gebirgs Division"		
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+		mountaineers = { x = 3 y = 0 }
+		mountaineers = { x = 3 y = 1 }
+		mountaineers = { x = 3 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Panzer Division"				
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }		
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	 	engineer = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Kavallerie Division" 			
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+}
+
+units = {
+	division= {	
+		name = "1. Infanterie-Division"
+		location = 692
+		division_template = "Infanterie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "2. Infanterie-Division"
+		location = 692
+		division_template = "Infanterie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "4. Infanterie-Division"
+		location = 692
+		division_template = "Infanterie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "5. Infanterie-Division"
+		location = 692
+		division_template = "Infanterie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "38. Infanterie-Division"
+		location = 692
+		division_template = "Infanterie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "1. Kavallerie-Division"
+		location = 692
+		division_template = "Kavallerie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "7. Infanterie-Division"
+		location = 11666
+		division_template = "Infanterie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "9. Infanterie-Division"
+		location = 11666
+		division_template = "Infanterie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "10. Infanterie-Division"
+		location = 11666
+		division_template = "Infanterie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "2. Kavallerie-Division"
+		location = 692
+		division_template = "Infanterie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "6. Infanterie-Division"
+		location = 9517
+		division_template = "Infanterie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "8. Infanterie-Division"
+		location = 9517
+		division_template = "Infanterie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "15. Infanterie-Division"
+		location = 9517
+		division_template = "Infanterie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "11. Infanterie-Division"
+		location = 673
+		division_template = "Infanterie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "12. Infanterie-Division"
+		location = 11584
+		division_template = "Infanterie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "13. Infanterie-Division"
+		location = 11584
+		division_template = "Infanterie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "17. Infanterie-Division"
+		location = 11584
+		division_template = "Infanterie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "40. Infanterie-Division"
+		location = 11584
+		division_template = "Infanterie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "14. Infanterie-Division"
+		location = 663
+		division_template = "Infanterie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "18. Infanterie-Division"
+		location = 663
+		division_template = "Infanterie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "39. Infanterie-Division"
+		location = 663
+		division_template = "Infanterie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "16. Infanterie-Division"
+		location = 9648
+		division_template = "Infanterie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "19. Infanterie-Division"
+		location = 9648
+		division_template = "Infanterie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "20. Infanterie-Division"
+		location = 9648
+		division_template = "Infanterie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "4. Kavallerie-Division"
+		location = 9648
+		division_template = "Kavallerie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "21. Infanterie-Division"
+		location = 6626
+		division_template = "Infanterie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "23. Infanterie-Division"
+		location = 6626
+		division_template = "Infanterie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "3. Kavallerie-Division"
+		location = 6626
+		division_template = "Kavallerie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "24. Infanterie-Division"
+		location = 9627
+		division_template = "Infanterie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "25. Infanterie-Division"
+		location = 9627
+		division_template = "Infanterie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "27. Infanterie-Division"
+		location = 11581
+		division_template = "Infanterie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "30. Infanterie-Division"
+		location = 11581
+		division_template = "Infanterie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "31. Infanterie-Division"
+		location = 11581
+		division_template = "Infanterie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "37. Infanterie-Division"
+		location = 11581
+		division_template = "Infanterie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "5. Kavallerie-Division"
+		location = 11581
+		division_template = "Kavallerie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "26. Infanterie-Division"
+		location = 6611
+		division_template = "Infanterie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "28. Infanterie-Division"
+		location = 6611
+		division_template = "Infanterie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "29. Infanterie-Division"
+		location = 11594
+		division_template = "Infanterie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "32. Infanterie-Division"
+		location = 11594
+		division_template = "Infanterie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "33. Infanterie-Division"
+		location = 3541
+		division_template = "Infanterie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "35. Infanterie-Division"
+		location = 3541
+		division_template = "Infanterie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "34. Infanterie-Division"
+		location = 688
+		division_template = "Infanterie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "36. Infanterie-Division"
+		location = 688
+		division_template = "Infanterie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "41. Infanterie-Division"
+		location = 9598
+		division_template = "Infanterie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "42. Infanterie-Division"
+		location = 9598
+		division_template = "Infanterie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "43. Infanterie-Division"
+		location = 9598
+		division_template = "Infanterie Division"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "SGF" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+}

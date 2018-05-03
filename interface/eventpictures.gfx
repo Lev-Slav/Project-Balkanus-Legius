@@ -1,0 +1,432 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_report_event_union_parade"
+		texturefile = "gfx/event_pictures/report_event_union_parade.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_naval_program"
+		texturefile = "gfx/event_pictures/report_event_naval_program.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_explosion_1"
+		texturefile = "gfx/event_pictures/report_event_explosion_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_USIR"
+		texturefile = "gfx/event_pictures/report_event_USIR.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_vovannslav"
+		texturefile = "gfx/event_pictures/report_event_vovannslav.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_dezarus_liberated"
+		texturefile = "gfx/event_pictures/report_event_dezarus_liberated.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_bucharest_liberated"
+		texturefile = "gfx/event_pictures/report_event_bucharest_liberated.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_welcome_to_mod"
+		texturefile = "gfx/event_pictures/report_event_welcome_to_mod.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_aquitaine_meeting"
+		texturefile = "gfx/event_pictures/GFX_report_event_aquitaine_meeting.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_airforce"
+		texturefile = "gfx/event_pictures/report_event_aiforce.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_aquitaine_army"
+		texturefile = "gfx/event_pictures/report_event_aquitaine_army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_balkan_coast"
+		texturefile = "gfx/event_pictures/report_event_balkan_coast.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_befriend_iran"
+		texturefile = "gfx/event_pictures/report_event_befriend_iran.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_croatia_or_war"
+		texturefile = "gfx/event_pictures/report_event_croatia_or_war.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_czar_lev"
+		texturefile = "gfx/event_pictures/report_event_czar_lev.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_dissidents"
+		texturefile = "gfx/event_pictures/report_event_dissidents.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_factory"
+		texturefile = "gfx/event_pictures/report_event_factory.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_foreign_legion"
+		texturefile = "gfx/event_pictures/report_event_foreign_legion.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_great_again"
+		texturefile = "gfx/event_pictures/report_event_great_again.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_invade_tulunid"
+		texturefile = "gfx/event_pictures/report_event_invade_tulunid.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_national_militia"
+		texturefile = "gfx/event_pictures/report_event_national_militia.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_navy"
+		texturefile = "gfx/event_pictures/report_event_navy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_north_africa"
+		texturefile = "gfx/event_pictures/report_event_north_africa.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_norway"
+		texturefile = "gfx/event_pictures/report_event_norway.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_occupation_of_bucharest"
+		texturefile = "gfx/event_pictures/report_event_occupation_of_bucharest.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_oil"
+		texturefile = "gfx/event_pictures/report_event_oil.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_paper"
+		texturefile = "gfx/event_pictures/report_event_paper.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_purge_corruption"
+		texturefile = "gfx/event_pictures/report_event_purge_corruption.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_restoration_of_monarchy"
+		texturefile = "gfx/event_pictures/report_event_restoration_of_monarchy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_russian_army"
+		texturefile = "gfx/event_pictures/report_event_russian_army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_south_american_rubber"
+		texturefile = "gfx/event_pictures/report_event_south_american_rubber.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_studying_map"
+		texturefile = "gfx/event_pictures/report_event_studying_map.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_submarine_program"
+		texturefile = "gfx/event_pictures/report_event_submarine_program.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_suez_canal"
+		texturefile = "gfx/event_pictures/report_event_suez_canal.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_total_war"
+		texturefile = "gfx/event_pictures/report_event_total_war.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_treaty_of_vienna"
+		texturefile = "gfx/event_pictures/report_event_treaty_of_vienna.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UBA"
+		texturefile = "gfx/event_pictures/report_event_UBA.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_UBA_Dmitar"
+		texturefile = "gfx/event_pictures/report_event_UBA_Dmitar.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_visarion_speech"
+		texturefile = "gfx/event_pictures/report_event_visarion_speech.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_visarion_speech2"
+		texturefile = "gfx/event_pictures/report_event_visarion_speech2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_visarion_speech3"
+		texturefile = "gfx/event_pictures/report_event_visarion_speech3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_youth_army"
+		texturefile = "gfx/event_pictures/report_event_youth_army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_youth_army_militia"
+		texturefile = "gfx/event_pictures/report_event_youth_army_militia.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_"
+		texturefile = "gfx/event_pictures/report_event_.dds"
+	}
+}

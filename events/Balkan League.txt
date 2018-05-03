@@ -1,0 +1,654 @@
+﻿###########################
+# Balkan League Events
+###########################
+
+add_namespace = balkan
+
+# Welcome to the Mod
+country_event = {
+	id = balkan.1
+	title = balkan.1.t
+	desc = balkan.1.d
+	picture = GFX_report_event_welcome_to_mod
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = BAL
+		date > 1937.1.1
+		NOT = { date > 1938.1.1 }
+	}		
+
+	mean_time_to_happen = { 
+		days = 1
+	}		
+
+	option = {
+		name = balkan.1.a
+		BAL = {
+			add_political_power = 50
+		}
+	}
+}
+
+# Union Military Parade
+country_event = {
+	id = balkan.2
+	title = balkan.2.t
+	desc = balkan.2.d
+	picture = GFX_report_event_union_parade
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = BAL
+		date > 1937.4.19
+		NOT = { date > 1938.1.1 }
+	}		
+
+	mean_time_to_happen = { 
+		days = 1
+	}		
+
+	option = {
+		name = balkan.2.a
+		BAL = {
+			add_political_power = 25
+			add_war_support = 0.025
+		}
+	}
+}
+
+# A Potential Ally?
+country_event = {
+	id = balkan.3
+	title = balkan.3.t
+	desc = balkan.3.d
+	picture = GFX_report_event_USIR
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = BAL
+		date > 1937.3.5
+		NOT = { date > 1938.1.1 }
+	}		
+
+	mean_time_to_happen = { 
+		days = 1
+	}		
+
+	option = {
+		name = balkan.3.a
+		set_global_flag = italy_coop_yes
+		ai_chance = {
+			factor = 90
+		}
+	}
+	option = {
+		name = balkan.3.b
+		set_global_flag = italy_coop_no 
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+# Vovannslav Visits Beograd Part I
+country_event = {
+	id = balkan.4
+	title = balkan.4.t
+	desc = balkan.4.d
+	picture = GFX_report_event_vovannslav
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = BAL
+		date > 1937.2.19
+		NOT = { date > 1938.1.1 }
+	}		
+
+	mean_time_to_happen = { 
+		days = 1
+	}		
+
+	option = {
+		name = balkan.4.a
+		ai_chance = {
+			factor = 0
+		}
+		set_global_flag = no_vovannslav
+	}
+	option = {
+		name = balkan.4.b
+		ai_chance = {
+			factor = 100
+		}
+		set_global_flag = yes_vovannslav
+	}
+}
+
+# Vovannslav Visits Beograd Part II
+country_event = {
+	id = balkan.401
+	title = balkan.401.t
+	desc = balkan.401.d
+	picture = GFX_report_event_vovannslav
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = BAL
+		has_global_flag = yes_vovannslav
+	}		
+
+	mean_time_to_happen = { 
+		days = 5
+	}		
+
+	option = {
+		name = balkan.401.a
+		add_political_power = 25
+	}
+}
+
+# Natiniyel Budayev Urges For Larger Navy
+country_event = {
+	id = balkan.5
+	title = balkan.5.t
+	desc = balkan.5.d
+	picture = GFX_report_event_naval_program
+	
+	is_triggered_only = yes		
+
+	mean_time_to_happen = { 
+		days = 1
+	}		
+
+	option = {
+		name = balkan.5.a
+		set_global_flag = full_program
+		add_political_power = -600
+	}
+	option = {
+		name = balkan.5.b
+		set_global_flag = half_program
+		add_political_power = -300
+	}
+	option = {
+		name = balkan.5.c
+		set_global_flag = partial_program
+		add_political_power = -150
+	}
+	option = {
+		name = balkan.5.e
+		set_global_flag = no_navy_needed
+	}
+}
+
+# Full Program Complete
+country_event = {
+	id = balkan.501
+	title = balkan.501.t
+	desc = balkan.501.d
+	picture = GFX_report_event_naval_program
+	
+	is_triggered_only = yes		
+
+	mean_time_to_happen = { 
+		days = 1
+	}		
+
+	option = {
+		name = balkan.501.a
+		load_oob = BAL_full_program_complete
+	}
+}
+
+# Half Program Complete
+country_event = {
+	id = balkan.502
+	title = balkan.502.t
+	desc = balkan.502.d
+	picture = GFX_report_event_naval_program
+	
+	is_triggered_only = yes		
+
+	mean_time_to_happen = { 
+		days = 1
+	}		
+
+	option = {
+		name = balkan.502.a
+		load_oob = BAL_half_program_complete
+	}
+}
+
+# Partial Program Complete
+country_event = {
+	id = balkan.503
+	title = balkan.503.t
+	desc = balkan.503.d
+	picture = GFX_report_event_naval_program
+	
+	is_triggered_only = yes		
+
+	mean_time_to_happen = { 
+		days = 1
+	}		
+
+	option = {
+		name = balkan.503.a
+		load_oob = BAL_partial_program_complete
+	}
+}
+
+# Zagreb Explosion
+country_event = {
+	id = balkan.6
+	title = balkan.6.t
+	desc = balkan.6.d
+	picture = GFX_report_event_explosion_1
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = BAL
+		has_global_flag = zagreb_bombing
+	}		
+
+	mean_time_to_happen = { 
+		days = 1
+	}		
+
+	option = {
+		name = balkan.6.a
+		# Offer Condelences Loser Lol
+		ai_chance = {
+			factor = 0
+		}
+		add_political_power = -50
+	}
+	option = {
+		name = balkan.6.b
+		ai_chance = {
+			factor = 100
+		}
+		add_political_power = 25
+		set_global_flag = territorial_ambitions
+	}
+}
+
+# Occupation of Muntenia
+country_event = {
+	id = balkan.7
+	title = balkan.7.t
+	desc = balkan.7.d
+	picture = GFX_report_event_occupation_of_bucharest
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = BAL
+		date > 1937.1.14
+	}		
+
+	mean_time_to_happen = { 
+		days = 1
+	}		
+
+	option = {
+		name = balkan.7.a
+		# They must be driven out!
+		ai_chance = {
+			factor = 100
+		}
+		set_global_flag = remilitarization_bucharest_yes
+		add_political_power = 25
+	}
+	option = {
+		name = balkan.7.b
+		# They will leave eventually right?
+		ai_chance = {
+			factor = 0
+		}
+		set_global_flag = remilitarization_bucharest_no
+		add_political_power = -50
+	}
+}
+
+# Vulnerable Shores
+country_event = {
+	id = balkan.8
+	title = balkan.8.t
+	desc = balkan.8.d
+	picture = GFX_report_event_balkan_coast
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = BAL
+		date > 1937.8.10
+	}		
+
+	mean_time_to_happen = { 
+		days = 1
+	}		
+
+	option = {
+		name = balkan.8.a
+		# Sounds like a good idea
+		ai_chance = {
+			factor = 100
+		}
+		set_global_flag = defense_construction_yes
+		add_political_power = -50
+	}
+	option = {
+		name = balkan.8.b
+		# Too costly
+		ai_chance = {
+			factor = 0
+		}
+		set_global_flag = defense_construction_no
+	}
+}
+
+# Britain Offers North Africa
+country_event = {
+	id = balkan.9
+	title = balkan.9.t
+	desc = balkan.9.d
+	picture = GFX_report_event_north_africa
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = BAL
+		has_global_flag = offer_north_africa
+	}		
+
+	mean_time_to_happen = { 
+		days = 5
+	}		
+
+	option = {
+		name = balkan.9.a
+		# We'll take it!
+		ai_chance = {
+			factor = 100
+		}
+		set_global_flag = take_north_africa
+		BAL = {
+			transfer_state = 273
+			transfer_state = 449
+			transfer_state = 450
+			transfer_state = 451
+			transfer_state = 662
+			transfer_state = 663
+		}
+	}
+	option = {
+		name = balkan.9.b
+		# North Africa? We want Croatia!
+		ai_chance = {
+			factor = 0
+		}
+		set_global_flag = no_north_africa
+		add_political_power = -50
+	}
+}
+
+# Corruption Within the Ranks
+country_event = {
+	id = balkan.10
+	title = balkan.10.t
+	desc = balkan.10.d
+	picture = GFX_report_event_corruption
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = BAL
+		date > 1937.2.11
+	}		
+
+	mean_time_to_happen = { 
+		days = 1
+	}		
+
+	option = {
+		name = balkan.10.a
+		# It should be dealt with
+		set_global_flag = corruption_issue
+	}
+}
+
+# Treaty of Vienna Issue
+country_event = {
+	id = balkan.11
+	title = balkan.11.t
+	desc = balkan.11.d
+	picture = GFX_report_event_treaty_of_vienna
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = BAL
+		date > 1937.1.6
+	}		
+
+	mean_time_to_happen = { 
+		days = 1
+	}		
+
+	option = {
+		name = balkan.11.a
+		# I will rip it up myself!
+		ai_chance = {
+			factor = 100
+		}
+		set_global_flag = treaty_of_vienna_no
+		add_political_power = 25
+	}
+	option = {
+		name = balkan.11.b
+		# We must face the consequences of our actions
+		ai_chance = {
+			factor = 0
+		}
+		set_global_flag = treaty_of_vienna_yes
+		add_political_power = -50
+	}
+}
+
+# Budayev vs Balasevich
+country_event = {
+	id = balkan.12
+	title = balkan.12.t
+	desc = balkan.12.d
+	picture = GFX_report_event_naval_program
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = BAL
+		date > 1937.7.1
+	}		
+
+	mean_time_to_happen = { 
+		days = 1
+	}		
+
+	option = {
+		name = balkan.12.a
+		# Go with Budayev's Plan
+		ai_chance = {
+			factor = 60
+		}
+		set_global_flag = budayev_plan
+	}
+	option = {
+		name = balkan.12.b
+		# Go with Balasevich's Plan
+		ai_chance = {
+			factor = 40
+		}
+		set_global_flag = balasevich_plan
+	}
+}
+
+# Monarchist Issue
+country_event = {
+	id = balkan.13
+	title = balkan.13.t
+	desc = balkan.13.d
+	picture = GFX_report_event_czar_lev
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = BAL
+		date > 1937.2.25
+	}		
+
+	mean_time_to_happen = { 
+		days = 1
+	}		
+
+	option = {
+		name = balkan.13.a
+		# The monarchy is in the past
+		ai_chance = {
+			factor = 100
+		}
+		set_global_flag = no_monarchy
+	}
+	option = {
+		name = balkan.13.b
+		# Perhaps we should look to restore it?
+		ai_chance = {
+			factor = 0
+		}
+		set_global_flag = yes_monarchy
+	}
+}
+
+# Industry Restoration
+country_event = {
+	id = balkan.14
+	title = balkan.14.t
+	desc = balkan.14.d
+	picture = GFX_report_event_factory
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = BAL
+		date > 1937.1.7
+	}		
+
+	mean_time_to_happen = { 
+		days = 1
+	}		
+
+	option = {
+		name = balkan.14.a
+	}
+}
+
+# Russian Threat
+country_event = {
+	id = balkan.15
+	title = balkan.15.t
+	desc = balkan.15.d
+	picture = GFX_report_event_russian_army
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = BAL
+		has_global_flag = victory_in_europe
+		BAL = {
+			NOT = {
+				has_war_with = RUS
+			}
+		}
+	}		
+
+	mean_time_to_happen = { 
+		days = 30
+	}		
+
+	option = {
+		name = balkan.15.a
+		set_global_flag = russian_threat
+	}
+}
+
+# Rubber Issue In Brazil
+country_event = {
+	id = balkan.16
+	title = balkan.16.t
+	desc = balkan.16.d
+	picture = GFX_report_event_south_american_rubber
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = BAL
+		has_global_flag = victory_in_europe
+		date > 1943.1.1 
+	}		
+
+	mean_time_to_happen = { 
+		days = 15
+	}		
+
+	option = {
+		name = balkan.16.a
+		set_global_flag = allied_rubber_in_brazil
+	}
+}
+
+# Liberation of Dezarussiya
+country_event = {
+	id = balkan.17
+	title = balkan.17.t
+	desc = balkan.17.d
+	picture = GFX_report_event_dezarus_liberated
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = BAL
+		AND = {
+			OR = {
+				controls_state = 90
+				controls_state = 91
+				controls_state = 92
+				controls_state = 97
+				controls_state = 771
+			}
+		} 
+	}		
+
+	mean_time_to_happen = { 
+		days = 1
+	}		
+
+	option = {
+		name = balkan.17.a
+		set_global_flag = liberate_dezarussiya_yes
+		DEZ = {
+			transfer_state = 89
+			transfer_state = 91
+			transfer_State = 92
+			transfer_state = 97
+			transfer_state = 771
+			load_oob = DEZ_free
+		}
+	}
+}
+

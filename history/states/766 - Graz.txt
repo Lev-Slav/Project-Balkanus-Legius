@@ -1,0 +1,23 @@
+
+state={
+	id=766
+	name="STATE_766"
+	manpower = 1357235
+	
+	state_category = city
+
+	history={
+		owner = SGF
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 3
+			arms_factory = 1 
+			air_base = 6 
+		}
+		add_claim_by = BAL
+	}
+
+	provinces={
+		653 9646 9648 9661 11630
+	}
+}

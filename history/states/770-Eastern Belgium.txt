@@ -1,0 +1,21 @@
+
+state={
+	id=770
+	name="STATE_770"
+	manpower = 1454564
+	
+	state_category = rural
+
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = FRA
+		add_claim_by = NGF
+	}
+
+	provinces={
+		3488 6537 9418 9444 11407
+	}
+}

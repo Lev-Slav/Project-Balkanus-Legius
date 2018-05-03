@@ -1,0 +1,24 @@
+
+state={
+	id=420
+	name="STATE_420"
+	manpower = 1014948
+	
+	state_category = rural
+
+	resources={
+		grain = 5
+	}
+
+	history={
+		owner = SAF
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = SAF
+	}
+
+	provinces={
+		4637 7969 10523 
+	}
+}

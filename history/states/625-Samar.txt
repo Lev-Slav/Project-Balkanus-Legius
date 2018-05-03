@@ -1,0 +1,24 @@
+state=
+{
+	id=625
+	name="STATE_625"
+	manpower = 1138724
+	
+	state_category = rural
+
+	resources={
+		grain = 1
+	}
+
+	history=
+	{
+		owner = IBE
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = IBE
+	}
+	provinces={
+		1224 1311 1340 4269 4373 
+	}
+}

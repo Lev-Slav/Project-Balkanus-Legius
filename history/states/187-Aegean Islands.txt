@@ -1,0 +1,32 @@
+
+state={
+	id=187
+	name="STATE_187"
+	manpower = 322600
+	
+	state_category = small_island
+	
+	resources={
+		chromium=10
+	}
+
+	history={
+		owner = VIZ
+		buildings = {
+			infrastructure = 5
+			dockyard = 2
+			8435 = {
+				naval_base = 2
+			}
+			6550 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = VIZ
+		add_core_of = BAL
+	}
+
+	provinces={
+		3401 6550 8435 
+	}
+}

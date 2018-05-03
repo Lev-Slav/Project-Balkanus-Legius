@@ -1,0 +1,20 @@
+state={
+	id=94
+	name="STATE_94"
+
+	history={
+		owner = RUS
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = RUS
+	}
+
+	provinces={
+		535 560 3309 3496 3556 6280 6306 6415 6579 9520 11285 11503 
+	}
+	manpower=1232200
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

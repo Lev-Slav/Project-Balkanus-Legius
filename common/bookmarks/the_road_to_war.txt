@@ -1,0 +1,113 @@
+bookmarks = {
+	bookmark = {
+		name = "ROAD_TO_WAR_NAME"
+		desc = "ROAD_TO_WAR_DESC"
+		date = 1937.1.1.1
+		picture = "GFX_select_date_1937"
+		default_country = "BAL"
+	
+		FRA = {
+			history = FRA_ROAD_TO_WAR_DESC
+			ideology = social_democrat
+			ideas={
+
+			}
+		}
+		USA = {
+			history = USA_ROAD_TO_WAR_DESC
+			ideology = social_conservative
+			ideas = {
+			}
+		}
+		NUS = {
+			history = NUS_ROAD_TO_WAR_DESC
+			ideology = paternal_autocrat
+			ideas = {
+
+			}
+			
+		}
+		BAL = {
+			history = BAL_ROAD_TO_WAR_DESC
+			ideology = national_socialist
+			ideas={
+
+			}
+		}
+		RUS = {
+			history = RUS_ROAD_TO_WAR_DESC
+			ideology = paternal_autocrat
+			ideas={
+				#
+			}			
+		}
+		VIZ = {
+			history = VIZ_ROAD_TO_WAR_DESC
+			ideology = social_conservative
+			ideas={
+				#
+			}			
+		}
+		NGF = {
+			history = NGF_ROAD_TO_WAR_DESC
+			ideology = paternal_autocrat
+			ideas = {
+
+			}
+		}
+
+		"---"={
+			history = "OTHER_ROAD_TO_WAR_DESC"
+		}
+
+		CSA = {
+			history = CSA_ROAD_TO_WAR_DESC
+			ideology = populist
+			ideas = {
+
+			}
+			
+		}
+
+		MOR = {
+			history = MOR_ROAD_TO_WAR_DESC
+			ideology = national_socialist
+			ideas = {
+
+			}
+			
+		}
+
+		AQU = {
+			history = AQU_ROAD_TO_WAR_DESC
+			ideology = national_socialist
+			ideas = {
+
+			}
+			
+		}
+
+		SWF = {
+			history = NUS_ROAD_TO_WAR_DESC
+			ideology = national_socialist
+			ideas = {
+
+			}
+			
+		}
+
+		SGF = {
+			history = SGF_ROAD_TO_WAR_DESC
+			ideology = social_conservative
+			ideas = {
+
+			}
+			
+		}
+
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

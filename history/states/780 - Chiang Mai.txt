@@ -1,0 +1,24 @@
+
+state={
+	id=780
+	name="STATE_780" 
+	manpower = 2562643
+	
+	state_category = city
+
+	history={
+		owner = NUS
+		victory_points = {
+			1488 1 
+		}
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = NUS
+		add_claim_by = LAN
+	}
+
+	provinces={
+		1253 1488 7312 7559 7675
+	}
+}

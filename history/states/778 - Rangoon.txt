@@ -1,0 +1,26 @@
+
+state={
+	id=778
+	name="STATE_778" 
+	manpower = 4562643
+	
+	state_category = town
+
+	history={
+		owner = NUS
+		victory_points = {
+			1330 5 
+		}
+		buildings = {
+			infrastructure = 4
+			1330 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = NUS
+	}
+
+	provinces={
+		1330 10154 12127 4293 4336 12238 4408 1403 12125 7295 1315 1385 12292 4275 1296 10217
+	}
+}

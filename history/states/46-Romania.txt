@@ -1,0 +1,43 @@
+
+state={
+	id=46
+	name="STATE_46" # Muntenia
+	manpower = 4461400
+	resources={
+		oil=70
+		grain = 2
+	}
+
+	state_category = city
+
+	history={
+		owner = BAL
+		victory_points = { 9617 20 }
+		victory_points = { 3663 5 }
+		victory_points = { 657 3 }
+		buildings = {
+			infrastructure = 7
+			arms_factory = 6
+			industrial_complex = 3
+			air_base = 6
+			657 = {
+				naval_base = 8
+			}
+			687 = {
+				naval_base = 3
+			}
+			dockyard = 4
+		}
+		add_core_of = BAL
+		1919.1.1 = {
+			set_demilitarized_zone = yes
+		}
+		1938.1.1 = {
+			set_demilitarized_zone = no
+		}
+	}
+
+	provinces={
+		657 660 674 687 818 3076 3636 3639 3663 6658 6677 6695 9617 9635 9651 11603 11619 11636 
+	}
+}

@@ -1,0 +1,21 @@
+
+state={
+	id=777
+	name="STATE_777" 
+	manpower = 2643
+	
+	state_category = town
+	impassable = yes
+
+	history={
+		owner = MAG
+		buildings = {
+			infrastructure = 5
+		}
+		add_core_of = MAG
+	}
+
+	provinces={
+		10884 12082 4962 12022 5004
+	}
+}

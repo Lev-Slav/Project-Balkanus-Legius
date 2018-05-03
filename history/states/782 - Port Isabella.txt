@@ -1,0 +1,23 @@
+
+state={
+	id=782
+	name="STATE_782" 
+	manpower = 52264
+	
+	state_category = rural
+
+	history={
+		owner = IBE
+		buildings = {
+			infrastructure = 3
+			2115 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = IBE
+	}
+
+	provinces={
+		2115
+	}
+}

@@ -1,0 +1,805 @@
+﻿###########################
+# South German Focus Events
+###########################
+
+add_namespace = south_germany_focus
+
+# 
+country_event = {
+	id = south_germany_focus.1
+	title = south_germany_focus.1.t
+	desc = south_germany_focus.1.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.1.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.2
+	title = south_germany_focus.2.t
+	desc = south_germany_focus.2.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.2.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.3
+	title = south_germany_focus.3.t
+	desc = south_germany_focus.3.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.3.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.4
+	title = south_germany_focus.4.t
+	desc = south_germany_focus.4.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.4.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.5
+	title = south_germany_focus.5.t
+	desc = south_germany_focus.5.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.5.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.6
+	title = south_germany_focus.6.t
+	desc = south_germany_focus.6.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.6.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.7
+	title = south_germany_focus.7.t
+	desc = south_germany_focus.7.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.7.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.8
+	title = south_germany_focus.8.t
+	desc = south_germany_focus.8.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.8.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.9
+	title = south_germany_focus.9.t
+	desc = south_germany_focus.9.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.9.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.10
+	title = south_germany_focus.10.t
+	desc = south_germany_focus.10.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.1.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.11
+	title = south_germany_focus.11.t
+	desc = south_germany_focus.11.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.11.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.12
+	title = south_germany_focus.12.t
+	desc = south_germany_focus.12.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.12.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.13
+	title = south_germany_focus.13.t
+	desc = south_germany_focus.13.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.13.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.14
+	title = south_germany_focus.14.t
+	desc = south_germany_focus.14.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.14.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.15
+	title = south_germany_focus.15.t
+	desc = south_germany_focus.15.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.15.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.16
+	title = south_germany_focus.16.t
+	desc = south_germany_focus.16.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.16.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.17
+	title = south_germany_focus.17.t
+	desc = south_germany_focus.17.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.17.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.18
+	title = south_germany_focus.18.t
+	desc = south_germany_focus.18.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.18.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.19
+	title = south_germany_focus.19.t
+	desc = south_germany_focus.19.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.19.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.20
+	title = south_germany_focus.20.t
+	desc = south_germany_focus.20.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.20.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.21
+	title = south_germany_focus.21.t
+	desc = south_germany_focus.21.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.21.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.22
+	title = south_germany_focus.22.t
+	desc = south_germany_focus.22.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.22.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.23
+	title = south_germany_focus.23.t
+	desc = south_germany_focus.23.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.23.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.24
+	title = south_germany_focus.24.t
+	desc = south_germany_focus.24.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.24.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.25
+	title = south_germany_focus.25.t
+	desc = south_germany_focus.25.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.25.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.26
+	title = south_germany_focus.26.t
+	desc = south_germany_focus.26.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.26.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.27
+	title = south_germany_focus.27.t
+	desc = south_germany_focus.27.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.27.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.28
+	title = south_germany_focus.28.t
+	desc = south_germany_focus.28.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.28.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.29
+	title = south_germany_focus.29.t
+	desc = south_germany_focus.29.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.29.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.30
+	title = south_germany_focus.30.t
+	desc = south_germany_focus.30.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.30.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.31
+	title = south_germany_focus.31.t
+	desc = south_germany_focus.31.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.31.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.32
+	title = south_germany_focus.32.t
+	desc = south_germany_focus.32.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.3.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.33
+	title = south_germany_focus.33.t
+	desc = south_germany_focus.33.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.33.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.34
+	title = south_germany_focus.34.t
+	desc = south_germany_focus.34.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.34.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.35
+	title = south_germany_focus.35.t
+	desc = south_germany_focus.35.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.35.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.36
+	title = south_germany_focus.36.t
+	desc = south_germany_focus.36.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.36.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.37
+	title = south_germany_focus.37.t
+	desc = south_germany_focus.37.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.37.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.38
+	title = south_germany_focus.38.t
+	desc = south_germany_focus.38.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.38.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.39
+	title = south_germany_focus.39.t
+	desc = south_germany_focus.39.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.39.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.40
+	title = south_germany_focus.40.t
+	desc = south_germany_focus.40.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.40.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.41
+	title = south_germany_focus.41.t
+	desc = south_germany_focus.41.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.41.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.42
+	title = south_germany_focus.42.t
+	desc = south_germany_focus.42.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.42.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.43
+	title = south_germany_focus.43.t
+	desc = south_germany_focus.43.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.43.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.44
+	title = south_germany_focus.44.t
+	desc = south_germany_focus.44.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.44.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.45
+	title = south_germany_focus.45.t
+	desc = south_germany_focus.45.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.45.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.46
+	title = south_germany_focus.46.t
+	desc = south_germany_focus.46.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.46.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.47
+	title = south_germany_focus.47.t
+	desc = south_germany_focus.47.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.47.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.48
+	title = south_germany_focus.48.t
+	desc = south_germany_focus.48.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.48.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.49
+	title = south_germany_focus.49.t
+	desc = south_germany_focus.49.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.49.a
+	}
+}
+
+# 
+country_event = {
+	id = south_germany_focus.50
+	title = south_germany_focus.50.t
+	desc = south_germany_focus.50.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = south_germany_focus.50.a
+	}
+}

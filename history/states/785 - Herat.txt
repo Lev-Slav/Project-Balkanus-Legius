@@ -1,0 +1,23 @@
+
+state={
+	id=785
+	name="STATE_785" 
+	manpower = 966346
+	
+	state_category = town
+
+	history={
+		owner = SAF
+		victory_points = {
+			4893 1 
+		}
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = SAF
+	}
+
+	provinces={
+		1948 2017 2062 2101 4893 8053 12871 
+	}
+}

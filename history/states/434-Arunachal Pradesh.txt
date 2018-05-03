@@ -1,0 +1,24 @@
+
+state={
+	id=434
+	name="STATE_434"
+	manpower = 200000
+	
+	state_category = wasteland
+	resources={
+		tungsten=54
+	}
+
+	history={
+		owner = BBE
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = BBE
+		add_claim_by = IND
+	}
+
+	provinces={
+		1116 1996 10810 12322 12730 
+	}
+}

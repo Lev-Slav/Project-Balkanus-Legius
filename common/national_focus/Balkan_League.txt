@@ -1,0 +1,4393 @@
+focus_tree = {
+	id = Balkan_League
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BAL
+		}
+	}
+	default = no
+	focus = {
+		id = BAL_muntenia
+		icon = GFX_goal_rhineland
+		cost = 0.00
+		x = 15
+		y = 1
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_global_flag = remilitarization_bucharest_yes
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.1
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_cede_territory_to_moravia
+		icon = GFX_goal_tripartite_pact
+		cost = 0.00
+		mutually_exclusive = {
+			focus = BAL_demand_north_germany_return
+		}
+		x = 30
+		y = 6
+			ai_will_do = {
+					factor = 8
+				}
+			available = {
+					has_global_flag = victory_in_europe
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.72
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_eliminate_visarion
+		icon = GFX_goal_generic_secret_weapon
+		cost = 0.00
+		mutually_exclusive = {
+			focus = BAL_restore_monarchy
+			focus = BAL_restore_monarchy
+			focus = BAL_make_serbia_great_again
+		}
+		x = 58
+		y = 2
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1937.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.89
+							set_global_flag = visarion_dead
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_restore_monarchy
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 0.00
+		mutually_exclusive = {
+			focus = BAL_eliminate_visarion
+			focus = BAL_eliminate_visarion
+			focus = BAL_make_serbia_great_again
+		}
+		x = 72
+		y = 2
+			ai_will_do = {
+					factor = 0
+				}
+			available = {
+					has_global_flag = yes_monarchy
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.25
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_make_serbia_great_again
+		icon = GFX_goal_generic_demand_territory
+		cost = 0.00
+		mutually_exclusive = {
+			focus = BAL_eliminate_visarion
+			focus = BAL_restore_monarchy
+		}
+		x = 46
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_global_flag = remilitarization_bucharest_yes
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.8
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_better_tanks
+		icon = GFX_goal_generic_army_tanks
+		cost = 0.00
+		mutually_exclusive = {
+			focus = BAL_anti_tank_effort
+		}
+		x = 46
+		y = 8
+			ai_will_do = {
+					factor = 8
+				}
+			available = {
+					has_global_flag = war_with_russia
+				}
+			completion_reward = {
+					BAL = {
+							add_ideas = better_tanks_focus
+						}
+					add_tech_bonus = {
+							name = BAL_focus_heavy_armor
+							bonus = 0.5
+							uses = 3
+							category = cat_heavy_armor
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_anti_tank_effort
+		icon = GFX_goal_generic_army_artillery2
+		cost = 0.00
+		mutually_exclusive = {
+			focus = BAL_better_tanks
+		}
+		x = 48
+		y = 8
+			ai_will_do = {
+					factor = 0
+				}
+			available = {
+					has_global_flag = war_with_russia
+				}
+			completion_reward = {
+					BAL = {
+							add_ideas = anti_tank_focus
+						}
+					set_global_flag = anti_tank_focus
+					add_tech_bonus = {
+							name = BAL_focus_anti_tank
+							bonus = 0.5
+							uses = 3
+							category = cat_anti_tank
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_mechanized_troops
+		icon = GFX_goal_generic_army_motorized
+		cost = 0.00
+		x = 44
+		y = 8
+			ai_will_do = {
+					factor = 5
+				}
+			available = {
+					has_global_flag = war_with_russia
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = BAL_mechanized_troops
+							bonus = 0.40
+							uses = 2
+							category = cat_mechanized_equipment
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_naval_effort
+		icon = GFX_goal_generic_build_navy
+		cost = 0.00
+		x = 92
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					date > 1937.1.1
+				}
+			completion_reward = {
+					BAL = {
+							navy_experience = 25
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_serbian_enigma
+		icon = GFX_focus_research
+		cost = 0.00
+		x = 38
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					date > 1939.1.1
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = enigma
+							bonus = 0.5
+							uses = 2
+							category = encryption_tech
+							category = computing_tech
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_paratroopers_focus
+		icon = GFX_goal_generic_air_bomber
+		cost = 0.00
+		x = 50
+		y = 8
+			ai_will_do = {
+					factor = 0
+				}
+			available = {
+					date > 1937.1.1
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = BAL_paratrooper_focus
+							bonus = 0.40
+							uses = 2
+							technology = paratroopers
+							technology = paratroopers2
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_nuclear_project
+		icon = GFX_focus_wonderweapons
+		cost = 0.00
+		x = 40
+		y = 8
+			ai_will_do = {
+					factor = 7
+				}
+			available = {
+					date > 1941.1.1
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = secret_bonus
+							bonus = 0.15
+							uses = 1
+							category = nuclear
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_airforce_focus
+		icon = GFX_goal_generic_build_airforce
+		cost = 0.00
+		x = 109
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					date > 1937.1.1
+				}
+			completion_reward = {
+					BAL = {
+							air_experience = 25
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_push_for_croatia
+		icon = GFX_goal_generic_position_armies
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_muntenia
+		}
+		x = 15
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_global_flag = territorial_ambitions
+					has_global_flag = remilitarization_bucharest_yes
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.2
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_home_defense
+		icon = GFX_goal_generic_defence
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_push_for_croatia
+		}
+		x = 5
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+				AND = {
+						OR = {
+								has_global_flag = start_date_1945
+								has_global_flag = start_date_1946
+						}
+					}
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.61
+							add_ideas = home_defense
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_defense_of_beograd
+		icon = GFX_goal_generic_fortify_city
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_home_defense
+		}
+		x = 5
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+				AND = {
+						OR = {
+								has_global_flag = start_date_1945
+								has_global_flag = start_date_1946
+						}
+					}
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.62
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_vaclonovich_plan
+		icon = GFX_goal_generic_defence
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_defense_of_beograd
+		}
+		mutually_exclusive = {
+			focus = BAL_jovanovic_plan
+		}
+		x = 4
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+				AND = {
+						OR = {
+								has_global_flag = start_date_1947
+						}
+					}
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.64
+							add_ideas = vaclonovich_plan
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_jovanovic_plan
+		icon = GFX_goal_generic_major_war
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_defense_of_beograd
+		}
+		mutually_exclusive = {
+			focus = BAL_vaclonovich_plan
+		}
+		x = 6
+		y = 5
+			ai_will_do = {
+					factor = 2
+				}
+			available = {
+				AND = {
+						OR = {
+								has_global_flag = start_date_1947
+						}
+					}
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.63
+							add_ideas = jovanovich_plan
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_defending_shores_1
+		icon = GFX_goal_generic_construct_military
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_push_for_croatia
+		}
+		x = 8
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_global_flag = defense_construction_yes
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.3
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_defending_shores_2
+		icon = GFX_goal_generic_construct_military
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_defending_shores_1
+		}
+		x = 8
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_global_flag = defense_construction_yes
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.4
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_defending_shores_3
+		icon = GFX_goal_generic_construct_military
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_defending_shores_2
+		}
+		x = 8
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_global_flag = defense_construction_yes
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.5
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_oil_prospects
+		icon = GFX_goal_generic_oil_refinery
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_push_for_croatia
+		}
+		x = 11
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_global_flag = take_north_affrica
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.6
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_plans_for_suez
+		icon = GFX_goal_generic_position_armies
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_oil_prospects
+		}
+		x = 11
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					date > 1941.1.1
+					has_global_flag = victory_in_europe
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.14
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_invade_UAR
+		icon = GFX_goal_generic_major_war
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_plans_for_suez
+		}
+		mutually_exclusive = {
+			focus = BAL_peacefully_demand_UAR
+		}
+		x = 10
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_global_flag = invade_tulunid
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.15
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_peacefully_demand_UAR
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_plans_for_suez
+		}
+		mutually_exclusive = {
+			focus = BAL_invade_UAR
+		}
+		x = 12
+		y = 5
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					has_global_flag = peaceful_negotiations_tulunid
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.16
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_get_rid_of_army_limitations
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_push_for_croatia
+		}
+		x = 13
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_global_flag = treaty_of_vienna_denounced
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.10
+							remove_ideas = army_limitations
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_get_rid_of_naval_limit
+		icon = GFX_goal_generic_build_navy
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_push_for_croatia
+		}
+		x = 15
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_global_flag = treaty_of_vienna_denounced
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.11
+							remove_ideas = naval_limitations
+							set_global_flag = no_naval_limitations
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_get_rid_of_airforce_limit
+		icon = GFX_goal_generic_build_airforce
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_push_for_croatia
+		}
+		x = 17
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_global_flag = treaty_of_vienna_denounced
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.11
+							remove_ideas = airforce_limitations
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_prepare_for_war
+		icon = GFX_goal_generic_small_arms
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_get_rid_of_army_limitations
+		}
+		prerequisite = {
+			focus = BAL_get_rid_of_naval_limit
+		}
+		prerequisite = {
+			focus = BAL_get_rid_of_airforce_limit
+		}
+		x = 15
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					date > 1940.1.1
+				}
+			completion_reward = {
+					BAL = {
+							add_manpower = 250000
+							add_political_power = 100
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_croatia_or_war
+		icon = GFX_goal_generic_territory_or_war
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_prepare_for_war
+		}
+		x = 15
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					date > 1941.4.4
+					has_global_flag = south_slavic_unity_speech
+					has_global_flag = aquitaine_secret_pact
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.23
+							set_global_flag = WWII_begins
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_victory_in_europe
+		icon = GFX_goal_generic_propaganda
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_croatia_or_war
+		}
+		x = 15
+		y = 7
+			ai_will_do = {
+					factor = 6
+				}
+			available = {
+					has_global_flag = treaty_of_budapest
+					has_global_flag = treaty_of_munich
+					has_global_flag = treaty_of_paris
+					BAL = {
+							controls_state = 341
+						}
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.60
+							set_gloal_flag = victory_in_europe
+							add_war_support = 0.10
+							add_stability = 0.10
+							add_ideas = victory_in_europe
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_target_russia
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_victory_in_europe
+		}
+		x = 15
+		y = 8
+			ai_will_do = {
+					factor = 6
+				}
+			available = {
+					has_global_flag = victory_in_europe
+					has_global_flag = russian_threat
+					RUS = {
+							NOT = {
+									has_war_with = BAL
+								}
+						}
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.66
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_declare_war_on_russia
+		icon = GFX_goal_generic_occupy_start_war
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_target_russia
+		}
+		x = 15
+		y = 9
+			ai_will_do = {
+					factor = 50
+				}
+			available = {
+					date > 1942.9.2
+					RUS = {
+							NOT = {
+									has_war_with = BAL
+								}
+						}
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.65
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_annex_hungarian_state
+		icon = GFX_goal_generic_position_armies
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_declare_war_on_russia
+		}
+		x = 13
+		y = 10
+			ai_will_do = {
+					factor = 15
+				}
+			available = {
+					has_global_flag = war_with_russia
+					date > 1944.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.73
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_dezarussian_legion
+		icon = GFX_goal_rhineland
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_declare_war_on_russia
+		}
+		x = 15
+		y = 10
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_global_flag = war_with_russia
+					has_global_flag = dezarus_liberated
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.75
+							add_manpower = 300000
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_operation_bastion
+		icon = GFX_goal_generic_fortify_city
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_declare_war_on_russia
+		}
+		x = 17
+		y = 10
+			ai_will_do = {
+					factor = 15
+				}
+			available = {
+					has_global_flag = start_date_1945
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.77
+							add_timed_idea = {
+									idea = operation_bastion
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_defense_of_dezarus
+		icon = GFX_goal_generic_defence
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_operation_bastion
+		}
+		x = 17
+		y = 11
+			ai_will_do = {
+					factor = 15
+				}
+			available = {
+					has_global_flag = start_date_1946
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.76
+							add_timed_idea = {
+									idea = defense_of_dezarus
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_USIR_Question
+		icon = GFX_goal_support_communism
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_push_for_croatia
+		}
+		x = 20
+		y = 3
+			ai_will_do = {
+					factor = 6
+				}
+			available = {
+					has_global_flag = italy_coop_yes
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.54
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_ally_USIR
+		icon = GFX_goal_generic_improve_relations
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_USIR_Question
+		}
+		mutually_exclusive = {
+			focus = BAL_enemy_USIR
+		}
+		x = 19
+		y = 4
+			ai_will_do = {
+					factor = 8
+				}
+			available = {
+					has_global_flag = USIR_friend
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.57
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_secret_pact
+		icon = GFX_goal_generic_military_deal
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_ally_USIR
+		}
+		x = 19
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					date > 1941.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.57
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_invite_USIR
+		icon = GFX_goal_generic_major_alliance
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_secret_pact
+		}
+		x = 19
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_global_flag = WWII_begins
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.58
+							add_to_faction = USI
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_betray_italy
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_invite_USIR
+		}
+		x = 19
+		y = 7
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					has_global_flag = victory_in_europe
+					NOT = {
+							has_global_flag = war_with_russia
+						}
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.59
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_americas
+		icon = GFX_goal_support_democracy
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_victory_in_europe
+		}
+		x = 22
+		y = 8
+			ai_will_do = {
+					factor = 15
+				}
+			available = {
+					has_global_flag = victory_in_europe
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.78
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_north_america
+		icon = GFX_goal_generic_position_armies
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_americas
+		}
+		x = 20
+		y = 9
+			ai_will_do = {
+					factor = 15
+				}
+			available = {
+					has_global_flag = victory_in_europe
+					USA = {
+							NOT = {
+									has_war_with = CSA
+								}
+							is_puppet = no
+						}
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.79
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_invite_CSA
+		icon = GFX_goal_generic_major_alliance
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_north_america
+		}
+		mutually_exclusive = {
+			focus = BAL_convince_CSA
+		}
+		x = 19
+		y = 10
+			ai_will_do = {
+					factor = 15
+				}
+			available = {
+					CSA = {
+							has_war_with = USA
+						}
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.81
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_enemy_USIR
+		icon = GFX_goal_anti_comintern_pact
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_USIR_Question
+		}
+		mutually_exclusive = {
+			focus = BAL_ally_USIR
+		}
+		x = 21
+		y = 4
+			ai_will_do = {
+					factor = 3
+				}
+			available = {
+					has_global_flag = USIR_enemy
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.55
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_eliminiate_communist_regime
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_enemy_USIR
+		}
+		x = 21
+		y = 5
+			ai_will_do = {
+					factor = 3
+				}
+			available = {
+					has_global_flag = WWII_begins
+					has_global_flag = victory_in_europe
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.56
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_convince_CSA
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_north_america
+		}
+		mutually_exclusive = {
+			focus = BAL_invite_CSA
+		}
+		x = 21
+		y = 10
+			ai_will_do = {
+					factor = 15
+				}
+			available = {
+					has_global_flag = victory_in_europe
+					date > 1943.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.82
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_invite_CSA
+		icon = GFX_goal_generic_major_alliance
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_convince_CSA
+		}
+		x = 21
+		y = 11
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_global_flag = victory_in_europe
+					date > 1943.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.83
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_befriend_aquitaine
+		icon = GFX_goal_generic_improve_relations
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_push_for_croatia
+		}
+		x = 24
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					date > 1937.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.48
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_aquitaine_military_coop
+		icon = GFX_goal_generic_small_arms
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_befriend_aquitaine
+		}
+		x = 24
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					date > 1938.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.50
+							army_experience = 25
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_secret_pact
+		icon = GFX_goal_generic_military_deal
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_aquitaine_military_coop
+		}
+		x = 24
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					date > 1941.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.51
+							set_global_flag = aquitaine_secret_pact
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_invite_aquitaine
+		icon = GFX_goal_generic_major_alliance
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_secret_pact
+		}
+		x = 24
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					date > 1941.1.1
+					has_global_flag = aquitaine_secret_pact
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.52
+							add_to_faction = AQU
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_befriend_argentina
+		icon = GFX_goal_generic_improve_relations
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_americas
+			focus = BAL_invite_aquitaine
+		}
+		x = 24
+		y = 9
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_global_flag = victory_in_europe
+					date > 1943.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.80
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_target_allies_rubber
+		icon = GFX_goal_generic_trade
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_befriend_argentina
+		}
+		x = 24
+		y = 10
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_global_flag = allied_rubber_in_brazil
+					date > 1944.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.84
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_operation_flashpoint
+		icon = GFX_goal_generic_military_deal
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_target_allies_rubber
+		}
+		x = 24
+		y = 11
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					date > 1944.5.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.85
+							add_to_faction = ARG
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_supply_aquitaine
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_aquitaine_military_coop
+		}
+		x = 26
+		y = 5
+			ai_will_do = {
+					factor = 6
+				}
+			available = {
+					has_global_flag = aquitaine_industry_issues
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.47
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_assist_atlantic_wall
+		icon = GFX_goal_generic_construct_military
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_supply_aquitaine
+		}
+		x = 26
+		y = 6
+			ai_will_do = {
+					factor = 7
+				}
+			available = {
+					has_global_flag = vulnerable_atlantic_shore
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.53
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_befriend_moravia
+		icon = GFX_goal_generic_improve_relations
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_muntenia
+		}
+		x = 27
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					date > 1937.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.67
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_moravia_invite
+		icon = GFX_goal_generic_major_alliance
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_befriend_moravia
+		}
+		x = 27
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					date > 1938.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.68
+							add_to_faction = MOR
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_moravia_military_coop
+		icon = GFX_goal_rhineland
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_moravia_invite
+		}
+		x = 27
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					date > 1939.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.70
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_demand_north_germany_return
+		icon = GFX_goal_generic_demand_territory
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_moravia_military_coop
+		}
+		mutually_exclusive = {
+			focus = BAL_cede_territory_to_moravia
+		}
+		x = 28
+		y = 6
+			ai_will_do = {
+					factor = 3
+				}
+			available = {
+					has_global_flag = victory_in_europe
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.71
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_lend_old_aircraft
+		icon = GFX_goal_generic_air_fighter
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_moravia_invite
+		}
+		x = 29
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					date > 1938.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.69
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_naval_ship_donation_1
+		icon = GFX_goal_generic_navy_battleship
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_aquitaine_military_coop
+		}
+		mutually_exclusive = {
+			focus = BAL_naval_ship_donation_2
+		}
+		x = 29
+		y = 5
+			ai_will_do = {
+					factor = 4
+				}
+			available = {
+					date > 1938.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.43
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_iran_friend
+		icon = GFX_goal_generic_improve_relations
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_push_for_croatia
+		}
+		x = 31
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					date > 1938.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.41
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_aviation_aid
+		icon = GFX_goal_generic_construction
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_iran_friend
+		}
+		x = 31
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					date > 1939.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.42
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_naval_ship_donation_2
+		icon = GFX_goal_generic_navy_battleship
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_aviation_aid
+		}
+		mutually_exclusive = {
+			focus = BAL_naval_ship_donation_1
+		}
+		x = 31
+		y = 5
+			ai_will_do = {
+					factor = 5
+				}
+			available = {
+					date > 1939.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.42
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_westernization_aid
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_naval_ship_donation_2
+		}
+		x = 32
+		y = 6
+			ai_will_do = {
+					factor = 5
+				}
+			available = {
+					date > 1940.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.44
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_offer_territory
+		icon = GFX_goal_generic_position_armies
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_westernization_aid
+		}
+		x = 32
+		y = 7
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					date > 1941.1.1
+					has_global_flag = victory_in_europe
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.45
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_sweden_friend
+		icon = GFX_goal_generic_improve_relations
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_push_for_croatia
+		}
+		x = 34
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					date > 1937.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.37
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_territorial_compensation
+		icon = GFX_goal_generic_position_armies
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_sweden_friend
+		}
+		x = 34
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_global_flag = WWII_begins
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.38
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_sway_to_join_vs_russia
+		icon = GFX_goal_generic_major_war
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_territorial_compensation
+		}
+		x = 34
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_global_flag = victory_in_europe
+					has_global_flag = war_with_russia
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.40
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_sweden_military_cooperation
+		icon = GFX_goal_generic_military_sphere
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_sweden_friend
+		}
+		x = 36
+		y = 4
+			ai_will_do = {
+					factor = 6
+				}
+			available = {
+					date > 1937.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.36
+							army_experience = 25
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_air_excercises
+		icon = GFX_goal_generic_air_fighter2
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_sweden_military_cooperation
+		}
+		x = 36
+		y = 5
+			ai_will_do = {
+					factor = 6
+				}
+			available = {
+					date > 1938.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.35
+							air_experience = 25
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_denounce_treaty_of_vienna
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_make_serbia_great_again
+		}
+		x = 47
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_global_flag = treaty_of_vienna_no
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.9
+							set_global_flag = treaty_of_vienna_denounced
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_military
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_denounce_treaty_of_vienna
+		}
+		x = 43
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					date > 1937.1.1
+				}
+			completion_reward = {
+					BAL = {
+							navy_experience = 25
+							army_experience = 25
+							air_experience = 25
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_focus_motorization
+		icon = GFX_goal_generic_army_motorized
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_military
+		}
+		mutually_exclusive = {
+			focus = BAL_focus_infantry
+			focus = BAL_focus_infantry
+			focus = BAL_focus_infantry
+			focus = BAL_focus_armor
+		}
+		x = 38
+		y = 5
+			ai_will_do = {
+					factor = 8
+				}
+			available = {
+					date > 1937.1.1
+				}
+			completion_reward = {
+					BAL = {
+							add_ideas = motorization_focus
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_focus_infantry
+		icon = GFX_goal_rhineland
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_military
+		}
+		mutually_exclusive = {
+			focus = BAL_focus_motorization
+			focus = BAL_focus_armor
+			focus = BAL_focus_motorization
+			focus = BAL_focus_armor
+			focus = BAL_focus_motorization
+		}
+		x = 40
+		y = 5
+			ai_will_do = {
+					factor = 2
+				}
+			available = {
+					date > 1937.1.1
+				}
+			completion_reward = {
+					BAL = {
+							add_ideas = infantry_focus
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_focus_armor
+		icon = GFX_goal_generic_army_tanks
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_military
+		}
+		mutually_exclusive = {
+			focus = BAL_focus_infantry
+			focus = BAL_focus_infantry
+			focus = BAL_focus_motorization
+		}
+		x = 42
+		y = 5
+			ai_will_do = {
+					factor = 5
+				}
+			available = {
+					date > 1937.1.1
+				}
+			completion_reward = {
+					BAL = {
+							add_ideas = armor_focus
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_youth_army
+		icon = GFX_goal_rhineland
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_military
+		}
+		x = 44
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					date > 1938.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.26
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_manpower_from_YA
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_youth_army
+		}
+		x = 43
+		y = 6
+			ai_will_do = {
+					factor = 7
+				}
+			available = {
+					date > 1945.1.1
+					has_global_flag = start_date_1945
+					has_global_flag = start_date_1946
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.34
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_purge_corruption
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_make_serbia_great_again
+		}
+		x = 45
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_global_flag = corruption_issue
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.7
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_form_national_militia
+		icon = GFX_goal_generic_small_arms
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_youth_army
+		}
+		x = 45
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					date > 1946.1.1
+					has_global_flag = start_date_1946
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.33
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_form_foreign_legion
+		icon = GFX_goal_rhineland
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_military
+		}
+		x = 46
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_global_flag = victory_in_europe
+					has_global_flag = war_with_russia
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.29
+							add_manpower = 150000
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_government
+		icon = GFX_goal_anschluss
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_purge_corruption
+			focus = BAL_denounce_treaty_of_vienna
+		}
+		x = 50
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					date > 1937.1.1
+				}
+			completion_reward = {
+					BAL = {
+							add_political_power = 100
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_block_monarchists
+		icon = GFX_goal_support_fascism
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_government
+		}
+		x = 48
+		y = 5
+			ai_will_do = {
+					factor = 7
+				}
+			available = {
+					has_global_flag = no_monarchy
+					date > 1939.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.24
+							add_stability = 0.05
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_south_slavic_unity
+		icon = GFX_goal_generic_propaganda
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_government
+		}
+		x = 50
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					date > 1940.11.11
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.22
+							set_global_flag = south_slavic_unity_speech
+							add_war_support = 0.05
+							add_political_power = 50
+							add_manpower = 100000
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_total_war
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_south_slavic_unity
+		}
+		x = 49
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_global_flag = victory_in_europe
+					has_global_flag = war_with_russia
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.28
+							add_ideas = total_war
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_restored_unity
+		icon = GFX_goal_generic_position_armies
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_south_slavic_unity
+		}
+		x = 51
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_global_flag = victory_in_europe
+					BAL = {
+							controls_state = 79
+					}
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.30
+							add_ideas = restored_unity
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_great_again
+		icon = GFX_goal_generic_national_unity
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_restored_unity
+			focus = BAL_total_war
+		}
+		x = 50
+		y = 7
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_global_flag = fall_of_russia
+					has_global_flag = victory_in_europe
+					has_global_flag = fall_of_britain
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.31
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_restore_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_government
+		}
+		x = 52
+		y = 5
+			ai_will_do = {
+					factor = 20
+				}
+			available = {
+					date > 1937.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.27
+							remove_ideas = dismantled_industry
+							add_ideas = restoration_of_industry
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_crack_down_dissidents
+		icon = GFX_goal_generic_political_pressure
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_government
+		}
+		x = 54
+		y = 5
+			ai_will_do = {
+					factor = 5
+				}
+			available = {
+					date > 1937.1.1
+				}
+			completion_reward = {
+					BAL = {
+							add_political_power = 75
+							add_stability = 0.05
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_unban_political_parties
+		icon = GFX_goal_support_democracy
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_eliminate_visarion
+		}
+		x = 58
+		y = 3
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1937.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.90
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_push_for_revolution
+		icon = GFX_goal_support_communism
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_unban_political_parties
+		}
+		mutually_exclusive = {
+			focus = BAL_restore_balkan_republic
+		}
+		x = 57
+		y = 4
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1937.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.91
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_ally_with_USIR
+		icon = GFX_goal_generic_major_alliance
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_push_for_revolution
+		}
+		x = 56
+		y = 5
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1939.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.92
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_propaganda_effort
+		icon = GFX_goal_generic_propaganda
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_push_for_revolution
+		}
+		x = 58
+		y = 5
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1937.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.94
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_rehabilitate_military
+		icon = GFX_goal_rhineland
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_propaganda_effort
+		}
+		x = 58
+		y = 6
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1937.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.95
+							remove_ideas = naval_limitations
+							remove_ideas = airforce_limitations
+							remove_ideas = army_limitations
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_world_revolution
+		icon = GFX_goal_support_communism
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_rehabilitate_military
+		}
+		x = 58
+		y = 7
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1939.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.96
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_spread_revolution
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_world_revolution
+		}
+		x = 58
+		y = 8
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1941.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.97
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_restore_balkan_republic
+		icon = GFX_goal_support_democracy
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_unban_political_parties
+		}
+		mutually_exclusive = {
+			focus = BAL_push_for_revolution
+		}
+		x = 59
+		y = 4
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1937.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.98
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_social_conservative_monarchy
+		icon = GFX_goal_support_democracy
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_restore_monarchy
+		}
+		x = 68
+		y = 3
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1937.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.109
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_autocratic_monarchy
+		icon = GFX_goal_generic_territory_or_war
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_restore_monarchy
+		}
+		x = 76
+		y = 3
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1937.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.111
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_focus_on_peace
+		icon = GFX_goal_generic_national_unity
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_social_conservative_monarchy
+		}
+		prerequisite = {
+			focus = BAL_autocratic_monarchy
+		}
+		mutually_exclusive = {
+			focus = BAL_denounce_vienna_treaty_2
+		}
+		x = 70
+		y = 4
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1937.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.110
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_move_away_from_NS
+		icon = GFX_goal_generic_propaganda
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_restore_balkan_republic
+			focus = BAL_focus_on_peace
+		}
+		x = 60
+		y = 5
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1937.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.99
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_consumer_goods_focus
+		icon = GFX_goal_generic_consumer_goods
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_restore_balkan_republic
+			focus = BAL_focus_on_peace
+		}
+		x = 62
+		y = 5
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1938.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.100
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_defense_focus
+		icon = GFX_goal_generic_defence
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_focus_on_peace
+			focus = BAL_restore_balkan_republic
+		}
+		x = 64
+		y = 5
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1938.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.103
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_diplomatic_effort
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_restore_balkan_republic
+			focus = BAL_focus_on_peace
+		}
+		x = 67
+		y = 5
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1937.1.1
+				}
+			completion_reward = {
+					BAL = {
+							add_political_power = 100
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_communist_threat
+		icon = GFX_goal_anti_comintern_pact
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_diplomatic_effort
+		}
+		x = 66
+		y = 6
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1939.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.106
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_join_munich_alliance
+		icon = GFX_goal_generic_major_alliance
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_diplomatic_effort
+		}
+		x = 68
+		y = 6
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1940.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.107
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_denounce_vienna_treaty_2
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_social_conservative_monarchy
+		}
+		prerequisite = {
+			focus = BAL_autocratic_monarchy
+		}
+		mutually_exclusive = {
+			focus = BAL_focus_on_peace
+		}
+		x = 74
+		y = 4
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1937.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.113
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_restore_imperial_borders
+		icon = GFX_goal_generic_political_pressure
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_denounce_vienna_treaty_2
+		}
+		x = 74
+		y = 5
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1938.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.114
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_colonial_ambitions
+		icon = GFX_goal_generic_position_armies
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_restore_imperial_borders
+		}
+		x = 72
+		y = 6
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1938.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.116
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_muntenia_2
+		icon = GFX_goal_rhineland
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_restore_imperial_borders
+		}
+		x = 74
+		y = 6
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1938.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.117
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_prepare_for_war_2
+		icon = GFX_goal_generic_small_arms
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_muntenia_2
+		}
+		x = 74
+		y = 7
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1940.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.118
+							add_manpower = 250000
+							add_war_support = 0.10
+							add_political_power = 100
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_victory_in_europe_2
+		icon = GFX_goal_demand_sudetenland
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_prepare_for_war_2
+		}
+		x = 74
+		y = 8
+			ai_will_do = {
+					factor = 6
+				}
+			available = {
+					has_global_flag = treaty_of_budapest
+					has_global_flag = treaty_of_munich
+					has_global_flag = treaty_of_paris
+					BAL = {
+							controls_state = 341
+						}
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.119
+							set_gloal_flag = victory_in_europe
+							add_war_support = 0.10
+							add_stability = 0.10
+							add_ideas = victory_in_europe
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_restore_hungary_dynasty
+		icon = GFX_goal_generic_improve_relations
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_victory_in_europe_2
+		}
+		x = 71
+		y = 9
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1941.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.120
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_plans_for_italy
+		icon = GFX_goal_generic_position_armies
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_victory_in_europe_2
+		}
+		x = 74
+		y = 9
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1941.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.121
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_restore_kingdom_of_italy
+		icon = GFX_goal_generic_improve_relations
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_plans_for_italy
+		}
+		x = 74
+		y = 10
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1941.1.1
+					has_global_flag = fall_of_italy
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.122
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_remove_army_restric_1
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_restore_imperial_borders
+		}
+		x = 76
+		y = 6
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1938.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.141
+							remove_ideas = army_limitations
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_restore_vizantiyan_dynasty
+		icon = GFX_goal_generic_improve_relations
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_victory_in_europe_2
+		}
+		x = 76
+		y = 9
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1941.1.1
+					has_global_flag = fall_of_vizantiyan
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.125
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_befriend_north_germany2
+		icon = GFX_goal_generic_improve_relations
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_muntenia_2
+		}
+		x = 77
+		y = 7
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1938.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.123
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_ally_north_germany
+		icon = GFX_goal_generic_major_alliance
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_befriend_north_germany2
+		}
+		x = 77
+		y = 8
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1939.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.124
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_restore_industry_2
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_denounce_vienna_treaty_2
+		}
+		x = 78
+		y = 5
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1937.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.115
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_remove_air_restric_1
+		icon = GFX_goal_generic_build_airforce
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_restore_imperial_borders
+		}
+		x = 78
+		y = 6
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1938.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.140
+							remove_ideas = airforce_limitations
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_plans_for_russia
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_victory_in_europe_2
+		}
+		mutually_exclusive = {
+			focus = BAL_befriend_russia
+		}
+		x = 78
+		y = 9
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1941.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.126
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_war_with_russia_2
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_plans_for_russia
+		}
+		x = 78
+		y = 10
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1942.6.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.128
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_remove_navy_restric_1
+		icon = GFX_goal_generic_build_navy
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_restore_imperial_borders
+		}
+		x = 80
+		y = 6
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1938.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.139
+							remove_ideas = naval_limitations
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_befriend_russia
+		icon = GFX_goal_generic_improve_relations
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_victory_in_europe_2
+		}
+		mutually_exclusive = {
+			focus = BAL_plans_for_russia
+		}
+		x = 80
+		y = 9
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1941.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.127
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_ally_russia
+		icon = GFX_goal_generic_major_alliance
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_befriend_russia
+		}
+		x = 80
+		y = 10
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1941.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.129
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_landing_craft
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_naval_effort
+		}
+		x = 85
+		y = 3
+			ai_will_do = {
+					factor = 3
+				}
+			available = {
+					date > 1940.1.1
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = BAL_landing_craft
+							bonus = 0.4
+							uses = 2
+							technology = transport
+							technology = landing_craft
+							technology = tank_landing_craft
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_marines
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_landing_craft
+		}
+		x = 85
+		y = 4
+			ai_will_do = {
+					factor = 3
+				}
+			available = {
+					date > 1940.1.1
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = BAL_marines
+							bonus = 0.40
+							uses = 2
+							technology = marines
+							technology = marines2
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_budayevs_plan
+		icon = GFX_goal_generic_navy_battleship
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_naval_effort
+		}
+		mutually_exclusive = {
+			focus = BAL_balasevich_plan
+		}
+		x = 89
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_global_flag = no_naval_limitations
+					has_global_flag = budayev_plan
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan.5
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_full_plan
+		icon = GFX_goal_generic_navy_battleship
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_budayevs_plan
+		}
+		mutually_exclusive = {
+			focus = BAL_partial_plan
+			focus = BAL_half_plan
+			focus = BAL_partial_plan
+		}
+		x = 87
+		y = 4
+			ai_will_do = {
+					factor = 5
+				}
+			available = {
+					has_global_flag = budayev_plan
+					date > 1943.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan.501
+							add_political_power = -600
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_half_plan
+		icon = GFX_goal_generic_navy_battleship
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_budayevs_plan
+		}
+		mutually_exclusive = {
+			focus = BAL_partial_plan
+			focus = BAL_full_plan
+			focus = BAL_partial_plan
+		}
+		x = 89
+		y = 4
+			ai_will_do = {
+					factor = 9
+				}
+			available = {
+					has_global_flag = budayev_plan
+					date > 1941.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan.502
+							add_political_power = -300
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_further_expansion
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_full_plan
+			focus = BAL_half_plan
+		}
+		x = 88
+		y = 5
+			ai_will_do = {
+					factor = 5
+				}
+			available = {
+					has_global_flag = budayev_plan
+					date > 1946.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.17
+							add_political_power = -300
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_partial_plan
+		icon = GFX_goal_generic_navy_battleship
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_budayevs_plan
+		}
+		mutually_exclusive = {
+			focus = BAL_full_plan
+			focus = BAL_half_plan
+			focus = BAL_half_plan
+			focus = BAL_full_plan
+		}
+		x = 91
+		y = 4
+			ai_will_do = {
+					factor = 5
+				}
+			available = {
+					has_global_flag = budayev_plan
+					date > 1939.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan.503
+							add_political_power = 100
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_balasevich_plan
+		icon = GFX_goal_generic_navy_submarine
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_naval_effort
+		}
+		mutually_exclusive = {
+			focus = BAL_budayevs_plan
+		}
+		x = 95
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_global_flag = no_naval_limitations
+					has_global_flag = balasevich_plan
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.13
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_full_plan
+		icon = GFX_goal_generic_wolf_pack
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_balasevich_plan
+		}
+		mutually_exclusive = {
+			focus = BAL_partial_plan
+		}
+		x = 94
+		y = 4
+			ai_will_do = {
+					factor = 5
+				}
+			available = {
+					has_global_flag = balasevich_plan
+					date > 1941.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.18
+							add_political_power = -400
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_further_submarine_expansion
+		icon = GFX_goal_generic_navy_submarine
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_full_plan
+		}
+		x = 94
+		y = 5
+			ai_will_do = {
+					factor = 4
+				}
+			available = {
+					date > 1943.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.20
+							add_political_power = -200
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_partial_plan
+		icon = GFX_goal_generic_navy_anti_submarine
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_balasevich_plan
+		}
+		mutually_exclusive = {
+			focus = BAL_full_plan
+		}
+		x = 96
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_global_flag = balasevich_plan
+					date > 1939.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.19
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_mixed_focus
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_partial_plan
+		}
+		x = 96
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					date > 1943.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.21
+							add_political_power = -200
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_supremacy_in_med
+		icon = GFX_goal_generic_navy_battleship
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_naval_effort
+		}
+		x = 99
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					date > 1937.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.87
+							add_ideas = supremacy_in_med
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_BB_sup
+		icon = GFX_goal_generic_navy_battleship
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_supremacy_in_med
+		}
+		mutually_exclusive = {
+			focus = BAL_SUB__sup
+		}
+		x = 98
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					date > 1938.1.1
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = BAL_bb_effort
+							bonus = 0.40
+							uses = 3
+							category = bb_tech
+						}
+					BAL = {
+							add_ideas = bb_focus
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_SUB__sup
+		icon = GFX_goal_generic_navy_submarine
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_supremacy_in_med
+		}
+		mutually_exclusive = {
+			focus = BAL_BB_sup
+		}
+		x = 100
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					date > 1938.1.1
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = BAL_u_boat_effort
+							bonus = 0.40
+							uses = 3
+							technology = early_submarine
+							technology = basic_submarine
+							technology = improved_submarine
+							technology = advanced_submarine
+						}
+					BAL = {
+							add_ideas = submarine_focus
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_dockyards_construction_1
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_BB_sup
+			focus = BAL_SUB__sup
+		}
+		x = 99
+		y = 5
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							NOT = {
+									any_owned_state = {
+											is_in_home_area = yes
+											free_building_slots = {
+													building = dockyard
+													size > 1
+													include_locked = yes
+												}
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					random_state = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = dockyard
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+			completion_reward = {
+					random_owned_state = {
+							limit = {
+									is_in_home_area = yes
+									free_building_slots = {
+											building = dockyard
+											size > 1
+											include_locked = yes
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = dockyard
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_dockyards_construction_2
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_dockyards_construction_1
+		}
+		x = 99
+		y = 6
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							NOT = {
+									any_owned_state = {
+											is_in_home_area = yes
+											free_building_slots = {
+													building = dockyard
+													size > 1
+													include_locked = yes
+												}
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					random_state = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = dockyard
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+			completion_reward = {
+					random_owned_state = {
+							limit = {
+									is_in_home_area = yes
+									free_building_slots = {
+											building = dockyard
+											size > 1
+											include_locked = yes
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = dockyard
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_dockyards_construction_3
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_dockyards_construction_2
+		}
+		x = 99
+		y = 7
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							NOT = {
+									any_owned_state = {
+											is_in_home_area = yes
+											free_building_slots = {
+													building = dockyard
+													size > 1
+													include_locked = yes
+												}
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					random_state = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = dockyard
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+			completion_reward = {
+					random_owned_state = {
+							limit = {
+									is_in_home_area = yes
+									free_building_slots = {
+											building = dockyard
+											size > 1
+											include_locked = yes
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = dockyard
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_sell_older_models
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_airforce_focus
+		}
+		x = 109
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					date > 1937.1.1
+				}
+			completion_reward = {
+					BAL = {
+							add_political_power = 75
+							country_event = balkan_focus.88
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_fighters_focus
+		icon = GFX_goal_generic_air_fighter
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_sell_older_models
+		}
+		mutually_exclusive = {
+			focus = BAL_bombers_focus
+		}
+		x = 106
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					date > 1938.1.1
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = BAL_fighter_focus
+							bonus = 0.40
+							uses = 1
+							category = cas_bomber
+							category = cat_heavy_fighter
+							category = light_fighter
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_heavy_fighter
+		icon = GFX_goal_generic_air_fighter
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_fighters_focus
+		}
+		mutually_exclusive = {
+			focus = BAL_fighter
+			focus = BAL_fighter
+			focus = BAL_CAS
+		}
+		x = 104
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					date > 1938.1.1
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = BAL_heavy_fighter_focus
+							bonus = 0.40
+							uses = 3
+							category = cat_heavy_fighter
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_fighter
+		icon = GFX_goal_generic_air_fighter2
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_fighters_focus
+		}
+		mutually_exclusive = {
+			focus = BAL_CAS
+			focus = BAL_heavy_fighter
+			focus = BAL_heavy_fighter
+			focus = BAL_CAS
+		}
+		x = 106
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					date > 1938.1.1
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = BAL_light_fighter_focus
+							bonus = 0.40
+							uses = 3
+							category = light_fighter
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_CAS
+		icon = GFX_goal_generic_CAS
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_fighters_focus
+		}
+		mutually_exclusive = {
+			focus = BAL_fighter
+			focus = BAL_fighter
+			focus = BAL_heavy_fighter
+		}
+		x = 108
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					date > 1938.1.1
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = BAL_CAS_focus
+							bonus = 0.40
+							uses = 3
+							category = cas_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_bombers_focus
+		icon = GFX_goal_generic_air_bomber
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_sell_older_models
+		}
+		mutually_exclusive = {
+			focus = BAL_fighters_focus
+		}
+		x = 112
+		y = 4
+			ai_will_do = {
+					factor = 4
+				}
+			available = {
+					date > 1938.1.1
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = BAL_bomber_focus
+							bonus = 0.40
+							uses = 1
+							category = naval_bomber
+							category = tactical_bomber
+							category = cat_strategic_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_strat_bomber
+		icon = GFX_goal_generic_occupy_start_war
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_bombers_focus
+		}
+		mutually_exclusive = {
+			focus = BAL_tac_bomber
+			focus = BAL_naval_bomber
+		}
+		x = 110
+		y = 5
+			ai_will_do = {
+					factor = 4
+				}
+			available = {
+					date > 1938.1.1
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = BAL_strategic_bomber_focus
+							bonus = 0.40
+							uses = 3
+							category = cat_strategic_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_tac_bomber
+		icon = GFX_goal_poland_goal
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_bombers_focus
+		}
+		mutually_exclusive = {
+			focus = BAL_strat_bomber
+			focus = BAL_naval_bomber
+		}
+		x = 112
+		y = 5
+			ai_will_do = {
+					factor = 4
+				}
+			available = {
+					date > 1938.1.1
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = BAL_tactical_bomber_focus
+							bonus = 0.40
+							uses = 3
+							category = tactical_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_send_aid_argentine
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_operation_flashpoint
+		}
+		x = 24
+		y = 12
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_global_flag = operation_flashpoint
+					date > 1944.5.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.86
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_wonder_weapons
+		icon = GFX_focus_wonderweapons
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_focus_motorization
+			focus = BAL_focus_infantry
+			focus = BAL_focus_armor
+		}
+		x = 40
+		y = 6
+			ai_will_do = {
+					factor = 7
+				}
+			available = {
+					date > 1939.1.1
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = secret_bonus
+							bonus = 0.15
+							uses = 1
+							category = nuclear
+						}
+					add_tech_bonus = {
+							name = secret_bonus
+							bonus = 0.40
+							uses = 1
+							category = rocketry
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_jet_aircraft
+		icon = GFX_goal_generic_air_fighter
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_wonder_weapons
+		}
+		x = 40
+		y = 7
+			ai_will_do = {
+					factor = 7
+				}
+			available = {
+					date > 1939.1.1
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = secret_bonus
+							bonus = 0.35
+							uses = 1
+							category = rocketry
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_rocketry
+		icon = GFX_focus_rocketry
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_wonder_weapons
+		}
+		x = 38
+		y = 7
+			ai_will_do = {
+					factor = 7
+				}
+			available = {
+					date > 1939.1.1
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = secret_bonus
+							bonus = 0.35
+							uses = 3
+							category = rocketry
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_super_heavy_tanks
+		icon = GFX_goal_generic_army_tanks
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_wonder_weapons
+		}
+		x = 42
+		y = 7
+			ai_will_do = {
+					factor = 7
+				}
+			available = {
+					has_global_flag = war_with_russia
+					NOT = {
+							has_global_flag = anti_tank_focus
+						}
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = BAL_super_heavy_tank_research
+							bonus = 0.40
+							uses = 1
+							technology = super_heavy_tank
+							technology = super_heavy_td
+							technology = super_heavy_art
+							technology = super_heavy_spaa
+							technology = advanced_heavy_tank
+							technology = advanced_heavy_td
+							technology = advanced_heavy_art
+							technology = advanced_heavy_spaa
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_integrate_hungary
+		icon = GFX_goal_generic_national_unity
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_annex_hungarian_state
+		}
+		x = 13
+		y = 11
+			ai_will_do = {
+					factor = 5
+				}
+			available = {
+					date > 1948.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.74
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_improve_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_consumer_goods_focus
+		}
+		x = 62
+		y = 6
+			ai_will_do = {
+					factor = 3
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_improve_infrastructure_2
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_improve_infrastructure
+		}
+		x = 62
+		y = 7
+			ai_will_do = {
+					factor = 3
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_ask_to_lift_military
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_defense_focus
+		}
+		x = 64
+		y = 6
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1938.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.104
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_ally_syndicalist_russia
+		icon = GFX_goal_generic_major_alliance
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_ally_with_USIR
+		}
+		x = 56
+		y = 6
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1941.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.93
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_eliminate_communism
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_communist_threat
+		}
+		x = 66
+		y = 7
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1940.1.1
+				}
+			completion_reward = {
+					BAL = {
+							country_event = balkan_focus.108
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_nuclear_project_2
+		icon = GFX_focus_wonderweapons
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_nuclear_project
+		}
+		x = 40
+		y = 9
+			ai_will_do = {
+					factor = 7
+				}
+			available = {
+					date > 1943.1.1
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = secret_bonus
+							bonus = 0.15
+							uses = 1
+							category = nuclear
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_nuclear_project_3
+		icon = GFX_focus_wonderweapons
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_nuclear_project_2
+		}
+		x = 40
+		y = 10
+			ai_will_do = {
+					factor = 7
+				}
+			available = {
+					date > 1946.1.1
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = secret_bonus
+							bonus = 0.20
+							uses = 1
+							category = nuclear
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_naval_bomber
+		icon = GFX_goal_generic_air_naval_bomber
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_bombers_focus
+		}
+		mutually_exclusive = {
+			focus = BAL_tac_bomber
+			focus = BAL_strat_bomber
+		}
+		x = 114
+		y = 5
+			ai_will_do = {
+					factor = 4
+				}
+			available = {
+					date > 1938.1.1
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = BAL_naval_bomber_focus
+							bonus = 0.40
+							uses = 3
+							category = naval_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = BAL_improve_infrastructure_3
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 0.00
+		prerequisite = {
+			focus = BAL_improve_infrastructure_2
+		}
+		x = 62
+		y = 8
+			ai_will_do = {
+					factor = 3
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+}

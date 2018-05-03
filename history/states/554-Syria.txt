@@ -1,0 +1,27 @@
+
+state={
+	id=554
+	name="STATE_554"
+	manpower = 547797
+	
+	state_category = rural
+
+	history={
+		owner = VIZ
+		victory_points = {
+			4111 3 
+		}
+		buildings = {
+			infrastructure = 5
+			air_base = 1
+		}
+		add_core_of = VIZ
+		add_core_of = SYR
+		add_claim_by = TUL
+	}
+
+
+	provinces={
+		1074 4111 4486 4550 7184 
+	}
+}

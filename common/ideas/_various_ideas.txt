@@ -1,0 +1,161 @@
+ideas = {
+
+	country = {
+			war_exhaustion = {
+			
+			allowed = {
+				always = yes
+			}
+
+			picture = war_exhaustion
+							
+			modifier = {
+				conscription_factor = -0.15
+				army_morale_factor = -0.25
+				army_org_factor = -0.25
+				production_speed_buildings_factor = -0.25
+				training_time_army_factor = 1
+				land_reinforce_rate = -0.5
+				unity_factor = -0.1
+				}
+			}
+
+			hundred_days = {
+			
+			allowed = {
+				always = yes
+			}
+
+			picture = hundred_days
+							
+			modifier = {
+				army_morale_factor = 0.30
+				army_org_factor = 0.30
+				land_reinforce_rate = 0.30
+				unity_factor = 0.1
+				}
+			}
+
+			desertion = {
+			
+			allowed = {
+				always = yes
+			}
+
+			picture = desertion
+							
+			modifier = {
+				conscription_factor = -0.15
+				army_morale_factor = -0.075
+				army_org_factor = -0.075
+				land_reinforce_rate = -0.1
+				unity_factor = -0.025
+				}
+			}
+
+			vardar_offensive = {
+			
+			allowed = {
+				always = yes
+			}
+
+			picture = vardar_offensive
+							
+			modifier = {
+				army_morale_factor = 0.30
+				army_org_factor = 0.30
+				land_reinforce_rate = 0.30
+				unity_factor = 0.1
+				}
+			}
+
+			desertion = {
+			
+			allowed = {
+				always = yes
+			}
+
+			picture = desertion
+							
+			modifier = {
+				conscription_factor = -0.15
+				army_morale_factor = -0.075
+				army_org_factor = -0.075
+				land_reinforce_rate = -0.1
+				unity_factor = -0.025
+				}
+			}
+
+			americans_are_here = {
+			
+			allowed = {
+				always = yes
+			}
+
+			picture = americans_are_here
+							
+			modifier = {
+				army_morale_factor = 0.2
+				army_org_factor = 0.2
+				land_reinforce_rate = 0.30
+				unity_factor = 0.10
+				}
+			}
+
+			unrestricted_sub_warfare = {
+			
+			allowed = {
+				always = yes
+			}
+
+			USA_support = {
+			
+			allowed = {
+				always = yes
+			}
+
+			picture = americans_are_here
+							
+			modifier = {
+				army_morale_factor = 0.2
+				army_org_factor = 0.2
+				land_reinforce_rate = 0.30
+				}
+			}
+
+			unrestricted_sub_warfare = {
+			
+			allowed = {
+				always = yes
+			}
+
+			picture = unrestricted_sub_warfare
+							
+			modifier = {
+				army_morale_factor = -0.045
+				army_org_factor = -0.045
+				land_reinforce_rate = -0.10
+				unity_factor = -0.075
+				}
+			}
+
+			fall_of_russia = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.10
+				army_org_factor = 0.10
+				land_reinforce_rate = 0.10
+				unity_factor = 0.1
+			}
+		}
+	}

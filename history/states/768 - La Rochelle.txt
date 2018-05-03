@@ -1,0 +1,23 @@
+
+state={
+	id=768
+	name="STATE_768"
+	manpower = 452753
+	
+	state_category = town
+
+	history={
+		owner = AQU
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			air_base = 4
+		}
+		add_claim_by = FRA
+		add_core_of = AQU
+	}
+
+	provinces={
+		595 6657 9597 11582
+	}
+}

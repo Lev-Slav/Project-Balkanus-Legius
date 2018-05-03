@@ -1,0 +1,287 @@
+division_template = {
+	name = "Divisi Infanteri"				
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+   		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+  		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Divisi Marinir"			
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}	
+	priority = 2
+}
+
+division_template = {
+	name = "Divisi Bermotor" 		
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	   	motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+	    	motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		motorized = { x = 3 y = 0 }
+	    	motorized = { x = 3 y = 1 }
+		motorized = { x = 3 y = 2 }
+	}
+	support = {
+        	recon = { x = 0 y = 0 }
+	 	engineer = { x = 0 y = 1 }		
+	}
+}
+
+division_template = {
+	name = "Divisi Kavaleri" 			
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+	}
+}
+
+units = {
+	division= {	
+		name = "1. Divisi Infanteri"
+		location = 7381
+		division_template = "Divisi Infanteri"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "NUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "2. Divisi Infanteri"
+		location = 7381
+		division_template = "Divisi Infanteri"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "NUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "3. Divisi Infanteri"
+		location = 7381
+		division_template = "Divisi Infanteri"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "NUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "1. Divisi Penjaga Kerajaan"
+		location = 7381
+		division_template = "Divisi Infanteri"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "NUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "1. Divisi Kavaleri"
+		location = 7381
+		division_template = "Divisi Kavaleri"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "NUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "1. Divisi Marinir"
+		location = 7381
+		division_template = "Divisi Marinir"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "NUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "7. Divisi Infanteri"
+		location = 4608
+		division_template = "Divisi Infanteri"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "NUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "11. Divisi Infanteri"
+		location = 4608
+		division_template = "Divisi Infanteri"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "NUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "3. Divisi Kavaleri"
+		location = 4608
+		division_template = "Divisi Kavaleri"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "NUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "4. Divisi Infanteri"
+		location = 12268
+		division_template = "Divisi Infanteri"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "NUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "9. Divisi Infanteri"
+		location = 12268
+		division_template = "Divisi Infanteri"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "NUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "2. Divisi Kavaleri"
+		location = 12268
+		division_template = "Divisi Kavaleri"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "NUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "15. Divisi Infanteri"
+		location = 4652
+		division_template = "Divisi Infanteri"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "NUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "5. Divisi Infanteri"
+		location = 12298
+		division_template = "Divisi Infanteri"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "NUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "8. Divisi Infanteri"
+		location = 12298
+		division_template = "Divisi Infanteri"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "NUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "19. Divisi Infanteri"
+		location = 10297
+		division_template = "Divisi Infanteri"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "NUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}	
+	division= {	
+		name = "14. Divisi Infanteri"
+		location = 7329
+		division_template = "Divisi Infanteri"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "NUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "10. Divisi Infanteri"
+		location = 7329
+		division_template = "Divisi Infanteri"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "NUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "12. Divisi Infanteri"
+		location = 7236
+		division_template = "Divisi Infanteri"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "NUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "13. Divisi Infanteri"
+		location = 10237
+		division_template = "Divisi Infanteri"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "NUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "6. Divisi Infanteri"
+		location = 1316
+		division_template = "Divisi Infanteri"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "NUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "17. Divisi Infanteri"
+		location = 10325
+		division_template = "Divisi Infanteri"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "NUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "14. Divisi Infanteri"
+		location = 7271
+		division_template = "Divisi Infanteri"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "NUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "15. Divisi Infanteri"
+		location = 10175
+		division_template = "Divisi Infanteri"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "NUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "16. Divisi Infanteri"
+		location = 1355
+		division_template = "Divisi Infanteri"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "NUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "18. Divisi Infanteri"
+		location = 12029
+		division_template = "Divisi Infanteri"
+		force_equipment_variants = { infantry_equipment_2 = { owner = "NUS" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+}

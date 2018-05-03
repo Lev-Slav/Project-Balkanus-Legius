@@ -1,0 +1,20 @@
+
+state={
+	id=462
+	name="STATE_462"
+	manpower = 1865552
+	
+	state_category = wasteland
+
+	history={
+		owner = UMA
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = UMA
+	}
+
+	provinces={
+		1102 1989 4022 4108 4139 5046 7203 10107 11943 12857
+	}
+}

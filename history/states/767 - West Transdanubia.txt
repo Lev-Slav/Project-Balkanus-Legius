@@ -1,0 +1,26 @@
+
+state={
+	id=767
+	name="STATE_767"
+	manpower = 1357235
+	
+	state_category = town
+
+	history={
+		owner = HUN
+		victory_points = {
+			11610 5 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1 
+			air_base = 3
+		}
+		add_claim_by = BAL
+	}
+
+	provinces={
+		682 686 701 3670 3680 3683 6685 6720 9608 9624 9643 11610 11627 13125
+	}
+}

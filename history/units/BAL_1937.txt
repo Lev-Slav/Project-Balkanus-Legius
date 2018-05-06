@@ -64,7 +64,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Motorizovani Divizija" 		
+	name = "Motorizovana Divizija" 		
 
 	regiments = {
 		motorized = { x = 0 y = 0 }
@@ -118,59 +118,399 @@ division_template = {
 
 units = {
 	division= {	
-		name = "1.Pesadijska Divizija"
+		name = "1. Pesadijska Divizija"
 		location = 11586
 		division_template = "Pesadijska Divizija"
 		force_equipment_variants = { infantry_equipment_2 = { owner = "BAL" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1.0
 	}
 	division= {	
-		name = "2.Pesadijska Divizija"
+		name = "1. Divizija Oklop"
+		location = 11586
+		division_template = "Oklop Divizija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division= {	
+		name = "2. Divizija Oklop"
+		location = 11586
+		division_template = "Oklop Divizija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division= {	
+		name = "1. Motorizovana Divizija"
+		location = 11586
+		division_template = "Motorizovana Divizija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division= {	
+		name = "2. Motorizovana Divizija"
+		location = 11586
+		division_template = "Motorizovana Divizija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division= {	
+		name = "3. Motorizovana Divizija"
+		location = 11586
+		division_template = "Motorizovana Divizija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division= {	
+		name = "2. Pesadijska Divizija"
 		location = 949
 		division_template = "Pesadijska Divizija"
 		force_equipment_variants = { infantry_equipment_2 = { owner = "BAL" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1.0
 	}
 	division= {	
-		name = "3.Pesadijska Divizija"
+		name = "3. Pesadijska Divizija"
 		location = 4109
 		division_template = "Pesadijska Divizija"
 		force_equipment_variants = { infantry_equipment_2 = { owner = "BAL" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1.0
 	}
 	division= {	
-		name = "4.Pesadijska Divizija"
+		name = "4. Pesadijska Divizija"
 		location = 11899
 		division_template = "Pesadijska Divizija"
 		force_equipment_variants = { infantry_equipment_2 = { owner = "BAL" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1.0
 	}
 	division= {	
-		name = "5.Pesadijska Divizija"
+		name = "5. Pesadijska Divizija"
 		location = 11818
 		division_template = "Pesadijska Divizija"
 		force_equipment_variants = { infantry_equipment_2 = { owner = "BAL" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1.0
 	}
 	division= {	
-		name = "6.Pesadijska Divizija"
+		name = "6. Pesadijska Divizija"
 		location = 9783
 		division_template = "Pesadijska Divizija"
 		force_equipment_variants = { infantry_equipment_2 = { owner = "BAL" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1.0
 	}
 	division= {	
-		name = "7.Pesadijska Divizija"
+		name = "7. Pesadijska Divizija"
 		location = 9914
 		division_template = "Pesadijska Divizija"
 		force_equipment_variants = { infantry_equipment_2 = { owner = "BAL" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1.0
+	}
+
+
+	##### NAVAL UNITS #####
+	navy = {
+		name = "Mornarica"
+		base = 4109
+		location = 4109  # Atina
+		ship = { name = "UBN Srbija" definition = heavy_cruiser  equipment = { heavy_cruiser_1 = { amount = 1 owner = BAL version_name = "Srbija Class" } } }	
+		ship = { name = "UBN Admiral Kovac" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = BAL version_name = "Srbija Class" } } }
+		ship = { name = "UBN Vratsa" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = BAL } } } 		
+		ship = { name = "UBN Vidin" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = BAL } } }		
+		ship = { name = "UBN Pula" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = BAL version_name = "Solun Class" } } }			
+		ship = { name = "UBN Uzice" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = BAL version_name = "Solun Class" } } }	
+		ship = { name = "UBN Beograd" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = BAL version_name = "Solun Class" } } }			
+		ship = { name = "UBN Rama" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = BAL } } }
+		ship = { name = "UBN Triglav" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAL } } }
+		ship = { name = "UBN Vesna" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAL } } }
+		ship = { name = "UBN Mat Zemlya" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAL } } }
+		ship = { name = "UBN Dazbog" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAL } } }
+	}
+
+	navy = {
+		name = "Egejsko More Flotila"
+		base = 11818
+		location = 11818  # Solun
+		ship = { name = "UBN Kralj Luka" definition = battleship equipment = { battleship_1 = { amount = 1 owner = BAL } } }
+		ship = { name = "UBN Car Viktor Veliki" definition = battleship equipment = { battleship_1 = { amount = 1 owner = BAL } } }		
+		ship = { name = "UBN Veverica" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAL } } }
+		ship = { name = "UBN Turska" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAL } } }
+		ship = { name = "UBN Ajkula" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAL } } }
+		ship = { name = "UBN Perun" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAL } } }
+		ship = { name = "UBN Jarilo" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAL } } }
+		ship = { name = "UBN Svarog" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAL } } }
+		ship = { name = "UBN Triglav" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAL } } }
+		ship = { name = "UBN Svetovid" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BAL } } }
+	}
+	
+	navy = {
+		name = "1. Podmornica Flotila"
+		base = 6389
+		location = 6389  
+		ship = { name = "P-7" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAL } } }
+		ship = { name = "P-8" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAL } } }
+		ship = { name = "P-9" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAL } } }
+		ship = { name = "P-10" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAL } } }
+	}
+	navy = {
+		name = "4. Podmornica Flotila"
+		base = 6389
+		location = 6389
+		ship = { name = "P-11" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAL } } }
+		ship = { name = "P-12" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAL } } }
+		ship = { name = "P-13" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAL } } }
+		ship = { name = "P-17" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAL } } }
+	}
+
+	navy = {
+		name = "2. Podmornica Flotila"
+		base = 3924
+		location = 3924  # Split
+		ship = { name = "P-1" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAL } } }
+		ship = { name = "P-2" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAL } } }
+		ship = { name = "P-3" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAL } } }
+	}
+	navy = {
+		name = "3. Podmornica Flotila"
+		base = 3924
+		location = 3924  # Split
+		ship = { name = "P-4" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAL } } }
+		ship = { name = "P-5" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAL } } }
+		ship = { name = "P-6" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAL } } }
 	}
 }
+
+### Air oob
+air_wings = {
+	### I. Vazdušna Komanda -- Sofia ###
+	48 = { 
+		# Vazdušna Eskadrila 125
+		fighter_equipment_0 =  {	
+			owner = "BAL" 
+			amount = 50
+		}
+		name = "Vazdushna Eskadrila 125"
+	}
+
+	### II. Vazdušna Komanda -- Beograd ###
+	107 = { 
+		# Vazdušna Eskadrila 125		
+		fighter_equipment_0 =  {		
+			owner = "BAL" 
+			amount = 100
+		}
+		name = "Vazdushna Eskadrila 101"
+
+		# Bombarder Eskadrila 153	
+		tac_bomber_equipment_0 = {		
+			owner = "BAL" 
+			amount = 120
+		}
+		name = "Bombarder Eskadrila 153"
+
+		transport_plane_equipment_1 = {
+			owner = "BAL" 
+			amount = 5
+		}
+	}
+
+	### III. Vazdušna Komanda -- Atina ###
+	47 = { 
+		# Bombarder Eskadrila 256'		
+		tac_bomber_equipment_0 = {	
+			owner = "BAL" 
+			amount = 120
+		}
+		name = "Bombarder Eskadrila 153"
+
+		# Ronilac Eskadrila 162		
+		CAS_equipment_1 =  {			
+			owner = "BAL" 
+			amount = 100
+		}
+		name = "Ronilac Eskadrila 162"	
+	}
+
+	### IV. Vazdušna Komanda -- Bosna ###
+	104 = { 
+		# Vazdušna Eskadrila 132		
+		fighter_equipment_0 =  {		
+			owner = "BAL" 
+			amount = 120
+		}
+		name = "Vazdushna Eskadrila 132"
+
+		# Bombarder Eskadrila 152	
+		tac_bomber_equipment_1 = {		
+			owner = "BAL" 
+			amount = 80
+		}
+		name = "Bombarder Eskadrila 153"
+
+		# Bombarder Eskadrila 155
+		tac_bomber_equipment_0 = {		
+			owner = "BAL" 
+			amount = 80
+		}
+		name = "Bombarder Eskadrila 155"
+	}
+
+	### IV. Vazdušna Komanda -- Plovdiv ###
+	212 = { 
+		# Vazdušna Eskadrila 165	
+		fighter_equipment_0 =  {		
+			owner = "BAL" 
+			amount = 40
+		}
+		name = "Vazdushna Eskadrila 165"
+
+		# Vazdušna Eskadrila 166	
+		tac_bomber_equipment_0 = {		
+			owner = "BAL" 
+			amount = 80
+		}
+		name = "Vazdushna Eskadrila 166"
+	}
+
+	### VI. Vazdušna Komanda -- Solun ###
+	731 = { 
+		# Pomorska Bomba Eskadrila		
+		nav_bomber_equipment_1 =  {	
+			owner = "BAL" 
+			amount = 50
+		}
+		name = "Pomorska Bomba Eskadrila 104"
+	}
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "BAL"
+		}
+		requested_factories = 10
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "BAL" 
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "BAL" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_2
+			creator = "BAL" 
+		}
+		requested_factories = 2
+		progress = 0.4
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "BAL" 
+		}
+		requested_factories = 2
+		progress = 0.4
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_1
+			creator = "BAL" 
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = CAS_equipment_1
+			creator = "BAL" 
+		}
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = tac_bomber_equipment_1
+			creator = "BAL" 
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+
+	### Ships Under Contruction ###
+	add_equipment_production = {
+		equipment = {
+			type = submarine_2
+			creator = "BAL" 
+		}
+		requested_factories = 5
+		progress = 0.75
+		amount = 10
+	}
+	add_equipment_production = {
+		equipment = {
+			type = heavy_cruiser_1
+			creator = "BAL"
+			version_name = "Srpska Class"
+		}
+		requested_factories = 1
+		progress = 0.95
+		amount = 1
+	}
+		# Scharnhorst
+	add_equipment_production = {
+		equipment = {
+			type = battleship_2
+			creator = "BAL"
+		}
+		requested_factories = 3
+		progress = 0.45
+		amount = 1
+	}
+		# Gneisenau
+	add_equipment_production = {
+		equipment = {
+			type = battleship_2
+			creator = "BAL"
+		}
+		requested_factories = 3
+		progress = 0.15
+		amount = 1
+	}
+}
+
+#####################

@@ -559,7 +559,7 @@ guiTypes = {
 		}
 	}
 
-	#### ROCKET SITE MAP ICON
+	#### RCOKET SITE MAP ICON
 	containerWindowType = {
 		name = "rocket_site_mapicon"
 		position = { x=0 y=0 }

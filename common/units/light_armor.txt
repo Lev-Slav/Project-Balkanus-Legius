@@ -25,8 +25,8 @@ sub_units = {
 
 		need = {
 			light_tank_equipment = 60
-			rations = 75
-			fuel = 100
+			rations = 50
+			fuel = 50
 		}
 		manpower = 500
 		max_organisation = 10

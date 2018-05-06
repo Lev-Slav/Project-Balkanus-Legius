@@ -1,6 +1,8 @@
 equipments = {
 
 	anti_tank_equipment = {
+		year = 1934
+
 		is_archetype = yes
 		picture = archetype_anti_tank_equipment		
 		type = { 
@@ -36,36 +38,24 @@ equipments = {
 		}
 	}
 
-	anti_tank_equipment_0 = {
+	anti_tank_equipment_1 = {
+		year = 1936
+
 		archetype = anti_tank_equipment
 		priority = 90
 		visual_level = 0
 	}
-
-	anti_tank_equipment_1 = {
-		archetype = anti_tank_equipment
-		parent = anti_tank_equipment_0
-		priority = 90
-		visual_level = 1
-		
-		hard_attack = 20
-		ap_attack = 80
-		
-		build_cost_ic = 5
-		resources = {
-			tungsten = 2
-			steel = 2
-		}
-	}
 	
 	anti_tank_equipment_2 = {
+		year = 1940
+
 		archetype = anti_tank_equipment
 		parent = anti_tank_equipment_1
 		priority = 90
 		visual_level = 1
 		
-		hard_attack = 25
-		ap_attack = 90
+		hard_attack = 22
+		ap_attack = 88
 		
 		build_cost_ic = 5
 		resources = {
@@ -75,6 +65,8 @@ equipments = {
 	}
 	
 	anti_tank_equipment_3 = {
+		year = 1943
+
 		archetype = anti_tank_equipment
 		parent = anti_tank_equipment_2
 		priority = 90

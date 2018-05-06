@@ -7,14 +7,14 @@ state={
 	state_category = town
 	
 	resources={
-		chromium=20
-		steel = 20
+		chromium=35
+		steel = 52
 	}
 
 	history={
 		owner = BAL
 		buildings = {
-			infrastructure = 6
+			infrastructure = 7
 			air_base = 3
 			9805 = {
 				naval_base = 4

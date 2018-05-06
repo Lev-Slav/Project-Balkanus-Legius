@@ -113,7 +113,7 @@ sub_units = {
 
 		need = {
 			early_infantry_equipment = 120
-			rations = 200
+			rations = 100
 		}
 	}
 
@@ -157,7 +157,7 @@ sub_units = {
 
 		need = {
 			early_infantry_equipment = 150
-			rations = 250
+			rations = 100
 		}
 
 		marsh = {
@@ -212,7 +212,7 @@ sub_units = {
 
 		need = {
 			early_infantry_equipment = 140
-			rations = 250
+			rations = 100
 		}
 
 		hills = {
@@ -267,7 +267,7 @@ sub_units = {
 
 		need = {
 			early_infantry_equipment = 130
-			rations = 250
+			rations = 100
 		}
 	}
 
@@ -310,7 +310,7 @@ sub_units = {
 
 		need = {
 			early_infantry_equipment = 100
-			rations = 250
+			rations = 100
 			motorized_equipment = 50
 			fuel = 50
 		}
@@ -393,7 +393,7 @@ sub_units = {
 		need = {
 			mechanized_equipment = 50
 			early_infantry_equipment = 100
-			rations = 250
+			rations = 100
 			fuel = 50
 		}
 

@@ -14,7 +14,7 @@ state=
 	{
 		owner = SGF
 		buildings = {
-			infrastructure = 6
+			infrastructure = 7
 		}
 		victory_points = {
 			9627 3 

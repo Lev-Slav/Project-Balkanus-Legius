@@ -24,6 +24,8 @@ sub_units = {
 
 		need = {
 			light_tank_destroyer_equipment = 30
+			fuel = 30	
+			rations = 50
 		}
 		manpower = 500
 		max_organisation = 0

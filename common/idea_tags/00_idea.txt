@@ -20,7 +20,7 @@ idea_categories = {
 		slot = armaments_minister
 		slot = minister_of_security
 		slot = minister_of_intelligence
-		slot = minister_of_propaganda
+		slot = minister_of_industry
 		
 		cost = 150
 		removal_cost = 50

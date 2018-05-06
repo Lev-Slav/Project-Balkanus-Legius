@@ -79,36 +79,6 @@ spriteTypes = {
 		textureFile = "gfx/interface/autonomy/autonomy_level_button.dds"
 	}
 	
-	spriteType = {
-		name = "GFX_autonomy_reichskommissariat_icon"
-		textureFile = "gfx/interface/autonomy/autonomy_reichskommissariat_icon.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_autonomy_reichsprotectorate_icon"
-		textureFile = "gfx/interface/autonomy/autonomy_reichsprotectorate_icon.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_autonomy_satellite_icon"
-		textureFile = "gfx/interface/autonomy/autonomy_satellite.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_autonomy_wtt_imperial_associate_icon"
-		textureFile = "gfx/interface/autonomy/autonomy_imperial_associate.dds"
-	}
-
-	spriteType = {
-		name = "GFX_autonomy_wtt_imperial_subject_icon"
-		textureFile = "gfx/interface/autonomy/autonomy_imperial_associate.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_autonomy_wtt_imperial_protectorate_icon"
-		textureFile = "gfx/interface/autonomy/autonomy_imperial_protectorate.dds"
-	}
-	
 	#-------------
 
 	spriteType = {
@@ -165,6 +135,36 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_rules_sum_icon"
 		textureFile = "gfx/interface/rules_sum_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_head_of_government"
+		textureFile = "gfx/interface/idea_slot_head_of_government.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_foreign_minister"
+		textureFile = "gfx/interface/idea_slot_foreign_minister.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_minister_of_security"
+		textureFile = "gfx/interface/idea_slot_minister_of_security.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_minister_of_intelligence"
+		textureFile = "gfx/interface/idea_slot_minister_of_intelligence.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_minister_of_industry"
+		textureFile = "gfx/interface/idea_slot_minister_of_industry.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_armaments_minister"
+		textureFile = "gfx/interface/idea_slot_armaments_minister.dds"
 	}
 
 	spriteType = {
@@ -506,12 +506,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_leader_unknown"
 		textureFile = "gfx/leaders/leader_unknown.dds"
-		legacy_lazy_load = no
-	}
-	
-	spriteType = {
-		name = "GFX_leader_marshal_unknown"
-		textureFile = "gfx/leaders/leader_marshal_unknown.dds"
 		legacy_lazy_load = no
 	}
 

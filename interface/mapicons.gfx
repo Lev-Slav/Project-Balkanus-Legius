@@ -20,7 +20,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_onmap_action_icon"
 		texturefile = "gfx/interface/onmap_action_icon.dds"
-		noOfFrames = 11
+		noOfFrames = 9
 	}
 
 	spriteType = {
@@ -225,8 +225,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_mapicon_naval_combat"
 		texturefile = "gfx/interface/mapicon_naval_combat.dds"
-		noOfFrames = 2
-		transparencecheck = yes
 	}
 	spriteType = {
 		name = "GFX_mapicon_naval_battle_result"

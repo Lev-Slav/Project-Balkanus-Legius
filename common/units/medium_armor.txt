@@ -24,8 +24,8 @@ sub_units = {
 
 		need = {
 			medium_tank_equipment = 50
-			rations = 100
-			fuel = 120
+			rations = 50
+			fuel = 50
 		}
 		manpower = 500
 		max_organisation = 10

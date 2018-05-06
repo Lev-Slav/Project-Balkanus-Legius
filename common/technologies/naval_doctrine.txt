@@ -1,467 +1,9 @@
 technologies = {
 
-	fleet_in_being1 = {
-		
-		# EFFECT #############
-		battleship = {
-			max_organisation = 5			
-		}
-		battle_cruiser = {
-			max_organisation = 5		
-		}
-		heavy_cruiser = {
-			max_organisation = 5			
-		}
-		#####
-
-
-		xor = { indirect_intervention } 
-		
-		path = {
-			leads_to_tech = battlefleet_concentration1
-			research_cost_coeff = 1
-		}
-		
-		doctrine = yes	
-		research_cost = 3
-		
-		categories = {
-			naval_doctrine
-		}
-		
-		folder = {
-			name = naval_doctrine_folder
-			position = { x = 1 y = 0 }
-		}
-		
-		ai_will_do = {
-			factor = 20
-		}
-		
-		ai_research_weights = {
-			naval_doctrine = -1.0
-			battleship = 1.0
-			cruiser = 1.0
-		}
-	}
-
-	battlefleet_concentration1 = {
-		# EFFECT #############
-		battleship = {
-			max_organisation = 5
-			search_and_destroy_coordination = 0.25
-		}
-		battle_cruiser = {
-			max_organisation = 5
-			search_and_destroy_coordination = 0.25
-		}
-		heavy_cruiser = {
-			max_organisation = 5
-			search_and_destroy_coordination = 0.25
-		}		
-		########
-
-		path = {
-			leads_to_tech = concentrated_fire
-			research_cost_coeff = 1
-		}
-		
-		doctrine = yes	
-		research_cost = 3
-		
-		categories = {
-			naval_doctrine
-		}
-		
-		folder = {
-			name = naval_doctrine_folder
-			position = { x = 1 y = 2 }
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-		
-		ai_research_weights = {
-			naval_doctrine = -1.0
-			battleship = 1.0
-			cruiser = 1.5
-		}
-	}
-
-	concentrated_fire = {
-		# EFFECT #############
-		battleship = {
-			max_organisation = 7.5
-		}
-		battle_cruiser = {
-			max_organisation = 7.5
-		}
-		heavy_cruiser = {
-			max_organisation = 7.5
-		}		
-		########
-
-		path = {
-			leads_to_tech = focused_fire
-			research_cost_coeff = 1
-		}
-
-		navy_capital_ship_attack_factor = 0.05
-		
-		doctrine = yes	
-		research_cost = 3
-		
-		categories = {
-			naval_doctrine
-		}
-		
-		folder = {
-			name = naval_doctrine_folder
-			position = { x = 1 y = 4 }
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-		
-		ai_research_weights = {
-			naval_doctrine = -1.0
-			battleship = 1.0
-			cruiser = 1.5
-		}
-	}
-
-	focused_fire = {
-		# EFFECT #############
-		battleship = {
-			max_organisation = 10
-		}
-		battle_cruiser = {
-			max_organisation = 10
-		}
-		heavy_cruiser = {
-			max_organisation = 10
-		}		
-		########
-		
-		navy_capital_ship_attack_factor = 0.10	
-
-		path = {
-			leads_to_tech = escort_sub
-			research_cost_coeff = 1
-		}
-		
-		doctrine = yes	
-		research_cost = 3
-		
-		categories = {
-			naval_doctrine
-		}
-		
-		folder = {
-			name = naval_doctrine_folder
-			position = { x = 1 y = 6 }
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-		
-		ai_research_weights = {
-			naval_doctrine = -1.0
-			battleship = 1.0
-			cruiser = 1.5
-		}
-	}
-
-	escort_sub = {
-		# EFFECT #############
-		submarine = {
-			surface_detection = 0.05
-			convoy_raiding_coordination = 0.05
-		}
-		convoy_escort_efficiency = 0.10
-		########
-
-		path = {
-			leads_to_tech = post_gw2
-			research_cost_coeff = 1
-		}
-		
-		doctrine = yes	
-		research_cost = 3
-		
-		categories = {
-			naval_doctrine
-		}
-		
-		folder = {
-			name = naval_doctrine_folder
-			position = { x = 1 y = 8 }
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
-
-# Indirect Apparoach	
-
-	indirect_intervention = {
-		# EFFECT #############
-		battleship = {
-			max_organisation = 10
-		}
-		light_cruiser = {
-			max_organisation = 10
-		}
-		########
-
-		navy_capital_ship_defence_factor = 0.10
-
-		xor = { fleet_in_being1 } 
-
-		path = {
-			leads_to_tech = trade_interdiction2
-			research_cost_coeff = 1
-		}
-		
-		doctrine = yes	
-		research_cost = 3
-		
-		categories = {
-			naval_doctrine
-		}
-		
-		folder = {
-			name = naval_doctrine_folder
-			position = { x = 3 y = 0 }
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
-
-	trade_interdiction2 = {
-		# EFFECT #############
-		submarine = {
-			surface_detection = 0.3
-			convoy_raiding_coordination = 0.1
-		}
-		########
-
-		path = {
-			leads_to_tech = distracting_maneuver
-			research_cost_coeff = 1
-		}
-		
-		doctrine = yes	
-		research_cost = 3
-		
-		categories = {
-			naval_doctrine
-		}
-		
-		folder = {
-			name = naval_doctrine_folder
-			position = { x = 3 y = 2 }
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-		
-		ai_research_weights = {
-			naval_doctrine = -1.0
-			battleship = 1.0
-			cruiser = 1.5
-		}
-	}
-
-	distracting_maneuver = {
-		# EFFECT #############
-		battleship = {
-			max_organisation = 5
-		}
-		battle_cruiser = {
-			max_organisation = 5
-		}
-		heavy_cruiser = {
-			max_organisation = 5
-		}
-		########
-
-		navy_capital_ship_attack_factor = 0.05
-
-		path = {
-			leads_to_tech = naval_baiting
-			research_cost_coeff = 1
-		}
-		
-		doctrine = yes	
-		research_cost = 3
-		
-		categories = {
-			naval_doctrine
-		}
-		
-		folder = {
-			name = naval_doctrine_folder
-			position = { x = 3 y = 4 }
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-		
-		ai_research_weights = {
-			naval_doctrine = -1.0
-			battleship = 1.0
-			cruiser = 1.5
-		}
-	}
-
-	naval_baiting = {
-		# EFFECT #############
-		battleship = {
-			max_organisation = 5
-		}
-		battle_cruiser = {
-			max_organisation = 5
-		}
-		heavy_cruiser = {
-			max_organisation = 5
-		}
-		########
-
-		navy_capital_ship_defence_factor = 0.10
-		navy_capital_ship_attack_factor = 0.10
-
-		path = {
-			leads_to_tech = convoy_raiding
-			research_cost_coeff = 1
-		}
-		
-		doctrine = yes	
-		research_cost = 3
-		
-		categories = {
-			naval_doctrine
-		}
-		
-		folder = {
-			name = naval_doctrine_folder
-			position = { x = 3 y = 6 }
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-		
-		ai_research_weights = {
-			naval_doctrine = -1.0
-			battleship = 1.0
-			cruiser = 1.5
-		}
-	}
-
-	convoy_raiding = {
-		
-		# EFFECT #############
-		submarine = {
-			surface_detection = 0.3
-			convoy_raiding_coordination = 0.1
-		}
-		#####
-		
-		path = {
-			leads_to_tech = post_gw2
-			research_cost_coeff = 1
-		}
-		
-		doctrine = yes	
-		research_cost = 2
-		
-		categories = {
-			naval_doctrine
-		}
-		
-		folder = {
-			name = naval_doctrine_folder
-			position = { x = 3 y = 8 }
-		}
-		
-		ai_will_do = {
-			factor = 5
-			
-			modifier = {
-				factor = 2
-				tag = ENG
-			}
-		}
-		
-		ai_research_weights = {
-			naval_doctrine = -1.0
-			battleship = 1.0
-			naval_equipment = 1.0
-		}
-	}
-
-	post_gw2 = {
-		
-		# EFFECT #############
-		# Nothing
-		#####
-		
-		path = {
-			leads_to_tech = fleet_in_being
-			research_cost_coeff = 1
-		}
-
-		path = {
-			leads_to_tech = trade_interdiction
-			research_cost_coeff = 1
-		}
-
-		path = {
-			leads_to_tech = base_strike
-			research_cost_coeff = 1
-		}
-		
-		doctrine = yes	
-		research_cost = 2
-		
-		categories = {
-			naval_doctrine
-		}
-		
-		folder = {
-			name = naval_doctrine_folder
-			position = { x = 2 y = 10 }
-		}
-		
-		ai_will_do = {
-			factor = 5
-			
-			modifier = {
-				factor = 2
-				tag = ENG
-			}
-		}
-		
-		ai_research_weights = {
-			naval_doctrine = -1.0
-			battleship = 1.0
-			naval_equipment = 1.0
-		}
-	}
-
-# Fleet in Being Line
-
 	fleet_in_being = {
-
+		#Fleet in being is mainly focused on Battleships (and Battlecrusiers/Heavy cruisers) and ASW with carriers and submarines being used to a lesser extent. The fleet may not have to do anything at all to be useful - simply having a powerful fleet in a protected port forces your enemies to keep a fleet of their own nearby in order you fight you if you emerge
+		#Bonus org for BB/BC/CA
+		
 		# EFFECT #############
 		battleship = {
 			max_organisation = 10			
@@ -497,17 +39,17 @@ technologies = {
 		
 		categories = {
 			naval_doctrine
-			# NOthing
+			fleet_in_being_tree
 			cat_fleet_in_being
 		}
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 2 y = 12 }
+			position = { x = 0 y = 0 }
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 2
 		}
 		
 		ai_research_weights = {
@@ -543,17 +85,17 @@ technologies = {
 		
 		categories = {
 			naval_doctrine
-			# NOthing
+			fleet_in_being_tree
 			cat_fleet_in_being
 		}
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 0 y = 14 }
+			position = { x = -2 y = 2 }
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -583,17 +125,17 @@ technologies = {
 		
 		categories = {
 			naval_doctrine
-			# NOthing
+			fleet_in_being_tree
 			cat_fleet_in_being
 		}
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 0 y = 16 }
+			position = { x = -2 y = 4 }
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -630,17 +172,17 @@ technologies = {
 		
 		categories = {
 			naval_doctrine
-			# NOthing
+			fleet_in_being_tree
 			cat_fleet_in_being
 		}
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 0 y = 18 }
+			position = { x = -2 y = 6 }
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -672,17 +214,17 @@ technologies = {
 		
 		categories = {
 			naval_doctrine
-			# NOthing
+			fleet_in_being_tree
 			cat_fleet_in_being
 		}
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 0 y = 20 }
+			position = { x = -2 y = 8 }
 		}
 
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -711,17 +253,17 @@ technologies = {
 		
 		categories = {
 			naval_doctrine
-			# NOthing
+			fleet_in_being_tree
 			cat_fleet_in_being
 		}
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 2 y = 22 }
+			position = { x = -1 y = 10 }
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -755,17 +297,17 @@ technologies = {
 		
 		categories = {
 			naval_doctrine
-			# NOthing
+			fleet_in_being_tree
 			cat_fleet_in_being
 		}
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 2 y = 24 }
+			position = { x = -1 y = 12 }
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -795,18 +337,18 @@ technologies = {
 		
 		categories = {
 			naval_doctrine
-			# NOthing
+			fleet_in_being_tree
 			convoy_defense_tree
 			cat_fleet_in_being
 		}
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 2 y = 14 }
+			position = { x = 0 y = 2 }
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 			
 			modifier = {
 				factor = 2
@@ -842,18 +384,18 @@ technologies = {
 		
 		categories = {
 			naval_doctrine
-			# NOthing
+			fleet_in_being_tree
 			convoy_defense_tree
 			cat_fleet_in_being
 		}
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 2 y = 16 }
+			position = { x = 0 y = 4 }
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 			
 			modifier = {
 				factor = 2
@@ -885,18 +427,18 @@ technologies = {
 		
 		categories = {
 			naval_doctrine
-			# NOthing
+			fleet_in_being_tree
 			convoy_defense_tree
 			cat_fleet_in_being
 		}
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 2 y = 18 }
+			position = { x = 0 y = 6 }
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 			
 			modifier = {
 				factor = 2
@@ -931,17 +473,18 @@ technologies = {
 		
 		categories = {
 			naval_doctrine
+			fleet_in_being_tree
 			convoy_defense_tree
 			cat_fleet_in_being
 		}
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 2 y = 20 }
+			position = { x = 0 y = 8 }
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 			
 			modifier = {
 				factor = 2
@@ -976,17 +519,18 @@ technologies = {
 		
 		categories = {
 			naval_doctrine
+			fleet_in_being_tree
 			submarine_doctrine
 			cat_fleet_in_being
 		}
 
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 4 y = 14 }
+			position = { x = 2 y = 2 }
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -1016,18 +560,18 @@ technologies = {
 		
 		categories = {
 			naval_doctrine
-			# NOthing
+			fleet_in_being_tree
 			submarine_doctrine
 			cat_fleet_in_being
 		}
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 4 y = 16 }
+			position = { x = 2 y = 4 }
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -1056,18 +600,18 @@ technologies = {
 		
 		categories = {
 			naval_doctrine
-			# NOthing
+			fleet_in_being_tree
 			submarine_doctrine
 			cat_fleet_in_being
 		}
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 4 y = 18 }
+			position = { x = 2 y = 6 }
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -1091,18 +635,18 @@ technologies = {
 		
 		categories = {
 			naval_doctrine
-			# NOthing
+			fleet_in_being_tree
 			submarine_doctrine
 			cat_fleet_in_being
 		}
 
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 4 y = 20 }
+			position = { x = 2 y = 8 }
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -1110,11 +654,6 @@ technologies = {
 			submarine = 2.0
 		}
 	}
-
-
-
-
-# Trade Interdiction Line
 	
 	trade_interdiction = {
 		# This tree is focused on sinking convoys, and boosting Subs and all types of Cruiser. It has some boosts for CVs and Battleships, but the CVs should be a bit worse and the BBs a lot worse than Fleet in being's.
@@ -1167,11 +706,11 @@ technologies = {
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = -6 y = 12 }
+			position = { x = 0 y = 0 }
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -1209,11 +748,11 @@ technologies = {
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = -4 y = 14 }
+			position = { x = 2 y = 2 }
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 			
 			modifier = {
 				factor = 2
@@ -1255,11 +794,11 @@ technologies = {
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = -4 y = 16 }
+			position = { x = 2 y = 4 }
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 			
 			modifier = {
 				factor = 2
@@ -1301,11 +840,11 @@ technologies = {
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = -4 y = 18 }
+			position = { x = 2 y = 6 }
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 			
 			modifier = {
 				factor = 2
@@ -1348,11 +887,11 @@ technologies = {
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = -4 y = 20 }
+			position = { x = 2 y = 8 }
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 			
 			modifier = {
 				factor = 2
@@ -1405,11 +944,11 @@ technologies = {
 
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = -4 y = 22 }
+			position = { x = 2 y = 10 }
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 			
 			modifier = {
 				factor = 2
@@ -1473,11 +1012,11 @@ technologies = {
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = -8 y = 14 }
+			position = { x = -2 y = 2 }
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -1522,11 +1061,11 @@ technologies = {
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = -8 y = 16 }
+			position = { x = -2 y = 4 }
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -1570,11 +1109,11 @@ technologies = {
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = -8 y = 18 }
+			position = { x = -2 y =6 }
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -1609,11 +1148,11 @@ technologies = {
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = -8 y = 20 }
+			position = { x = -2 y = 8 }
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -1643,11 +1182,11 @@ technologies = {
 
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = -10 y = 22 }
+			position = { x = -1 y = 10 }
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -1685,11 +1224,11 @@ technologies = {
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = -6 y = 14 }
+			position = { x = 0 y = 2 }
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -1727,11 +1266,11 @@ technologies = {
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = -6 y = 16 }
+			position = { x = 0 y = 4 }
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -1767,11 +1306,11 @@ technologies = {
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = -6 y = 18 }
+			position = { x = 0 y = 6 }
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -1809,11 +1348,11 @@ technologies = {
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = -6 y = 20 }
+			position = { x = 0 y = 8 }
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -1822,12 +1361,6 @@ technologies = {
 			naval_air = 0.75
 		}
 	}
-
-
-# Base Strike Tree
-
-
-
 	
 	base_strike = {
 		#This tree is primarily focused on Carriers. It should have the best Carriers, Battleships that are better than Trade interdiction but worse than Fleet in being, and has the same Sub tree as FiB. Convoy defense is better than TI but worse than FiB
@@ -1865,11 +1398,11 @@ technologies = {
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 8 y = 12 }
+			position = { x = 0 y = 0 }
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 2
 		}
 		
 		ai_research_weights = {
@@ -1908,11 +1441,11 @@ technologies = {
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 10 y = 14 }
+			position = { x = 2 y = 2 }
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 			
 			modifier = {
 				factor = 2
@@ -1961,11 +1494,11 @@ technologies = {
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 10 y = 16 }
+			position = { x = 2 y = 4 }
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 			
 			modifier = {
 				factor = 2
@@ -2011,11 +1544,11 @@ technologies = {
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 10 y = 16 }
+			position = { x = 2 y = 6 }
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 			
 			modifier = {
 				factor = 2
@@ -2065,11 +1598,11 @@ technologies = {
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 10 y = 18 }
+			position = { x = 2 y = 8 }
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 			
 			modifier = {
 				factor = 2
@@ -2114,11 +1647,11 @@ technologies = {
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 10 y = 20 }
+			position = { x = 2 y = 10 }
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 			
 			modifier = {
 				factor = 2
@@ -2162,11 +1695,11 @@ technologies = {
 
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 10 y = 22 }
+			position = { x = 2 y = 12 }
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 			
 			modifier = {
 				factor = 2
@@ -2211,11 +1744,11 @@ technologies = {
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 8 y = 14 }
+			position = { x = 0 y = 2 }
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -2249,11 +1782,11 @@ technologies = {
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 8 y = 16 }
+			position = { x = 0 y = 4 }
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -2288,11 +1821,11 @@ technologies = {
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 8 y = 18 }
+			position = { x = 0 y = 6 }
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -2321,11 +1854,11 @@ technologies = {
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 8 y = 20 }
+			position = { x = 0 y = 8 }
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -2361,11 +1894,11 @@ technologies = {
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 6 y = 14 }
+			position = { x = -2 y = 2 }
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -2407,11 +1940,11 @@ technologies = {
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 6 y = 16 }
+			position = { x = -2 y = 4 }
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -2448,11 +1981,11 @@ technologies = {
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 6 y = 18 }
+			position = { x = -2 y = 6 }
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {
@@ -2483,11 +2016,11 @@ technologies = {
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 6 y = 20 }
+			position = { x = -2 y = 8 }
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 1
 		}
 		
 		ai_research_weights = {

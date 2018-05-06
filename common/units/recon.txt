@@ -49,7 +49,7 @@ sub_units = {
 		need = {
 			early_infantry_equipment = 40
 			support_equipment = 10
-			rations = 25
+			rations = 15
 		}
 
 		forest = {

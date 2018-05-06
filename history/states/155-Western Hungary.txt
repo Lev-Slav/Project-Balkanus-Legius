@@ -7,7 +7,7 @@ state={
 	state_category = city
 	resources={
 		oil = 1
-		grain = 6 
+		grain = 1
 	}
 	history={
 		owner = HUN

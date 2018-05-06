@@ -8,12 +8,13 @@ state={
 
 	resources={
 		grain = 4
+		steel = 3 
 	}
 
 	history={
 		owner = SGF
 		buildings = {
-			infrastructure = 6
+			infrastructure = 7
 			industrial_complex = 3
 		}
 		victory_points = {

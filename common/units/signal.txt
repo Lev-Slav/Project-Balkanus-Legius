@@ -44,7 +44,7 @@ sub_units = {
 		need = {
 			support_equipment = 20
 			motorized_equipment = 10
-			rations = 10
+			rations = 15
 		}
 
 	}

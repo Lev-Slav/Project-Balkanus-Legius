@@ -149,7 +149,7 @@ create_country_leader = {
 	expire = "1953.1.20"
 	ideology = national_socialist
 	traits = {
-		indomitable_perseverance
+		HOS_supreme_gentleman
 	}
 }
 

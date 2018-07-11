@@ -8,7 +8,7 @@ state= {
 		grain = 3 
 	}
 	
-	state_category = city
+	state_category = megalopolis
 
 	history= {
 		add_core_of = BAL

@@ -25,7 +25,7 @@ set_stability = 0.5
 set_war_support = 0.25
 
 add_ideas = {
-	pre_industrial_industry
+	pre_industrial_society
 	minimal_education_investment
 	volunteer_only
 	censored_press

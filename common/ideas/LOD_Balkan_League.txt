@@ -1,0 +1,564 @@
+ideas = {
+
+	country = {
+		
+		BAL_diktat_of_vienna = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				drift_defence_factor = 0.5
+				conscription_factor = -0.5
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+
+		BAL_general_staff = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = 0.05
+				planning_speed = 0.25
+			}
+		}
+
+	}
+
+	head_of_government = {
+
+		BAL_Visarion_Belojevic = {
+
+			allowed = {
+				original_tag = BAL
+			}
+
+			visible = {
+				NOT = { has_country_flag = visarion_dead }
+			}
+			
+			traits = { MOC_charismatic_speaker }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+	}
+
+	foreign_minister = {
+
+		BAL_Dusan_Maktovic = {
+
+			allowed = {
+				original_tag = BAL
+			}
+			
+			traits = { FM_general_staffer }
+
+			ai_will_do = {
+				factor = 0.75
+			}
+		}
+
+		BAL_Dragan_Kicanovic = {
+
+			allowed = {
+				original_tag = BAL
+			}
+			
+			traits = { FM_ideological_crusader }
+
+			ai_will_do = {
+				factor = 0.75
+			}
+		}
+
+		BAL_Nenad_Popovic = {
+
+			allowed = {
+				original_tag = BAL
+			}
+			
+			traits = { FM_cloak_n_dagger_schemer }
+
+			ai_will_do = {
+				factor = 0.75
+			}
+		}
+
+		BAL_Neno_Dimov = {
+
+			allowed = {
+				original_tag = BAL
+			}
+			
+			traits = { FM_biased_intellectual }
+
+			ai_will_do = {
+				factor = 0.75
+			}
+		}
+
+		BAL_Illia_Illiev = {
+
+			allowed = {
+				original_tag = BAL
+			}
+			
+			traits = { FM_smooth_talking_charmer }
+
+			ai_will_do = {
+				factor = 0.75
+			}
+		}
+
+		BAL_Jovan_Babovic = {
+
+			allowed = {
+				original_tag = BAL
+			}
+			
+			traits = { FM_great_compromiser }
+
+			ai_will_do = {
+				factor = 0.75
+			}
+		}
+
+		BAL_Milorad_Miskovic = {
+
+			allowed = {
+				original_tag = BAL
+			}
+			
+			traits = { FM_iron_fisted_brute }
+
+			ai_will_do = {
+				factor = 0.75
+			}
+		}
+	}
+
+
+	armaments_minister = {
+
+		BAL_Klonimir_Karic = {
+
+			allowed = {
+				original_tag = BAL
+			}
+			
+			traits = { AM_armaments_organizer }
+
+			ai_will_do = {
+				factor = 0.75
+			}
+		}
+
+		BAL_Konstantin_Vaclonovic = {
+
+			allowed = {
+				original_tag = BAL
+			}
+			
+			traits = { AM_tank_proponent }
+
+			ai_will_do = {
+				factor = 0.75
+			}
+		}
+
+		BAL_Stanislav_Stojsavljevic = {
+
+			allowed = {
+				original_tag = BAL
+			}
+			
+			traits = { AM_air_superiority_proponent }
+
+			ai_will_do = {
+				factor = 0.75
+			}
+		}
+
+		BAL_Rasim_Ljajc = {
+
+			allowed = {
+				original_tag = BAL
+			}
+			
+			traits = { AM_military_entrenpreneur }
+
+			ai_will_do = {
+				factor = 0.75
+			}
+		}
+
+		BAL_Emil_Vulic = {
+
+			allowed = {
+				original_tag = BAL
+			}
+			
+			traits = { AM_battlefield_support_proponent }
+
+			ai_will_do = {
+				factor = 0.75
+			}
+		}
+
+		BAL_Erikslav_Boyanov = {
+
+			allowed = {
+				original_tag = BAL
+			}
+			
+			traits = { AM_infantry_proponent }
+
+			ai_will_do = {
+				factor = 0.75
+			}
+		}
+
+		BAL_Skrapijon_Todorovic = {
+
+			allowed = {
+				original_tag = BAL
+			}
+			
+			traits = { AM_theoretical_scientist }
+
+			ai_will_do = {
+				factor = 0.75
+			}
+		}
+
+		BAL_Zlatibor_Loncaric = {
+
+			allowed = {
+				original_tag = BAL
+			}
+			
+			traits = { AM_armaments_organizer }
+
+			ai_will_do = {
+				factor = 0.75
+			}
+		}
+
+	}
+
+	minister_of_security = {
+
+		BAL_Dmitrije_Dimitrijevic = {
+
+			allowed = {
+				original_tag = BAL
+			}
+			
+			traits = { MOS_dismal_enigma }
+
+			ai_will_do = {
+				factor = 0.75
+			}
+		}
+
+		BAL_Tefik_Lugici = {
+
+			allowed = {
+				original_tag = BAL
+			}
+			
+			traits = { MOS_compassionate_gentleman }
+
+			ai_will_do = {
+				factor = 0.75
+			}
+		}
+
+		BAL_Rostislav_Asanovic = {
+
+			allowed = {
+				original_tag = BAL
+			}
+			
+			traits = { MOS_political_specialist }
+
+			ai_will_do = {
+				factor = 0.75
+			}
+		}
+
+		BAL_Borislav_Spahovic = {
+
+			allowed = {
+				original_tag = BAL
+			}
+			
+			traits = { MOS_logistics_Specialist }
+
+			ai_will_do = {
+				factor = 0.75
+			}
+		}
+
+		BAL_Tomislav_Donchev = {
+
+			allowed = {
+				original_tag = BAL
+			}
+			
+			traits = { MOS_industrial_specialist }
+
+			ai_will_do = {
+				factor = 0.75
+			}
+		}
+
+		BAL_Prvoslav_Vlastimorivic = {
+
+			allowed = {
+				original_tag = BAL
+			}
+			
+			traits = { MOS_silent_lawyer }
+
+			ai_will_do = {
+				factor = 0.75
+			}
+		}
+
+		BAL_Veljko_Simin = {
+
+			allowed = {
+				original_tag = BAL
+			}
+			
+			traits = { MOS_technical_specialist }
+
+			ai_will_do = {
+				factor = 0.75
+			}
+		}
+
+		BAL_Milomir_Minic = {
+
+			allowed = {
+				original_tag = BAL
+			}
+			
+			traits = { MOS_anti_communist }
+
+			ai_will_do = {
+				factor = 0.75
+			}
+		}
+
+		BAL_Miodrag_Jokic = {
+
+			allowed = {
+				original_tag = BAL
+			}
+			
+			traits = { MOS_prince_of_terror }
+
+			ai_will_do = {
+				factor = 0.75
+			}
+		}
+
+	}
+
+	minister_of_industry = {
+
+		BAL_Danilo_Mitrovic = {
+
+			allowed = {
+				original_tag = BAL
+			}
+			
+			traits = { MOI_laissez_faire_capitalist }
+
+			ai_will_do = {
+				factor = 0.75
+			}
+		}
+
+		BAL_Jaddranko_Joksimovic = {
+
+			allowed = {
+				original_tag = BAL
+			}
+			
+			traits = { MOI_captain_of_industry }
+
+			ai_will_do = {
+				factor = 0.75
+			}
+		}
+
+		BAL_Ioannis_Cvijan = {
+
+			allowed = {
+				original_tag = BAL
+			}
+			
+			traits = { MOI_crime_fighter }
+
+			ai_will_do = {
+				factor = 0.75
+			}
+		}
+
+		BAL_Lav_Dacic = {
+
+			allowed = {
+				original_tag = BAL
+			}
+			
+			traits = { MOI_efficient_sociopath }
+
+			ai_will_do = {
+				factor = 0.75
+			}
+		}
+
+		BAL_Goran_Knezevic = {
+
+			allowed = {
+				original_tag = BAL
+			}
+			
+			traits = { MOI_war_industrialist }
+
+			ai_will_do = {
+				factor = 0.75
+			}
+		}
+
+		BAL_Mile_Pesic = {
+
+			allowed = {
+				original_tag = BAL
+			}
+			
+			traits = { MOI_oil_baron }
+
+			ai_will_do = {
+				factor = 0.75
+			}
+		}
+
+		BAL_Zdislav_Lafazanis_ = {
+
+			allowed = {
+				original_tag = BAL
+			}
+			
+			traits = { MOI_corrupt_kleptocrat }
+
+			ai_will_do = {
+				factor = 0.75
+			}
+		}
+
+		BAL_Valeri_Simeonov = {
+
+			allowed = {
+				original_tag = BAL
+			}
+			
+			traits = { MOI_resource_industrialist }
+
+			ai_will_do = {
+				factor = 0.75
+			}
+		}
+
+		BAL_Nikola_Stanic = {
+
+			allowed = {
+				original_tag = BAL
+			}
+			
+			traits = { MOI_administrative_genius }
+
+			ai_will_do = {
+				factor = 0.75
+			}
+		}
+
+		BAL_Bozo_Prelevic = {
+
+			allowed = {
+				original_tag = BAL
+			}
+			
+			traits = { MOI_fortification_engineer }
+
+			ai_will_do = {
+				factor = 0.75
+			}
+		}
+	}
+
+	minister_of_culture = {
+
+		BAL_Apistoli_Anastopoulos = {
+
+			allowed = {
+				original_tag = BAL
+			}
+			
+			traits = { MOC_master_of_propaganda }
+
+			ai_will_do = {
+				factor = 0.75
+			}
+		}
+
+		BAL_Krasen_Kralev = {
+
+			allowed = {
+				original_tag = BAL
+			}
+			
+			traits = { MOC_talented_censorer }
+
+			ai_will_do = {
+				factor = 0.75
+			}
+		}
+
+		BAL_Milan_Nedic = {
+
+			allowed = {
+				original_tag = BAL
+			}
+			
+			traits = { MOC_master_of_war_propaganda }
+
+			ai_will_do = {
+				factor = 0.75
+			}
+		}
+	}
+}

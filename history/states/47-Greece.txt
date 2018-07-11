@@ -11,7 +11,7 @@ state={
 		grain = 2 
 	}
 	
-	state_category = city
+	state_category = metropolis
 
 	history={
 		owner = BAL
@@ -20,8 +20,8 @@ state={
 		}
 		buildings = {
 			infrastructure = 7
-			arms_factory = 2
-			industrial_complex = 6
+			arms_factory = 1
+			industrial_complex = 4
 			air_base = 4
 			dockyard = 5
 			4109 = {

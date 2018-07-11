@@ -164,16 +164,4 @@ buildings = {
 		max_level = 10
 		value = 1
 	}
-
-	synthetic_rubber_refinery = {
-		show_on_map = 1
-		base_cost = 12250
-		icon_frame = 15
-		local_resources_rubber = 7 
-		refinery = yes
-		#max_level = 0 
-		max_level = 4 
-		shares_slots = yes
-		value = 5
-	}
 }

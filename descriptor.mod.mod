@@ -1,7 +1,6 @@
 ﻿name="Legacy of Dezarussiya"
 path="mod/LOD/"
 replace_path="music"
-replace_path="common/technologies"
 replace_path="gfx"
 replace_path="map"
 replace_path="history"

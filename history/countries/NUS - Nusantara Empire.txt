@@ -151,6 +151,6 @@ create_country_leader = {
 	expire = "1982.3.15"
 	ideology = paternal_autocrat
 	traits = {
-		dictator
+		HOS_die_hard_reformer
 	}
 }

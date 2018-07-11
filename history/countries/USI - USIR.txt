@@ -147,6 +147,6 @@ create_country_leader = {
 	expire = "1953.1.20"
 	ideology = left_wing_radical
 	traits = {
-		dictator
+		HOS_power_hungry_demagogue
 	}
 }

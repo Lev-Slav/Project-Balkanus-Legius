@@ -18,25 +18,6 @@ leader_traits = {
 		}
 	}
 
-	stern_imperialist1 = {
-		production_speed_arms_factory_factor = 0.1
-		production_speed_dockyard_factor = 0.1
-		ai_focus_aggressive_factor = 0.5
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	man_of_the_people1 = {
-		random = no
-		political_power_factor = 0.20
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
 	unpopular_leader = {
 		random = no
 		political_power_factor = -0.15
@@ -468,7 +449,7 @@ leader_traits = {
 	HOS_barking_buffoon = {
 		sprite = 13
 		political_power_gain = -0.05
-		army_org_factor = 0.04
+		army_org_factor = 0.05
 
 		ai_will_do = {
 			factor = 1
@@ -741,9 +722,9 @@ leader_traits = {
 	FM_biased_intellectual = {
 		random = yes
 		sprite = 13
-		opinion_gain_monthly_factor = -0.001
-		political_power_factor = -0.05
-		trade_opinion_factor = -0.05
+		opinion_gain_monthly_factor = 0.001
+		political_power_factor = 0.05
+		trade_opinion_factor = 0.05
 		
 		ai_will_do = {
 			factor = 1
@@ -820,19 +801,7 @@ leader_traits = {
 		trade_opinion_factor = 0.2
 
 		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	FM_cloak_n_dagger_schemer = {
-		sprite = 13
-		random = yes
-		ai_call_ally_desire_factor = 30
-		ai_focus_aggressive_factor = 0.5
-		decryption = 1
-
-		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 
@@ -849,6 +818,7 @@ leader_traits = {
 		ai_will_do = {
 			factor = 1
 		}
+	}
 
 	AM_theoretical_scientist = {
 		research_time_factor = -0.03
@@ -1036,7 +1006,7 @@ leader_traits = {
 
 	MOS_man_of_the_people = {
 		sprite = 13
-		unity_factor = 0.15 
+		stability_factor = 0.15 
 		political_power_factor = 0.15
 		
 		ai_will_do = {
@@ -1261,7 +1231,7 @@ leader_traits = {
 ###################### Minister of Culture ########################
 ###################################################################
 
-	charismatic_speaker = {
+	MOC_charismatic_speaker = {
 		sprite = 13
 		political_power_gain = 0.25
 		stability_factor = 0.10
@@ -1272,7 +1242,7 @@ leader_traits = {
 		}
 	}
 
-	master_of_propaganda = {
+	MOC_master_of_propaganda = {
 		sprite = 13
 		political_power_gain = 0.5
 		stability_factor = 0.25 
@@ -1282,6 +1252,39 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
+	MOC_talented_censorer = {
+		sprite = 13
+		political_power_gain = 0.15
+		encryption = 1
+		stability_factor = 0.05 
+		war_support_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	MOC_master_of_war_propaganda = {
+		sprite = 13
+		war_support_factor = 0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	MOC_political_film_maker = {
+		sprite = 13
+		war_support_factor = 0.05
+		stability_factor = 0.05
+		political_power_gain = 0.10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 
 
 ###################################################################
@@ -1335,7 +1338,7 @@ leader_traits = {
 		army_attack_factor = 0.15
 		research_time_factor = -0.05
 		opinion_gain_monthly_factor = -0.001
-		unity_factor = -0.15
+		stability_factor = -0.15
 
 		ai_will_do = {
 			factor = 1
@@ -1572,21 +1575,6 @@ leader_traits = {
 		}
 	}
 	
-	blitzkrieg_theorist = {
-		sprite = 14
-		
-		equipment_bonus = {
-			armor = {
-				instant = yes
-				maximum_speed = 0.10
-			}
-		}
-		experience_gain_army = 0.05
-		
-		ai_will_do = {
-			factor = 500
-		}
-	}
 	
 	light_aircraft_manufacturer = {
 		random = no

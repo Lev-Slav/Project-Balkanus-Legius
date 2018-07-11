@@ -1,0 +1,913 @@
+###DIPLOMACY AI###
+
+##Factional Relations##
+#WIP; Needs to be reworked but should be fine in game for now
+#Entente#
+entente_france = {
+	enable = {
+		OR = { #Either
+			AND = { #Be cananda and be a factiona leader
+				tag = CAN
+				is_faction_leader = yes
+			}
+			AND = { # Be in a faction with Canada. Where Canada is the faction leader
+				is_in_faction = yes
+				any_allied_country = {
+					tag = CAN
+					is_faction_leader = yes
+				}
+			}
+		}
+		FRA = {
+			OR = { #France must have a syndiclist government
+				has_government = totalist
+				has_government = syndicalist
+				has_government = radical_socialist
+			}
+		}
+		CAN = {
+			OR = { #Canada must not have a syndiclist government
+				has_government = social_democrat
+				has_government = social_liberal
+				has_government = market_liberal
+				has_government = social_conservative
+				has_government = authoritarian_democrat
+				has_government = paternal_autocrat
+				has_government = national_populist
+			}
+		}
+	}
+	abort = {
+		OR = { #If one of the above conditions is no longer met, abort the strategy
+			NOT = {
+				OR = {
+					AND = {
+						tag = CAN
+						is_faction_leader = yes
+					}
+					AND = {
+						is_in_faction = yes
+						any_allied_country = {
+							tag = CAN
+							is_faction_leader = yes
+						}
+					}
+				}
+			}
+			FRA = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+					}
+				}
+			}
+			CAN = {
+				NOT = {
+					OR = {
+						has_government = social_democrat
+						has_government = social_liberal
+						has_government = market_liberal
+						has_government = social_conservative
+						has_government = authoritarian_democrat
+						has_government = paternal_autocrat
+						has_government = national_populist
+					}
+				}
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = contain
+		id = "FRA"
+		value = 100
+	}
+	ai_strategy = {
+		type = conquer
+		id = "FRA"
+		value = 100
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "FRA"
+		value = 100
+	}
+}
+
+entente_britain = {
+	enable = {
+		OR = { #Either
+			AND = { #Be cananda and be a factiona leader
+				tag = CAN
+				is_faction_leader = yes
+			}
+			AND = { # Be in a faction with Canada. Where Canada is the faction leader
+				is_in_faction = yes
+				any_allied_country = {
+					tag = CAN
+					is_faction_leader = yes
+				}
+			}
+		}
+		ENG = {
+			OR = { #Britain must have a syndiclist government
+				has_government = totalist
+				has_government = syndicalist
+				has_government = radical_socialist
+			}
+		}
+		CAN = {
+			OR = { #Canada must not have a syndiclist government
+				has_government = social_democrat
+				has_government = social_liberal
+				has_government = market_liberal
+				has_government = social_conservative
+				has_government = authoritarian_democrat
+				has_government = paternal_autocrat
+				has_government = national_populist
+			}
+		}
+	}
+	abort = {
+		OR = { #If one of the above conditions is no longer met, abort the strategy
+			NOT = {
+				OR = {
+					AND = {
+						tag = CAN
+						is_faction_leader = yes
+					}
+					AND = {
+						is_in_faction = yes
+						any_allied_country = {
+							tag = CAN
+							is_faction_leader = yes
+						}
+					}
+				}
+			}
+			ENG = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+					}
+				}
+			}
+			CAN = {
+				NOT = {
+					OR = {
+						has_government = social_democrat
+						has_government = social_liberal
+						has_government = market_liberal
+						has_government = social_conservative
+						has_government = authoritarian_democrat
+						has_government = paternal_autocrat
+						has_government = national_populist
+					}
+				}
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = contain
+		id = "ENG"
+		value = 100
+	}
+	ai_strategy = {
+		type = conquer
+		id = "ENG"
+		value = 100
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "ENG"
+		value = 100
+	}
+}
+
+take_the_islands_canada = {
+	enable = {
+		tag = CAN
+		has_war_with = DEN
+	}
+	abort = {
+		NOT = { has_war_with = DEN }
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = north_atlantic
+		value = 500
+	}
+
+	ai_strategy = {
+		type = invade
+		id = "DEN"
+		value = 500
+	}
+}
+
+#Internationale#
+international_canada = {
+	enable = {
+		OR = { #Either
+			AND = { #Be france and be a factiona leader
+				tag = FRA
+				is_faction_leader = yes
+			}
+			AND = { # Be in a faction with france. Where france is the faction leader
+				is_in_faction = yes
+				any_allied_country = {
+					tag = FRA
+					is_faction_leader = yes
+				}
+			}
+		}
+		FRA = {
+			OR = { #france must have a syndiclist government
+				has_government = totalist
+				has_government = syndicalist
+				has_government = radical_socialist
+			}
+		}
+		CAN = {
+			OR = { #Canada must not have a syndiclist government
+				has_government = social_democrat
+				has_government = social_liberal
+				has_government = market_liberal
+				has_government = social_conservative
+				has_government = authoritarian_democrat
+				has_government = paternal_autocrat
+				has_government = national_populist
+			}
+		}
+	}
+	abort = {
+		OR = { #If one of the above conditions is no longer met, abort the strategy
+			NOT = {
+				OR = {
+					AND = {
+						tag = FRA
+						is_faction_leader = yes
+					}
+					AND = {
+						is_in_faction = yes
+						any_allied_country = {
+							tag = FRA
+							is_faction_leader = yes
+						}
+					}
+				}
+			}
+			FRA = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+					}
+				}
+			}
+			CAN = {
+				NOT = {
+					OR = {
+						has_government = social_democrat
+						has_government = social_liberal
+						has_government = market_liberal
+						has_government = social_conservative
+						has_government = authoritarian_democrat
+						has_government = paternal_autocrat
+						has_government = national_populist
+					}
+				}
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = contain
+		id = "CAN"
+		value = 100
+	}
+	ai_strategy = {
+		type = conquer
+		id = "CAN"
+		value = 100
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "CAN"
+		value = 100
+	}
+}
+
+international_natfrance = {
+	enable = {
+		OR = { #Either
+			AND = { #Be france and be a factiona leader
+				tag = FRA
+				is_faction_leader = yes
+			}
+			AND = { # Be in a faction with france. Where france is the faction leader
+				is_in_faction = yes
+				any_allied_country = {
+					tag = FRA
+					is_faction_leader = yes
+				}
+			}
+		}
+		FRA = {
+			OR = { #france must have a syndiclist government
+				has_government = totalist
+				has_government = syndicalist
+				has_government = radical_socialist
+			}
+		}
+		NFA = {
+			OR = { #National France must not have a syndiclist government
+				has_government = social_democrat
+				has_government = social_liberal
+				has_government = market_liberal
+				has_government = social_conservative
+				has_government = authoritarian_democrat
+				has_government = paternal_autocrat
+				has_government = national_populist
+			}
+		}
+	}
+	abort = {
+		OR = { #If one of the above conditions is no longer met, abort the strategy
+			NOT = {
+				OR = {
+					AND = {
+						tag = FRA
+						is_faction_leader = yes
+					}
+					AND = {
+						is_in_faction = yes
+						any_allied_country = {
+							tag = FRA
+							is_faction_leader = yes
+						}
+					}
+				}
+			}
+			FRA = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+					}
+				}
+			}
+			NFA = {
+				NOT = {
+					OR = {
+						has_government = social_democrat
+						has_government = social_liberal
+						has_government = market_liberal
+						has_government = social_conservative
+						has_government = authoritarian_democrat
+						has_government = paternal_autocrat
+						has_government = national_populist
+					}
+				}
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = contain
+		id = "NFA"
+		value = 100
+	}
+	ai_strategy = {
+		type = conquer
+		id = "NFA"
+		value = 100
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "NFA"
+		value = 100
+	}
+}
+
+international_dehli = {
+	enable = {
+		OR = { #Either
+			AND = { #Be france and be a factiona leader
+				tag = FRA
+				is_faction_leader = yes
+			}
+			AND = { # Be in a faction with france. Where france is the faction leader
+				is_in_faction = yes
+				any_allied_country = {
+					tag = FRA
+					is_faction_leader = yes
+				}
+			}
+		}
+		FRA = {
+			OR = { #france must have a syndiclist government
+				has_government = totalist
+				has_government = syndicalist
+				has_government = radical_socialist
+			}
+		}
+		DEH = {
+			OR = { #National France must not have a syndiclist government
+				has_government = social_democrat
+				has_government = social_liberal
+				has_government = market_liberal
+				has_government = social_conservative
+				has_government = authoritarian_democrat
+				has_government = paternal_autocrat
+				has_government = national_populist
+			}
+		}
+	}
+	abort = {
+		OR = { #If one of the above conditions is no longer met, abort the strategy
+			NOT = {
+				OR = {
+					AND = {
+						tag = FRA
+						is_faction_leader = yes
+					}
+					AND = {
+						is_in_faction = yes
+						any_allied_country = {
+							tag = FRA
+							is_faction_leader = yes
+						}
+					}
+				}
+			}
+			FRA = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+					}
+				}
+			}
+			DEH = {
+				NOT = {
+					OR = {
+						has_government = social_democrat
+						has_government = social_liberal
+						has_government = market_liberal
+						has_government = social_conservative
+						has_government = authoritarian_democrat
+						has_government = paternal_autocrat
+						has_government = national_populist
+					}
+				}
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = contain
+		id = "DEH"
+		value = 100
+	}
+	ai_strategy = {
+		type = conquer
+		id = "DEH"
+		value = 100
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "DEH"
+		value = 100
+	}
+}
+
+international_germany = {
+	enable = {
+		OR = { #Either
+			AND = { #Be france and be a factiona leader
+				tag = FRA
+				is_faction_leader = yes
+			}
+			AND = { # Be in a faction with france. Where france is the faction leader
+				is_in_faction = yes
+				any_allied_country = {
+					tag = FRA
+					is_faction_leader = yes
+				}
+			}
+		}
+		FRA = {
+			OR = { #france must have a syndiclist government
+				has_government = totalist
+				has_government = syndicalist
+				has_government = radical_socialist
+			}
+		}
+		GER = {
+			OR = { #Germany must not have a syndiclist government
+				has_government = social_democrat
+				has_government = social_liberal
+				has_government = market_liberal
+				has_government = social_conservative
+				has_government = authoritarian_democrat
+				has_government = paternal_autocrat
+				has_government = national_populist
+			}
+		}
+	}
+	abort = {
+		OR = { #If one of the above conditions is no longer met, abort the strategy
+			NOT = {
+				OR = {
+					AND = {
+						tag = FRA
+						is_faction_leader = yes
+					}
+					AND = {
+						is_in_faction = yes
+						any_allied_country = {
+							tag = FRA
+							is_faction_leader = yes
+						}
+					}
+				}
+			}
+			FRA = {
+				NOT = {
+					OR = {
+						has_government = totalist
+						has_government = syndicalist
+						has_government = radical_socialist
+					}
+				}
+			}
+			GER = {
+				NOT = {
+					OR = {
+						has_government = social_democrat
+						has_government = social_liberal
+						has_government = market_liberal
+						has_government = social_conservative
+						has_government = authoritarian_democrat
+						has_government = paternal_autocrat
+						has_government = national_populist
+					}
+				}
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = contain
+		id = "GER"
+		value = 100
+	}
+	#ai_strategy = {	#I fear they would justify on them too much
+	#	type = conquer
+	#	id = "GER"
+	#	value = 100
+	#}
+	ai_strategy = {
+		type = antagonize
+		id = "GER"
+		value = 100
+	}
+}
+
+#MittleEuropa#
+mittleeuropa_france = {
+	enable = {
+		is_in_faction_with = GER
+		is_in_europe = yes
+		FRA = {
+			OR = { #France must have a syndiclist government
+				has_government = totalist
+				has_government = syndicalist
+				has_government = radical_socialist
+			}
+		}
+		GER = {
+			is_faction_leader = yes
+			NOT = { #germany must not have a syndiclist government
+				has_government = totalist
+				has_government = syndicalist
+				has_government = radical_socialist
+			}
+		}
+	}
+	abort = {
+		NOT = { #If one of the above conditions is no longer met, abort the strategy
+			is_in_faction_with = GER
+			is_in_europe = yes
+			FRA = {
+				OR = { #France must have a syndiclist government
+					has_government = totalist
+					has_government = syndicalist
+					has_government = radical_socialist
+				}
+			}
+			GER = {
+				is_faction_leader = yes
+				NOT = { #germany must not have a syndiclist government
+					has_government = totalist
+					has_government = syndicalist
+					has_government = radical_socialist
+				}
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = contain
+		id = "FRA"
+		value = 100
+	}
+	ai_strategy = {
+		type = conquer
+		id = "FRA"
+		value = 100
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "FRA"
+		value = 100
+	}
+}
+
+mittleeuropa_britain = {
+	enable = {
+		is_in_faction_with = GER
+		is_in_europe = yes
+		ENG = {
+			OR = { #France must have a syndiclist government
+				has_government = totalist
+				has_government = syndicalist
+				has_government = radical_socialist
+			}
+		}
+		GER = {
+			is_faction_leader = yes
+			NOT = { #germany must not have a syndiclist government
+				has_government = totalist
+				has_government = syndicalist
+				has_government = radical_socialist
+			}
+		}
+	}
+	abort = {
+		NOT = { #If one of the above conditions is no longer met, abort the strategy
+			is_in_faction_with = GER
+			is_in_europe = yes
+			ENG = {
+				OR = { #France must have a syndiclist government
+					has_government = totalist
+					has_government = syndicalist
+					has_government = radical_socialist
+				}
+			}
+			GER = {
+				is_faction_leader = yes
+				NOT = { #germany must not have a syndiclist government
+					has_government = totalist
+					has_government = syndicalist
+					has_government = radical_socialist
+				}
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = contain
+		id = "ENG"
+		value = 100
+	}
+	ai_strategy = {
+		type = conquer
+		id = "ENG"
+		value = 100
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "ENG"
+		value = 100
+	}
+}
+
+# Keep MAF units in Africa
+KR_keep_MAF_units_home = {
+	reversed = yes
+
+	enable = {
+		NOT = { tag = MAF }
+		NOT = { has_global_flag = war_is_hell }
+		is_in_faction_with = MAF
+		MAF = { is_subject_of = GER }
+	}
+
+	abort = {
+		OR = {
+			has_global_flag = war_is_hell
+			NOT = { is_in_faction_with = MAF }
+			NOT = { MAF = { is_subject_of = GER } }
+		}
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "MAF"
+		value = 100
+	}
+}
+
+KR_MAF_prewar_strategy = {
+	enable = {
+		tag = MAF
+		NOT = { has_global_flag = war_is_hell }
+		is_subject_of = GER
+	}
+
+	abort = {
+		OR = {
+			has_global_flag = war_is_hell
+			NOT = { is_subject_of = GER }
+		}
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = benelux
+		value = -1000
+	}
+	ai_strategy = {
+		type = area_priority
+		id = germany
+		value = -1000
+	}
+	ai_strategy = {
+		type = area_priority
+		id = africa
+		value = 500
+	}
+}
+
+# Keep AOG units out of Europe
+KR_AOG_prewar_strategy = {
+	enable = {
+		tag = AOG
+		has_war = no
+		date < 1939.1.1
+	}
+
+	abort = {
+		OR = {
+			has_war = yes
+			date > 1939.1.1
+		}
+	}
+
+	ai_strategy = {
+		type = spare_unit_factor
+		value = 50
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "BEL"
+		value = 100
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "GER"
+		value = 100
+	}
+	ai_strategy = { #
+		type = dont_defend_ally_borders
+		id = "GEA"
+		value = 100
+	}
+	ai_strategy = {
+		type = area_priority
+		id = benelux
+		value = -1000
+	}
+	ai_strategy = {
+		type = area_priority
+		id = germany
+		value = -1000
+	}
+}
+
+# Keep GEA units in East Indies/SE Asia
+KR_GEA_prewar_strategy = {
+	enable = {
+		tag = GEA
+		has_war = no
+		date < 1939.1.1
+	}
+
+	abort = {
+		OR = {
+			has_war = yes
+			date > 1939.1.1
+		}
+	}
+
+	ai_strategy = {
+		type = spare_unit_factor
+		value = 50
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "BEL"
+		value = 100
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "GER"
+		value = 100
+	}
+	ai_strategy = {
+		type = area_priority
+		id = benelux
+		value = -1000
+	}
+	ai_strategy = {
+		type = area_priority
+		id = germany
+		value = -1000
+	}
+	ai_strategy = {
+		type = area_priority
+		id = east_indies
+		value = 500
+	}
+	ai_strategy = {
+		type = area_priority
+		id = se_asia
+		value = 500
+	}
+}
+
+# Navy won't die easily to Japan
+KR_GEA_war_strategy = {
+	enable = {
+		tag = GEA
+		has_war_with = JAP
+		OR = {
+			naval_strength_ratio = { tag = JAP ratio < 0.75 }
+			country_exists = FRA #France is not defeated
+		}
+	}
+	abort = {
+		OR = {
+			NOT = { has_war_with = JAP }
+			naval_strength_ratio = { tag = JAP ratio > 0.75 }
+			NOT = { country_exists = FRA } #France is defeated
+		}
+	}
+	ai_strategy = {
+		type = invade #Not even try islands
+		id = "JAP"
+		value = -1500
+	}
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 79 #Sea of Japan
+		value = 100
+	}
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 90 #Coast of Japan
+		value = 100
+	}
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 76 #East China Sea
+		value = 100
+	}
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 77 #Yellow Sea
+		value = 100
+	}
+	ai_strategy = {
+		type = area_priority
+		id = east_indies
+		value = 1000
+	}
+	ai_strategy = {
+		type = area_priority
+		id = se_asia
+		value = 1000
+	}
+}
+

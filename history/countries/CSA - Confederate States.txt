@@ -148,6 +148,6 @@ create_country_leader = {
 	expire = "1947.3.15"
 	ideology = populist
 	traits = {
-		man_of_the_people1
+		HOS_stern_imperialist
 	}
 }

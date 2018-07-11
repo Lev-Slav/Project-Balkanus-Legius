@@ -69,11 +69,10 @@ set_technology = {
 }
 
 
-set_research_slots = 5
-set_convoys = 50
-set_national_unity = 0.9
-#set_stability = 0.85
-#set_war_support = 0.50
+set_research_slots = 4
+set_convoys = 125
+set_stability = 0.85
+set_war_support = 0.50
 
 add_ideas = {
 	heavy_industry
@@ -81,6 +80,11 @@ add_ideas = {
 	limited_conscription
 	propaganda_press
 	specialist_training
+	
+	###
+
+	BAL_diktat_of_vienna
+	BAL_general_staff
 }
 
 create_faction = League_Alliance
@@ -164,12 +168,12 @@ create_country_leader = {
 	expire = "1947.3.15"
 	ideology = national_socialist
 	traits = {
-		dictator
+		HOG_silent_workhorse
 	}
 }
 
 create_field_marshal = {
-	name = "Erikslav Blažić"
+	name = "Erikslav Boyanov"
 	picture = "Portrait_Balkan_League_Erikslav_Boyanov.dds"
 	traits = { brilliant_strategist politically_connected armor_officer war_hero media_personality inspirational_leader }
 	skill = 5
@@ -219,13 +223,25 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Slobodan Praljak"
 	picture = "Portrait_Balkan_League_Slobodan_Praljak.dds"
-	traits = { brilliant_strategist war_hero media_ersonality commando combined_arms_expert panzer_leader skilled_staffer }
+	traits = { brilliant_strategist war_hero commando combined_arms_expert panzer_leader skilled_staffer }
 	skill = 5
 	attack_skill = 5
 	defense_skill = 5
 	planning_skill = 3
 	logistics_skill = 4
 	id = 113
+}
+
+create_corps_commander = {
+	name = "Radovan Karadzić"
+	picture = "Portrait_Balkan_League_Radovan_Karadzic.dds"
+	traits = { inflexible_strategist organizer trait_engineer trait_mountaineer }
+	skill = 5
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 3
+	id = 116
 }
 
 create_corps_commander = {

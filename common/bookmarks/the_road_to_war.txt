@@ -61,6 +61,7 @@ bookmarks = {
 		}
 
 		CSA = {
+			minor = yes
 			history = CSA_ROAD_TO_WAR_DESC
 			ideology = populist
 			ideas = {
@@ -69,7 +70,8 @@ bookmarks = {
 			
 		}
 
-		MOR = {
+		MOR = {		
+			minor = yes
 			history = MOR_ROAD_TO_WAR_DESC
 			ideology = national_socialist
 			ideas = {
@@ -79,6 +81,7 @@ bookmarks = {
 		}
 
 		AQU = {
+			minor = yes
 			history = AQU_ROAD_TO_WAR_DESC
 			ideology = national_socialist
 			ideas = {
@@ -87,7 +90,8 @@ bookmarks = {
 			
 		}
 
-		SWF = {
+		SWF = {	
+			minor = yes
 			history = NUS_ROAD_TO_WAR_DESC
 			ideology = national_socialist
 			ideas = {
@@ -97,6 +101,7 @@ bookmarks = {
 		}
 
 		SGF = {
+			minor = yes
 			history = SGF_ROAD_TO_WAR_DESC
 			ideology = social_conservative
 			ideas = {

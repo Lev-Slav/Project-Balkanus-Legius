@@ -75,6 +75,10 @@ add_ideas = {
 	advanced_training
 }
 
+puppet = BBA
+puppet = BBE
+puppet = CAN
+
 1905.1.1 = {
 	set_politics = {
 	

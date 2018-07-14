@@ -148,6 +148,15 @@ add_ideas = {
 	}
 }
 
+create_faction = Munich_Pact
+add_to_faction = ENG
+add_to_faction = HUN
+add_to_faction = NGF
+add_to_faction = VIZ
+add_to_faction = HOL
+add_to_faction = DEN
+add_to_faction = FRA
+
 create_country_leader = {
 	name = "Albert Kessler"
 	desc = "POLITICS_ALBERT_KESSLER_DESC"

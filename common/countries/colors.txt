@@ -126,6 +126,11 @@ IRQ = {
 	color_ui = rgb { 231 148 129 }
 }
 
+ITA = {
+	color = rgb { 109 143 110 }
+	color_ui = rgb { 109 143 110 }
+}
+
 JAP = {
 	color = hsv { 0.05 0.3 1 }
 	color_ui = hsv { 0.05 0.25 1.2 }

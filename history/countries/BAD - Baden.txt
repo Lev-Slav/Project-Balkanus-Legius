@@ -112,3 +112,58 @@ add_ideas = {
 		elections_allowed = yes
 	}
 }
+
+create_country_leader = {
+	name = "Franz IV"
+	desc = "POLITICS_FRANZ_IV_DESC"
+	picture = "Portrait_Baden_Franz_IV.dds"
+	expire = "1963.6.23"
+	ideology = social_conservative
+	traits = {
+		HOS_popular_figurehead
+	}
+}
+
+create_country_leader = {
+	name = "Franz IV"
+	desc = "POLITICS_FRANZ_IV_DESC"
+	picture = "Portrait_Baden_Franz_IV.dds"
+	expire = "1963.6.23"
+	ideology = social_democrat
+	traits = {
+		HOS_popular_figurehead
+	}
+}
+
+create_country_leader = {
+	name = "Franz IV"
+	desc = "POLITICS_FRANZ_IV_DESC"
+	picture = "Portrait_Baden_Franz_IV.dds"
+	expire = "1963.6.23"
+	ideology = social_liberal
+	traits = {
+		HOS_popular_figurehead
+	}
+}
+
+create_country_leader = {
+	name = "Franz IV"
+	desc = "POLITICS_FRANZ_IV_DESC"
+	picture = "Portrait_Baden_Franz_IV.dds"
+	expire = "1963.6.23"
+	ideology = market_liberal
+	traits = {
+		HOS_popular_figurehead
+	}
+}
+
+create_country_leader = {
+	name = "Franz IV"
+	desc = "POLITICS_FRANZ_IV_DESC"
+	picture = "Portrait_Baden_Franz_IV.dds"
+	expire = "1963.6.23"
+	ideology = paternal_autocrat
+	traits = {
+		HOS_popular_figurehead
+	}
+}

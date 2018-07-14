@@ -127,3 +127,58 @@ add_ideas = {
 		elections_allowed = no
 	}
 }
+
+create_country_leader = {
+	name = "Phillip IV"
+	desc = "POLITICS_PHILLIP_IV_DESC"
+	picture = "Portrait_Spain_Phillip_IV.dds"
+	expire = "1975.2.25"
+	ideology = social_conservative
+	traits = {
+		HOS_weary_stiffneck
+	}
+}
+
+create_country_leader = {
+	name = "Phillip IV"
+	desc = "POLITICS_PHILLIP_IV_DESC"
+	picture = "Portrait_Spain_Phillip_IV.dds"
+	expire = "1975.2.25"
+	ideology = social_democrat
+	traits = {
+		HOS_weary_stiffneck
+	}
+}
+
+create_country_leader = {
+	name = "Phillip IV"
+	desc = "POLITICS_PHILLIP_IV_DESC"
+	picture = "Portrait_Spain_Phillip_IV.dds"
+	expire = "1975.2.25"
+	ideology = social_liberal
+	traits = {
+		HOS_weary_stiffneck
+	}
+}
+
+create_country_leader = {
+	name = "Phillip IV"
+	desc = "POLITICS_PHILLIP_IV_DESC"
+	picture = "Portrait_Spain_Phillip_IV.dds"
+	expire = "1975.2.25"
+	ideology = market_liberal
+	traits = {
+		HOS_weary_stiffneck
+	}
+}
+
+create_country_leader = {
+	name = "Phillip IV"
+	desc = "POLITICS_PHILLIP_IV_DESC"
+	picture = "Portrait_Spain_Phillip_IV.dds"
+	expire = "1975.2.25"
+	ideology = paternal_autocrat
+	traits = {
+		HOS_weary_stiffneck
+	}
+}

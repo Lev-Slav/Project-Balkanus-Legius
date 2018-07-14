@@ -468,7 +468,7 @@ leader_traits = {
 		production_speed_rocket_site_factor = 0.10
 		production_speed_radar_station_factor = 0.10
 		army_org_factor = -0.15
-		unity_factor = -0.1
+		stability_factor = -0.1
 
 		ai_will_do = {
 			factor = 1
@@ -489,7 +489,7 @@ leader_traits = {
 	HOS_weary_stiffneck = {
 		sprite = 13
 		army_morale_factor = 0.08
-		justify_war_goal_time = 0.15
+		justify_war_goal_time = 0.25
 
 		ai_will_do = {
 			factor = 1

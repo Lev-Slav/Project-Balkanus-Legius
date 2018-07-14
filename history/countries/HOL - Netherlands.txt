@@ -121,3 +121,90 @@ add_ideas = {
 	}
 }
 
+create_country_leader = {
+	name = "Alexander III"
+	desc = "POLITICS_Alexander_III_DESC"
+	picture = "Portrait_Netherlands_Alexander_III.dds"
+	expire = "1975.2.25"
+	ideology = social_conservative
+	traits = {
+		HOS_autocratic_charmer
+	}
+}
+
+create_country_leader = {
+	name = "Alexander III"
+	desc = "POLITICS_Alexander_III_DESC"
+	picture = "Portrait_Netherlands_Alexander_III.dds"
+	expire = "1975.2.25"
+	ideology = social_democrat
+	traits = {
+		HOS_autocratic_charmer
+	}
+}
+
+create_country_leader = {
+	name = "Alexander III"
+	desc = "POLITICS_Alexander_III_DESC"
+	picture = "Portrait_Netherlands_Alexander_III.dds"
+	expire = "1975.2.25"
+	ideology = social_liberal
+	traits = {
+		HOS_autocratic_charmer
+	}
+}
+
+create_country_leader = {
+	name = "Alexander III"
+	desc = "POLITICS_Alexander_III_DESC"
+	picture = "Portrait_Netherlands_Alexander_III.dds"
+	expire = "1975.2.25"
+	ideology = market_liberal
+	traits = {
+		HOS_autocratic_charmer
+	}
+}
+
+create_country_leader = {
+	name = "Alexander III"
+	desc = "POLITICS_Alexander_III_DESC"
+	picture = "Portrait_Netherlands_Alexander_III.dds"
+	expire = "1975.2.25"
+	ideology = paternal_autocrat
+	traits = {
+		HOS_autocratic_charmer
+	}
+}
+
+create_country_leader = {
+	name = "Alexander III"
+	desc = "POLITICS_Alexander_III_DESC"
+	picture = "Portrait_Netherlands_Alexander_III.dds"
+	expire = "1975.2.25"
+	ideology = populist
+	traits = {
+		HOS_autocratic_charmer
+	}
+}
+
+create_country_leader = {
+	name = "Alexander III"
+	desc = "POLITICS_Alexander_III_DESC"
+	picture = "Portrait_Netherlands_Alexander_III.dds"
+	expire = "1975.2.25"
+	ideology = fascist
+	traits = {
+		HOS_autocratic_charmer
+	}
+}
+
+create_country_leader = {
+	name = "Alexander III"
+	desc = "POLITICS_Alexander_III_DESC"
+	picture = "Portrait_Netherlands_Alexander_III.dds"
+	expire = "1975.2.25"
+	ideology = national_socialist
+	traits = {
+		HOS_autocratic_charmer
+	}
+}

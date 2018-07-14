@@ -124,3 +124,14 @@ add_ideas = {
 		elections_allowed = no
 	}
 }
+
+create_country_leader = {
+	name = "Hussein Shah"
+	desc = "POLITICS_HUSSEIN_SHAH_DESC"
+	picture = "Portrait_SAF_Hussein_Shah.dds"
+	expire = "1964.6.19"
+	ideology = paternal_autocrat
+	traits = {
+		HOS_die_hard_reformer
+	}
+}

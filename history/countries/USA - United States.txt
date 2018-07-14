@@ -1,4 +1,4 @@
-﻿capital = 64
+﻿capital = 361
 
 oob = "USA_1937"
 
@@ -136,8 +136,19 @@ add_ideas = {
 		}
 
 		ruling_party = social_conservative
-		last_election = "1937.1.1"
+		last_election = "1936.11.8"
 		election_frequency = 60
 		elections_allowed = yes
+	}
+}
+
+create_country_leader = {
+	name = "Isaac Martin"
+	desc = "POLITICS_Isaac_Martin_DESC"
+	picture = "Portrait_USA_Isaac_Martin.dds"
+	expire = "1972.1.25"
+	ideology = social_conservative
+	traits = {
+		HOS_barking_buffoon
 	}
 }

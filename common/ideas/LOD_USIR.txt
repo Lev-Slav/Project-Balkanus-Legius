@@ -1,0 +1,105 @@
+ideas = {
+
+	country = {
+
+	}
+
+	head_of_government = {
+
+		USI_ = {
+
+			allowed = {
+				original_tag = USI
+			}
+			
+			traits = { }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+	}
+
+	foreign_minister = {
+
+		USI_Benito_Mussolini = {
+
+			allowed = {
+				original_tag = USI
+			}
+			
+			traits = { HOG_political_protege }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+	}
+
+
+	armaments_minister = {
+
+		USI_ = {
+
+			allowed = {
+				original_tag = USI
+			}
+			
+			traits = { }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+
+	}
+
+	minister_of_security = {
+
+		USI_ = {
+
+			allowed = {
+				original_tag = USI
+			}
+			
+			traits = { }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+
+	}
+
+	minister_of_industry = {
+
+		USI_Niva_Russo = {
+
+			allowed = {
+				original_tag = USI
+			}
+			
+			traits = { MOI_efficient_sociopath }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+	}
+
+	minister_of_culture = {
+
+		USI_ = {
+
+			allowed = {
+				original_tag = USI
+			}
+			
+			traits = { }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+	}
+}

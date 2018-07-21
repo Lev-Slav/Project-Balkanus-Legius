@@ -97,7 +97,7 @@ units = {
 		name = "1-ya Dezaruskaya Strelkovaya Divizija"
 		location = 11479
 		division_template = "Strelkovaya Diviziya"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "DEZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "DEZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -105,7 +105,7 @@ units = {
 		name = "2-ya Dezaruskaya Strelkovaya Divizija"
 		location = 11479
 		division_template = "Strelkovaya Diviziya"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "DEZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "DEZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -113,7 +113,7 @@ units = {
 		name = "3-ya Dezaruskaya Strelkovaya Divizija"
 		location = 11479
 		division_template = "Strelkovaya Diviziya"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "DEZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "DEZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -129,7 +129,7 @@ units = {
 		name = "1-ya Korolevskaya Ohrana"
 		location = 11479
 		division_template = "Karolevksaya Ohrana"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "DEZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "DEZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}

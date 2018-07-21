@@ -22,7 +22,7 @@ set_technology = {
 
 # Random
 
-	fuel = 1 
+	# = 1 
 	rations = 1 
 }
 

@@ -121,7 +121,7 @@ units = {
 		name = "1.Pesadijska Divizija"
 		location = 306
 		division_template = "Pesadijska Divizija"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "RUS" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "RUS" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}

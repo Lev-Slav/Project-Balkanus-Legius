@@ -79,7 +79,7 @@ units = {
 		name = "1. Tmima Pezikuo"
 		location = 9833
 		division_template = "Tmima Pezikuo"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "VIZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "VIZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -87,7 +87,7 @@ units = {
 		name = "2. Tmima Pezikuo"
 		location = 9833
 		division_template = "Tmima Pezikuo"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "VIZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "VIZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -95,7 +95,7 @@ units = {
 		name = "3. Tmima Pezikuo"
 		location = 9833
 		division_template = "Tmima Pezikuo"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "VIZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "VIZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -103,7 +103,7 @@ units = {
 		name = "1. Tmima Ippiko"
 		location = 9833
 		division_template = "Tmima Ippiko"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "VIZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "VIZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -111,7 +111,7 @@ units = {
 		name = "5. Tmima Pezikuo"
 		location = 3893
 		division_template = "Tmima Pezikuo"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "VIZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "VIZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -119,7 +119,7 @@ units = {
 		name = "28. Tmima Pezikuo"
 		location = 3893
 		division_template = "Tmima Pezikuo"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "VIZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "VIZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -127,7 +127,7 @@ units = {
 		name = "4. Tmima Pezikuo"
 		location = 4112
 		division_template = "Tmima Pezikuo"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "VIZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "VIZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -135,7 +135,7 @@ units = {
 		name = "6. Tmima Pezikuo"
 		location = 4112
 		division_template = "Tmima Pezikuo"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "VIZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "VIZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -143,7 +143,7 @@ units = {
 		name = "7. Tmima Pezikuo"
 		location = 4112
 		division_template = "Tmima Pezikuo"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "VIZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "VIZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -151,7 +151,7 @@ units = {
 		name = "8. Tmima Pezikuo"
 		location = 9940
 		division_template = "Tmima Pezikuo"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "VIZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "VIZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -159,7 +159,7 @@ units = {
 		name = "9. Tmima Pezikuo"
 		location = 1005
 		division_template = "Tmima Pezikuo"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "VIZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "VIZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -167,7 +167,7 @@ units = {
 		name = "10. Tmima Pezikuo"
 		location = 1005
 		division_template = "Tmima Pezikuo"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "VIZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "VIZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -175,7 +175,7 @@ units = {
 		name = "12. Tmima Pezikuo"
 		location = 890
 		division_template = "Tmima Pezikuo"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "VIZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "VIZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -183,7 +183,7 @@ units = {
 		name = "29. Tmima Pezikuo"
 		location = 890
 		division_template = "Tmima Pezikuo"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "VIZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "VIZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -191,7 +191,7 @@ units = {
 		name = "13. Tmima Pezikuo"
 		location = 11747
 		division_template = "Tmima Pezikuo"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "VIZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "VIZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -199,7 +199,7 @@ units = {
 		name = "17. Tmima Pezikuo"
 		location = 11747
 		division_template = "Tmima Pezikuo"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "VIZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "VIZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -207,7 +207,7 @@ units = {
 		name = "2. Tmima Ippiko"
 		location = 11747
 		division_template = "Tmima Ippiko"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "VIZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "VIZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -215,7 +215,7 @@ units = {
 		name = "14. Tmima Pezikuo"
 		location = 11746
 		division_template = "Tmima Pezikuo"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "VIZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "VIZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -223,7 +223,7 @@ units = {
 		name = "15. Tmima Pezikuo"
 		location = 11746
 		division_template = "Tmima Pezikuo"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "VIZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "VIZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -231,7 +231,7 @@ units = {
 		name = "18. Tmima Pezikuo"
 		location = 12473
 		division_template = "Tmima Pezikuo"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "VIZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "VIZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -239,7 +239,7 @@ units = {
 		name = "20. Tmima Pezikuo"
 		location = 12473
 		division_template = "Tmima Pezikuo"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "VIZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "VIZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -247,7 +247,7 @@ units = {
 		name = "19. Tmima Pezikuo"
 		location = 792
 		division_template = "Tmima Pezikuo"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "VIZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "VIZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -255,7 +255,7 @@ units = {
 		name = "21. Tmima Pezikuo"
 		location = 10106
 		division_template = "Tmima Pezikuo"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "VIZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "VIZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -263,7 +263,7 @@ units = {
 		name = "25. Tmima Pezikuo"
 		location = 10106
 		division_template = "Tmima Pezikuo"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "VIZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "VIZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -271,7 +271,7 @@ units = {
 		name = "22. Tmima Pezikuo"
 		location = 4111
 		division_template = "Tmima Pezikuo"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "VIZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "VIZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -279,7 +279,7 @@ units = {
 		name = "27. Tmima Pezikuo"
 		location = 4111
 		division_template = "Tmima Pezikuo"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "VIZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "VIZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -287,7 +287,7 @@ units = {
 		name = "24. Tmima Pezikuo"
 		location = 4111
 		division_template = "Tmima Pezikuo"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "VIZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "VIZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -295,7 +295,7 @@ units = {
 		name = "23. Tmima Pezikuo"
 		location = 9932
 		division_template = "Tmima Pezikuo"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "VIZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "VIZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -303,7 +303,7 @@ units = {
 		name = "26. Tmima Pezikuo"
 		location = 9932
 		division_template = "Tmima Pezikuo"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "VIZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "VIZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -311,7 +311,7 @@ units = {
 		name = "30. Tmima Pezikuo"
 		location = 940
 		division_template = "Tmima Pezikuo"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "VIZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "VIZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -319,7 +319,7 @@ units = {
 		name = "31. Tmima Pezikuo"
 		location = 849
 		division_template = "Tmima Pezikuo"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "VIZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "VIZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -327,7 +327,7 @@ units = {
 		name = "32. Tmima Pezikuo"
 		location = 9893
 		division_template = "Tmima Pezikuo"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "VIZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "VIZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -335,7 +335,7 @@ units = {
 		name = "33. Tmima Pezikuo"
 		location = 13121
 		division_template = "Tmima Pezikuo"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "VIZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "VIZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -343,7 +343,7 @@ units = {
 		name = "36. Tmima Pezikuo"
 		location = 13121
 		division_template = "Tmima Pezikuo"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "VIZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "VIZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -351,7 +351,7 @@ units = {
 		name = "34. Tmima Pezikuo"
 		location = 7454
 		division_template = "Tmima Pezikuo"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "VIZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "VIZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -359,7 +359,7 @@ units = {
 		name = "35. Tmima Pezikuo"
 		location = 7454
 		division_template = "Tmima Pezikuo"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "VIZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "VIZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -367,7 +367,7 @@ units = {
 		name = "37. Tmima Pezikuo"
 		location = 6995
 		division_template = "Tmima Pezikuo"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "VIZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "VIZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -375,7 +375,7 @@ units = {
 		name = "39. Tmima Pezikuo"
 		location = 11829
 		division_template = "Tmima Pezikuo"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "VIZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "VIZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -383,7 +383,7 @@ units = {
 		name = "38. Tmima Pezikuo"
 		location = 6864
 		division_template = "Tmima Pezikuo"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "VIZ" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "VIZ" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}

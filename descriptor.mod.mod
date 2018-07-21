@@ -10,4 +10,4 @@ tags={
 }
 picture="endsieg.jpg"
 remote_file_id=""
-supported_version="1.4.2"
+supported_version="1.5.4"

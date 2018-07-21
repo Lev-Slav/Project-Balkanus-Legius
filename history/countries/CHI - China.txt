@@ -1,0 +1,119 @@
+﻿capital = 64
+
+oob = "CHI_1937"
+
+# Starting tech
+set_technology = {
+
+# Infantry
+
+	infantry_weapons = 1
+
+# Armor
+
+	gwtank = 1
+
+# Aircraft
+
+	early_fighter = 1
+	early_bomber = 1
+
+# Doctrine 
+
+	mass_assault = 1
+	fleet_in_being = 1
+
+# Navy
+	early_destroyer = 1
+	early_light_cruiser = 1
+
+# Random
+
+	rations = 1 
+	# = 1 
+}
+
+set_research_slots = 3
+set_convoys = 75
+set_stability = 0.6
+set_war_support = 0.40
+
+add_ideas = {
+	early_industry
+	minimal_education_investment
+	limited_conscription
+	state_press
+	basic_training
+}
+
+1905.1.1 = {
+	set_politics = {
+	
+		parties = {
+			national_socialist = {
+
+				popularity = 34
+			}
+
+			populist = {
+
+				popularity = 3
+			}
+		
+			fascist = {
+
+				popularity = 0
+			}	
+		
+			paternal_autocrat = {
+
+				popularity = 39
+			}
+
+			social_conservative = {
+
+				popularity = 11
+			}
+		
+			market_liberal = {
+
+				popularity = 0
+			}
+
+			social_liberal = {
+
+				popularity = 5
+			}
+
+			social_democrat = {
+
+				popularity = 5
+			}
+
+			left_wing_radical = {
+
+				popularity = 3
+			}
+
+			leninist = {
+
+				popularity = 0
+			}
+
+			stalinist = {
+
+				popularity = 0
+			}
+
+			anarchist = {
+
+				popularity = 0
+			}
+		}
+
+		ruling_party = paternal_autocrat
+		last_election = "1934.1.1"
+		election_frequency = 60
+		elections_allowed = no
+	}
+}

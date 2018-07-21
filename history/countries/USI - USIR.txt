@@ -51,7 +51,7 @@ set_technology = {
 # Random
 	
 	rations = 1 
-	fuel = 1 
+	# = 1 
 }
 
 
@@ -146,6 +146,17 @@ create_country_leader = {
 	picture = "Portrait_USIR_Monte_Carino.dds"
 	expire = "1953.1.20"
 	ideology = left_wing_radical
+	traits = {
+		HOS_power_hungry_demagogue
+	}
+}
+
+create_country_leader = {
+	name = "Benito Mussolini"
+	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
+	picture = "Portrait_USIR_Benito_Mussolini.dds"
+	expire = "1958.3.12"
+	ideology = leninist
 	traits = {
 		HOS_power_hungry_demagogue
 	}

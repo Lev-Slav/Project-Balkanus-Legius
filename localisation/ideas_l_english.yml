@@ -5,6 +5,57 @@ early_industry:0 "Early Industrial Society"
 basic_industry:0 "Basic Industrial Society"
 heavy_industry:0 "Industrial Society"
 
+#####################
+### OCCITAN IDEAS ###
+#####################
+
+AQU_Amic_Villanou:0 "Amic Villanou"
+AQU_Andreas_Colom:0 "Andreas Colom"
+AQU_Artus_Bayle:0 "Artus Bayle"
+AQU_Aulric_Bosch:0 "Aulric Bosch"
+AQU_Azemar_Lafitte:0 "Azemar Lafitte"
+AQU_Bartolemi_Vidal:0 "Bartolemi Vidal"
+AQU_Bernarldo_Guinovart:0 "Bernarldo Guinovart"
+AQU_Bernat_Pan:0 "Bernart Pan"
+AQU_Bernat_Sentenac:0 "Bernat Sentenac"
+AQU_Bertran_Courtade:0 "Bertran Rabiteu"
+AQU_Brenguier_Alquie:0 "Brenguier Alquie"
+AQU_Carloman_Domergue:0 "Carloman Domergue"
+AQU_Castello_Crescas:0 "Castello Crescas"
+AQU_Cristofol_Banister:0 "Cristofol Banister"
+AQU_Duran_Soubeyran:0 "Duran Soubeyran"
+AQU_Fountainier_Camboulives:0 "Fountainer Camboulives"
+AQU_Geroni_Borell:0 "Geroni Borell"
+AQU_Gregori_Espina:0 "Gregori Espina"
+AQU_Guilhelm_Bazerque:0 "Guilhelm Bazerque"
+AQU_Guillien_Courell:0 "Guillien Courell"
+AQU_Guirbert_Oriol:0 "Guirbert Oriol"
+AQU_Henric_Serra:0 "Henric Serra"
+AQU_Jaufre_Labourdette:0 "Jaufre Labourdette"
+AQU_Joaquim_Fortuny:0 "Joaquim Fortuny"
+AQU_Johan_Gasc:0 "Johan Gasc"
+AQU_Jordi_Fornals:0 "Jordi Fornals"
+AQU_Josep_Capdeville:0 "Josep Capdeville"
+AQU_Karl_Martell:0 "Karl Martell"
+AQU_Lois_Soler:0 "Lois Soler"
+AQU_Marcau_Taberner:0 "Marcau Taberner"
+AQU_Marshal_Thomas_Lux:0 "Tomas Lux"
+AQU_Mateu_Gasol:0 "Mateu Gasol"
+AQU_Miquel_Castex:0 "Miquel Castex"
+AQU_Miquel_Courtade:0 "Miquel Courtade"
+AQU_Pau_Calas:0 "Pau Calas"
+AQU_Philip_Aubanel:0 "Philip Aubanel"
+AQU_Pons_Prat:0 "Pons Prat"
+AQU_Ramon_Sabatier:0 "Ramon Sabatier"
+AQU_Reynaut_Paret:0 "Reynaut Paret"
+AQU_Rotlan_Vallve:0 "Rotlan Vallve"
+AQU_Saubat_Marxausch:0 "Saubat Marxausch"
+AQU_Stefe_Argerich:0 "Stefe Argerich"
+AQU_Terrec_Costa:0 "Terrec Costa"
+AQU_Tomas_Junqueras:0 "Tomas Junqueras"
+AQU_Tosel_Llobet:0 "Tosel Llobet"
+AQU_Veray_Oller:0 "Veray Oller"
+AQU_Vitor_Reus:0 "Vitor Reus"
 
 ###########################
 ### BALKAN LEAGUE IDEAS ###
@@ -99,7 +150,12 @@ BAL_Zoran_Dordevic:0 "Zoran Dordević"
 BAL_Zoran_Sokolovic:0 "Zoran Sokolović"
 
 
+##################
+### USIR IDEAS ###
+##################
 
+USI_Benito_Mussolini:0 "Benito Mussolini"
+USI_Niva_Russo:0 "Niva Russo"
 
 
 

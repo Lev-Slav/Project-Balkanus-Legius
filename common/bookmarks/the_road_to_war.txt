@@ -90,9 +90,9 @@ bookmarks = {
 			
 		}
 
-		SWF = {	
+		SWE = {	
 			minor = yes
-			history = NUS_ROAD_TO_WAR_DESC
+			history = SWE_ROAD_TO_WAR_DESC
 			ideology = national_socialist
 			ideas = {
 

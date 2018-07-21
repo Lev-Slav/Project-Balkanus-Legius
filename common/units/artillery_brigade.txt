@@ -25,7 +25,6 @@ sub_units = {
 		manpower = 500
 		need = {
 			artillery_equipment = 36
-			rations = 15
 		}
 		
 		max_strength = 0.6
@@ -36,7 +35,7 @@ sub_units = {
 		supply_consumption = 0.2
 
 		#Line artillery bonuses
-		soft_attack = 0.25
+		# soft_attack = 0.25
 		
 		forest = {
 			attack = -0.2

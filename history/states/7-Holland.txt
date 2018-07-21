@@ -24,33 +24,6 @@ state={
 				naval_base = 5
 			}
 		}
-		1941.6.1 = {
-			owner = NGF
-			controller = NGF
-		}
-		1943.1.1 = {
-			buildings = {
-				arms_factory = 2
-				industrial_complex = 1
-			}
-		}
-		1944.12.1 = {
-			controller = FRF
-			owner = NGF
-			FRF = {
-				set_province_controller = 9431
-				set_province_controller = 480
-			}
-		}
-		1945.1.1 = {
-			controller = FRF
-			owner = NGF
-			FRF = {
-				set_province_controller = 9431
-				set_province_controller = 480
-				set_province_controller = 9498
-			}
-		}
 
 	}
 

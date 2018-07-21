@@ -55,7 +55,7 @@ units = {
 		name = "1. Infanterie Division"
 		location = 9620
 		division_template = "Infanterie Division"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "BAD" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "BAD" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}
@@ -63,7 +63,7 @@ units = {
 		name = "2. Infanterie Division"
 		location = 9620
 		division_template = "Infanterie Division"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "BAD" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "BAD" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}
@@ -71,7 +71,7 @@ units = {
 		name = "3. Infanterie Division"
 		location = 9620
 		division_template = "Infanterie Division"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "BAD" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "BAD" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}
@@ -79,7 +79,7 @@ units = {
 		name = "4. Infanterie Division"
 		location = 3692
 		division_template = "Infanterie Division"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "BAD" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "BAD" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}
@@ -87,7 +87,7 @@ units = {
 		name = "5. Infanterie Division"
 		location = 3692
 		division_template = "Infanterie Division"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "BAD" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "BAD" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}
@@ -95,7 +95,7 @@ units = {
 		name = "6. Infanterie Division"
 		location = 9587
 		division_template = "Infanterie Division"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "BAD" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "BAD" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}
@@ -103,7 +103,7 @@ units = {
 		name = "7. Infanterie Division"
 		location = 9587
 		division_template = "Infanterie Division"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "BAD" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "BAD" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}

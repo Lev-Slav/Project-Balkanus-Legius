@@ -15,7 +15,7 @@ country_event = {
 
 	trigger = {
 		tag = BAL
-		date > 1937.1.1
+		date > 1936.21.31
 		NOT = { date > 1938.1.1 }
 	}		
 
@@ -26,7 +26,18 @@ country_event = {
 	option = {
 		name = balkan.1.a
 		BAL = {
-			add_political_power = 50
+			add_political_power = 1
+		}
+		hidden = {
+			AST = {
+				dismantle_faction = yes
+			}
+			CAN = {
+				dismantle_faction = yes
+			}
+			NZL = {
+				dismantle_faction = yes
+			}
 		}
 	}
 }
@@ -649,6 +660,10 @@ country_event = {
 			transfer_state = 771
 			load_oob = DEZ_free
 		}
+	}
+	option = {
+		name = balkan.17.b
+		set_global_flag = liberate_dezarussiya_no
 	}
 }
 

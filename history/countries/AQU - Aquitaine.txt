@@ -51,7 +51,7 @@ set_technology = {
 # Random
 
 	rations = 1 
-	fuel = 1 
+	# = 1 
 
 }
 
@@ -146,7 +146,7 @@ create_country_leader = {
 	name = "Grantaire Eglise"
 	desc = "POLITICS_GRANTAIRE_EGLISE_DESC"
 	picture = "Portrait_Aquitaine_Grantaire_Eglise.dds"
-	expire = "1953.1.20"
+	expire = "1953.1.10"
 	ideology = national_socialist
 	traits = {
 		HOS_supreme_gentleman
@@ -162,7 +162,7 @@ create_field_marshal = {
 	defense_skill = 6
 	planning_skill = 6
 	logistics_skill = 3
-	id = 200
+	id = 100
 }
 
 
@@ -175,7 +175,7 @@ create_corps_commander = {
 	defense_skill = 1
 	planning_skill = 2
 	logistics_skill = 2
-	id = 201
+	id = 101
 }
 
 create_corps_commander = {
@@ -187,7 +187,7 @@ create_corps_commander = {
 	defense_skill = 3
 	planning_skill = 2
 	logistics_skill = 2
-	id = 202
+	id = 102
 }
 
 create_corps_commander = {
@@ -199,7 +199,7 @@ create_corps_commander = {
 	defense_skill = 1
 	planning_skill = 1
 	logistics_skill = 1
-	id = 203
+	id = 103
 }
 
 create_corps_commander = {
@@ -211,7 +211,7 @@ create_corps_commander = {
 	defense_skill = 4
 	planning_skill = 3
 	logistics_skill = 5
-	id = 204
+	id = 104
 }
 
 create_corps_commander = {
@@ -223,7 +223,7 @@ create_corps_commander = {
 	defense_skill = 6
 	planning_skill = 4
 	logistics_skill = 2
-	id = 205
+	id = 105
 }
 
 create_navy_leader = {
@@ -231,7 +231,7 @@ create_navy_leader = {
 	picture = "Portrait_Aquitaine_Victor_Lafont.dds"
 	traits = { blockade_runner }
 	skill = 4
-	id = 206
+	id = 106
 }
 
 create_navy_leader = {
@@ -239,5 +239,5 @@ create_navy_leader = {
 	picture = "Portrait_Aquitaine_Loui_de_La_Fontaine.dds"
 	traits = { seawolf }
 	skill = 3
-	id = 207
+	id = 107
 }

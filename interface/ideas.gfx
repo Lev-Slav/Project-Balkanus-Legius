@@ -1258,6 +1258,254 @@ spriteTypes = {
 	}		
 
 
+#######################
+#### OCCITAN IDEAS ####
+#######################
+
+SpriteType = {
+	name = "GFX_idea_AQU_Amic_Villanou"
+	texturefile = "gfx/interface/ideas/idea_AQU_Amic_Villanou.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Andreas_Colom"
+	texturefile = "gfx/interface/ideas/idea_AQU_Andreas_Colom.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Andreas_Pons"
+	texturefile = "gfx/interface/ideas/idea_AQU_Andreas_Pons.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Artus_Bayle"
+	texturefile = "gfx/interface/ideas/idea_AQU_Artus_Bayle.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Aulric_Bosch"
+	texturefile = "gfx/interface/ideas/idea_AQU_Aulric_Bosch.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Azenar_Lafitte"
+	texturefile = "gfx/interface/ideas/idea_AQU_Azemar_Lafitte.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Bartolemi_Vidal"
+	texturefile = "gfx/interface/ideas/idea_AQU_Bartolemi_Vidal.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Bernarldo_Guinovart"
+	texturefile = "gfx/interface/ideas/idea_AQU_Bernarldo_Guinovart.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Bernat_Pan"
+	texturefile = "gfx/interface/ideas/idea_AQU_Bernat_Pan.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Bernat_Sentenac"
+	texturefile = "gfx/interface/ideas/idea_AQU_Bernat_Sentenac.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Bertran_Courtade"
+	texturefile = "gfx/interface/ideas/idea_AQU_Bertran_Courtade.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Brenguier_Alquie"
+	texturefile = "gfx/interface/ideas/idea_AQU_Brenguier_Alquie.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Carloman_Domergue"
+	texturefile = "gfx/interface/ideas/idea_AQU_Carloman_Domergue.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Castello_Crescas"
+	texturefile = "gfx/interface/ideas/idea_AQU_Castello_Crescas.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Cristofol_Banister"
+	texturefile = "gfx/interface/ideas/idea_AQU_Cristofol_Banister.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Duran_Soubeyran"
+	texturefile = "gfx/interface/ideas/idea_AQU_Duran_Soubeyran.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Fontainier_Camboulives"
+	texturefile = "gfx/interface/ideas/idea_AQU_Fontainier_Camboulives.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Geroni_Borell"
+	texturefile = "gfx/interface/ideas/idea_AQU_Geroni_Borell.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Gregori_Espina"
+	texturefile = "gfx/interface/ideas/idea_AQU_Gregori_Espina.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Guilhelm_Bazerque"
+	texturefile = "gfx/interface/ideas/idea_AQU_Guilhelm_Bazerque.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Guillien_Courell"
+	texturefile = "gfx/interface/ideas/idea_AQU_Guillien_Courell.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Guirbert_Oriol"
+	texturefile = "gfx/interface/ideas/idea_AQU_Guirbert_Oriol.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Henric_Serra"
+	texturefile = "gfx/interface/ideas/idea_AQU_Henric_Serra.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Jaufre_Labourdette"
+	texturefile = "gfx/interface/ideas/idea_AQU_Jaufre_Labourdette.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Joaquim_Fortuny"
+	texturefile = "gfx/interface/ideas/idea_AQU_Joaquim_Fortuny.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Johan_Gasc"
+	texturefile = "gfx/interface/ideas/idea_AQU_Johan_Gasc.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Jordi_Fornals"
+	texturefile = "gfx/interface/ideas/idea_AQU_Jordi_Fornals.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Josep_Capdeville"
+	texturefile = "gfx/interface/ideas/idea_AQU_Josep_Capdeville.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Karl_Martell"
+	texturefile = "gfx/interface/ideas/idea_AQU_Karl_Martell.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Lois_Soler"
+	texturefile = "gfx/interface/ideas/idea_AQU_Lois_Soler.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Marcau_Taberner"
+	texturefile = "gfx/interface/ideas/idea_AQU_Marcau_Taberner.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Marshal_Thomas_Lux"
+	texturefile = "gfx/interface/ideas/idea_AQU_Marshal_Thomas_Lux.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Mateu_Gasol"
+	texturefile = "gfx/interface/ideas/idea_AQU_Mateu_Gasol.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Miquel_Courtade"
+	texturefile = "gfx/interface/ideas/idea_AQU_Miquel_Courtade.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Miquel_Castex"
+	texturefile = "gfx/interface/ideas/idea_AQU_Miquel_Castex.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Pau_Calas"
+	texturefile = "gfx/interface/ideas/idea_AQU_Pau_Calas.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Philip_Aubanel"
+	texturefile = "gfx/interface/ideas/idea_AQU_Philip_Aubanel.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Pons_Prat"
+	texturefile = "gfx/interface/ideas/idea_AQU_Pons_Prat.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Ramon_Sabatier"
+	texturefile = "gfx/interface/ideas/idea_AQU_Ramon_Sabatier.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Reynaut_Paret"
+	texturefile = "gfx/interface/ideas/idea_AQU_Reynaut_Paret.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Rotlan_Vallve"
+	texturefile = "gfx/interface/ideas/idea_AQU_Rotlan_Vallve.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Saubat_Marxausch"
+	texturefile = "gfx/interface/ideas/idea_AQU_Saubat_Marxausch.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Stefe_Argerich"
+	texturefile = "gfx/interface/ideas/idea_AQU_Stefe_Argerich.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Terrec_Costa"
+	texturefile = "gfx/interface/ideas/idea_AQU_Terrec_Costa.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Tomas_Junqueras"
+	texturefile = "gfx/interface/ideas/idea_AQU_Tomas_Junqueras.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Tosel_Llobet"
+	texturefile = "gfx/interface/ideas/idea_AQU_Tosel_Llobet.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Veray_Oller"
+	texturefile = "gfx/interface/ideas/idea_AQU_Veray_Oller.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_Vitor_Reus"
+	texturefile = "gfx/interface/ideas/idea_AQU_Vitor_Reus.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_AQU_"
+	texturefile = "gfx/interface/ideas/idea_AQU_.dds"
+}
 
 	
 #######################
@@ -1274,12 +1522,10 @@ SpriteType = {
 	texturefile = "gfx/interface/ideas/idea_BAL_Aleksander_Tsvetkov.dds"
 }
 
-
 SpriteType = {
 	name = "GFX_idea_BAL_Apistoli_Anastopoulos"
 	texturefile = "gfx/interface/ideas/idea_BAL_Apistoli_Anastopoulos.dds"
 }
-
 
 SpriteType = {
 	name = "GFX_idea_BAL_Aristides_Xydakis"
@@ -1835,4 +2081,19 @@ SpriteType = {
 SpriteType = {
 	name = "GFX_idea_BAL_"
 	texturefile = "gfx/interface/ideas/idea_BAL_.dds"
+}
+
+
+###########################################
+#### Union of Italian Soviet Republics ####
+###########################################
+
+SpriteType = {
+	name = "GFX_idea_USI_Benito_Mussolini"
+	texturefile = "gfx/interface/ideas/idea_USI_Benito_Mussolini.dds"
+}
+
+SpriteType = {
+	name = "GFX_idea_USI_Niva_Russo"
+	texturefile = "gfx/interface/ideas/idea_USI_Niva_Russo.dds"
 }

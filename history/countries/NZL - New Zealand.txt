@@ -41,13 +41,12 @@ set_technology = {
 # Random
 	
 	rations = 1 
-	fuel = 1 
+	# = 1 
 }
 
 
 set_research_slots = 2
 set_convoys = 50
-set_national_unity = 0.9
 set_stability = 0.6
 set_war_support = 0.10
 

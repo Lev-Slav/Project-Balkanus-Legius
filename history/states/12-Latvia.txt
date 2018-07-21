@@ -28,50 +28,6 @@ state={
 			}
 		}
 		add_core_of = RUS
-		add_core_of = RUS
-		1918.1.1 = {
-			controller = UBD
-                        owner = UBD
-		}
-		1933.1.1 = {
-			controller = RUS
-			owner = RUS
-		}
-		1942.6.1 = {
-			controller = NGF
-			owner = NGF
-			GER = {
-				set_province_controller = 222
-				set_province_controller = 310
-				set_province_controller = 319
-				set_province_controller = 341
-				set_province_controller = 3255
-				set_province_controller = 3298
-				set_province_controller = 3388
-				set_province_controller = 6459
-				set_province_controller = 7482
-				set_province_controller = 9240
-				set_province_controller = 9275
-				set_province_controller = 9317
-				set_province_controller = 9340
-				set_province_controller = 9501
-				set_province_controller = 10323
-				set_province_controller = 10493
-				set_province_controller = 11222
-				set_province_controller = 11302
-				set_province_controller = 11358
-			}
-		}
-		1943.1.1 = {
-			buildings = {
-				arms_factory = 2
-				industrial_complex = 1
-			}
-		}
-		1944.12.1 = {
-			controller = RUS
-			owner = RUS
-		}
 	}
 
 	provinces={

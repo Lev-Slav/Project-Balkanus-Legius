@@ -1,0 +1,572 @@
+ideas = {
+
+	country = {
+
+	}
+
+	head_of_government = {
+
+		AQU_Marshal_Thomas_Lux = {
+
+			allowed = {
+				original_tag = AQU
+			}
+			
+			traits = { HOG_backstabber_backroom }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+	}
+
+	foreign_minister = {
+
+		AQU_Guirbert_Oriol = {
+
+			allowed = {
+				original_tag = AQU
+			}
+			
+			traits = { FM_biased_intellectual }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+
+		AQU_Lois_Soler = {
+
+			allowed = {
+				original_tag = AQU
+			}
+			
+			traits = { FM_smooth_talking_charmer }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+
+		AQU_Mateu_Gasol = {
+
+			allowed = {
+				original_tag = AQU
+			}
+			
+			traits = { FM_apologetic_clerk }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+
+		AQU_Reynaut_Paret = {
+
+			allowed = {
+				original_tag = AQU
+			}
+			
+			traits = { FM_great_compromiser }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+
+		AQU_Pau_Calas = {
+
+			allowed = {
+				original_tag = AQU
+			}
+			
+			traits = { FM_ideological_crusader }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+
+		AQU_Carloman_Domergue = {
+
+			allowed = {
+				original_tag = AQU
+			}
+			
+			traits = { FM_cloak_n_dagger_schemer }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+
+		AQU_Johan_Gasc = {
+
+			allowed = {
+				original_tag = AQU
+			}
+			
+			traits = { FM_iron_fisted_brute  }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+
+		AQU_Brenguier_Alquie = {
+
+			allowed = {
+				original_tag = AQU
+			}
+			
+			traits = { FM_general_staffer }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+
+		AQU_Terrec_Costa = {
+
+			allowed = {
+				original_tag = AQU
+			}
+			
+			traits = { FM_apologetic_clerk }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+	}
+
+
+	armaments_minister = {
+
+		AQU_Henric_Serra = {
+
+			allowed = {
+				original_tag = AQU
+			}
+			
+			traits = { AM_armaments_organizer }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+
+		AQU_Karl_Martell = {
+
+			allowed = {
+				original_tag = AQU
+			}
+			
+			traits = { AM_tank_proponent }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+
+		AQU_Miquel_Courtade = {
+
+			allowed = {
+				original_tag = AQU
+			}
+			
+			traits = { AM_theoretical_scientist }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+
+		AQU_Rotlan_Vallve = {
+
+			allowed = {
+				original_tag = AQU
+			}
+			
+			traits = { AM_military_entrenpreneur }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+
+		AQU_Andreas_Colom = {
+
+			allowed = {
+				original_tag = AQU
+			}
+			
+			traits = { AM_battlefleet_proponent }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+		
+		AQU_Castello_Crescas = {
+
+			allowed = {
+				original_tag = AQU
+			}
+			
+			traits = { AM_infantry_proponent  }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+
+		AQU_Jordi_Fornals = {
+
+			allowed = {
+				original_tag = AQU
+			}
+			
+			traits = { AM_air_superiority_proponent }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+
+		AQU_Bertran_Courtade = {
+
+			allowed = {
+				original_tag = AQU
+			}
+			
+			traits = { AM_battlefield_support_proponent }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+
+		AQU_Veray_Oller = {
+
+			allowed = {
+				original_tag = AQU
+			}
+			
+			traits = { AM_strategic_bomber_proponent }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+
+		AQU_Philip_Aubanel = {
+
+			allowed = {
+				original_tag = AQU
+			}
+			
+			traits = { AM_naval_aviation_proponent }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+
+		AQU_Marcau_Taberner = {
+
+			allowed = {
+				original_tag = AQU
+			}
+			
+			traits = { AM_submarine_proponent }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+
+		AQU_Tosel_Llobet = {
+
+			allowed = {
+				original_tag = AQU
+			}
+			
+			traits = { AM_armaments_organizer }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+
+		AQU_Amic_Villanou = {
+
+			allowed = {
+				original_tag = AQU
+			}
+			
+			traits = { HOG_corporate_suit }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+	}
+
+	minister_of_security = {
+
+		AQU_Bernat_Sentenac = {
+
+			allowed = {
+				original_tag = AQU
+			}
+			
+			traits = { MOS_dismal_enigma }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+
+		AQU_Andreas_Pons = {
+
+			allowed = {
+				original_tag = AQU
+			}
+			
+			traits = { MOS_crooked_kleptocrat }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+
+		AQU_Saubat_Marxausch = {
+
+			allowed = {
+				original_tag = AQU
+			}
+			
+			traits = { MOS_industrial_specialist }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+
+		AQU_Pons_Prat = {
+
+			allowed = {
+				original_tag = AQU
+			}
+			
+			traits = { MOS_naval_intelligence_specialist }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+
+		AQU_Stefe_Argerich = {
+
+			allowed = {
+				original_tag = AQU
+			}
+			
+			traits = { MOS_prince_of_terror }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+
+		AQU_Cristofol_Banister = {
+
+			allowed = {
+				original_tag = AQU
+			}
+			
+			traits = { MOS_silent_lawyer  }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+
+		AQU_Gregori_Espina = {
+
+			allowed = {
+				original_tag = AQU
+			}
+			
+			traits = { MOS_dismal_enigma }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+
+		AQU_Bartolemi_Vidal = {
+
+			allowed = {
+				original_tag = AQU
+			}
+			
+			traits = { MOS_man_of_the_people  }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+
+	}
+
+	minister_of_industry = {
+
+		AQU_Miquel_Castex = {
+
+			allowed = {
+				original_tag = AQU
+			}
+			
+			traits = { MOI_laissex_faire_capitalist }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+
+		AQU_Fontainier_Camboulives = {
+
+			allowed = {
+				original_tag = AQU
+			}
+			
+			traits = { MOI_oil_baron }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+
+		AQU_Geroni_Borell = {
+
+			allowed = {
+				original_tag = AQU
+			}
+			
+			traits = { MOI_captain_of_industry }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+
+		AQU_Guilhelm_Bazerque = {
+
+			allowed = {
+				original_tag = AQU
+			}
+			
+			traits = { MOI_resource_industrialist }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+
+		AQU_Jaufre_Labourdette = {
+
+			allowed = {
+				original_tag = AQU
+			}
+			
+			traits = { MOI_fortification_engineer }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+
+		AQU_Tomas_Junqueras = {
+
+			allowed = {
+				original_tag = AQU
+			}
+			
+			traits = { MOS_political_specialist  }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+
+		AQU_Artus_Bayle = {
+
+			allowed = {
+				original_tag = AQU
+			}
+			
+			traits = { MOS_anti_communist  }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+
+		AQU_Guillien_Courell = {
+
+			allowed = {
+				original_tag = AQU
+			}
+			
+			traits = { MOS_industrial_specialist }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+	}
+
+	minister_of_culture = {
+
+		AQU_Vitor_Reus = {
+
+			allowed = {
+				original_tag = AQU
+			}
+			
+			traits = { MOC_talented_censorer }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+
+		AQU_Duran_Soubeyran = {
+
+			allowed = {
+				original_tag = AQU
+			}
+			
+			traits = { MOC_political_film_maker }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+
+		AQU_Josep_Capdeville = {
+
+			allowed = {
+				original_tag = AQU
+			}
+			
+			traits = { MOC_charismatic_speaker }
+
+			ai_will_do = {
+				factor = 1.0
+			}
+		}
+	}
+}

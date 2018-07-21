@@ -23,14 +23,14 @@ state={
 			air_base = 10
 		}
 		add_core_of = FRA
-		add_core_of = FRF
+		add_core_of = FRA
 		1941.6.20 = {
 			controller = NGF
 			owner = NGF
 		}
 		1944.12.1 = {
-			controller = FRF
-			owner = FRF
+			controller = FRA
+			owner = FRA
 		}
 	}
 

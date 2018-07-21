@@ -37,7 +37,6 @@ sub_units = {
 
 		need = {
 			anti_air_equipment = 30
-			rations = 15
 		}
 
 		forest = {

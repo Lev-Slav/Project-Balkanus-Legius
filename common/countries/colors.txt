@@ -120,12 +120,6 @@ IND = {
 	color_ui = rgb { 209 160 255 }
 }
 
-
-IRQ = {
-	color = rgb { 178 114 99 }
-	color_ui = rgb { 231 148 129 }
-}
-
 ITA = {
 	color = rgb { 109 143 110 }
 	color_ui = rgb { 109 143 110 }
@@ -161,7 +155,7 @@ MEX = {
 	color_ui = rgb { 135 198 108 }
 }
 
-MON = {
+MNY = {
 	color = rgb { 57 103 150 }
 	color_ui = rgb { 57 103 150 }
 }
@@ -196,11 +190,6 @@ OIR = {
 	color_ui = rgb { 214 199 167 }
 }
 
-PER = {
-	color = rgb { 196 184 143 }
-	color_ui = rgb { 196 184 143 }
-}
-
 POM = {
 	color = rgb { 117 93 66 }
 	color_ui = rgb { 117 93 66 }
@@ -216,7 +205,7 @@ RUS = {
 	color_ui = rgb { 9 79 25 }
 }
 
-SAF = {
+SFR = {
 	color = rgb { 74 102 43 }
 	color_ui = rgb { 74 102 43 }
 }
@@ -226,7 +215,7 @@ SGF = {
 	color_ui = rgb { 76 76 76 }
 }
 
-SWF = {
+SWE = {
 	color = rgb { 36 132 247 }
 	color_ui = rgb { 47 172 255 }
 }

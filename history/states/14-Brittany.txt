@@ -38,31 +38,10 @@ state={
 			}
 		}
 		add_core_of = FRA
-		add_core_of = FRF
 		1939.1.1 = {
 			buildings = {
 				dockyard = 5
 			}
-		}
-		1941.6.20 = {
-			controller = NGF
-			owner = NGF
-			GER = {
-				set_province_controller = 542
-				set_province_controller = 3552
-				set_province_controller = 3758
-				set_province_controller = 6536
-				set_province_controller = 6548
-				set_province_controller = 6572
-				set_province_controller = 9495
-				set_province_controller = 9510
-				set_province_controller = 9525
-				set_province_controller = 11508
-			}
-		}
-		1944.12.1 = {
-			controller = FRF
-			owner = FRF
 		}
 	}
 

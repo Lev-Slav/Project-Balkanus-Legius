@@ -12,8 +12,8 @@ state=
 	
 	history=
 	{
-		owner = SWF
-		add_core_of = SWF
+		owner = SWE
+		add_core_of = SWE
 		buildings = {
 			infrastructure = 6
 			408 = {

@@ -16,7 +16,7 @@ ideas = {
 			}
 
 			modifier = { 
-				unity_factor = -0.05
+				stability_factor = -0.05
 				drift_defence_factor = -0.1
 				justify_war_goal_time = 0.75
 			}
@@ -34,7 +34,7 @@ ideas = {
 					has_government = paternal_autocrat
 					has_government = populist
 					has_government = national_socialist
-					has_government = fascism
+					has_government = fascist
 					has_government = leninist
 					has_government = stalinist
 					has_government = anarchist
@@ -60,7 +60,7 @@ ideas = {
 						has_government = paternal_autocrat
 						has_government = populist
 						has_government = national_socialist
-						has_government = fascism
+						has_government = fascist
 						has_government = leninist
 						has_government = stalinist
 						has_government = anarchist
@@ -106,7 +106,7 @@ ideas = {
 			}
 
 			modifier = {
-				unity_factor = 0.05
+				stability_factor = 0.05
 				drift_defence_factor = 0.05
 				army_morale_factor = 0.05
 			}
@@ -144,7 +144,7 @@ ideas = {
 
 				modifier = {
 					factor = 50
-					has_government = fascism
+					has_government = fascist
 				}
 
 				modifier = {
@@ -174,7 +174,7 @@ ideas = {
 			}
 
 			modifier = {
-				unity_factor = 0.1
+				stability_factor = 0.1
 				drift_defence_factor = 0.1
 				army_morale_factor = 0.075
 				justify_war_goal_time = -0.10

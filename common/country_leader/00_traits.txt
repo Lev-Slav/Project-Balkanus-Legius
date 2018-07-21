@@ -67,7 +67,7 @@ leader_traits = {
 	inexperienced_imperialist = {
 		random = no
 		political_power_factor = -0.3
-		unity_factor = -0.05
+		stability_factor = -0.05
 		justify_war_goal_time = -0.25
 		
 		ai_will_do = {
@@ -78,7 +78,7 @@ leader_traits = {
 	corrupt = {
 		random = no
 		political_power_factor = -0.3
-		unity_factor = -0.05
+		stability_factor = -0.05
 		justify_war_goal_time = -0.25
 		army_morale_factor = -0.04
 		
@@ -90,7 +90,7 @@ leader_traits = {
 	divided_leadership = {
 		random = no
 		political_power_factor = -0.25
-		unity_factor = -0.05
+		stability_factor = -0.05
 		justify_war_goal_time = 0.25
 		army_morale_factor = -0.10
 		
@@ -102,7 +102,7 @@ leader_traits = {
 	old_guard = {
 		random = no
 		political_power_factor = -0.25
-		unity_factor = 0.10
+		stability_factor = 0.10
 		army_morale_factor = 0.025
 		
 		ai_will_do = {
@@ -357,7 +357,7 @@ leader_traits = {
 		random = no
 		# Boosts Fascism
 		sprite = 13
-		fascism_drift = 0.1
+		fascist_drift = 0.1
 		
 		ai_will_do = {
 			factor = 0
@@ -581,7 +581,7 @@ leader_traits = {
 	HOG_backstabber_backroom = {
 		random = yes
 		sprite = 13
-		stability_factor = 0.30
+		stability_factor = 0.15
 		production_factory_max_efficiency_factor = 0.10
 		political_power_factor = 0.05
 		consumer_goods_factor = -0.075
@@ -656,7 +656,7 @@ leader_traits = {
 	HOG_political_protege = {
 		sprite = 13
 		consumer_goods_factor = 0.05
-		political_power_gain = 0.1
+		political_power_gain = 0.25
 
 		ai_will_do = {
 			factor = 1

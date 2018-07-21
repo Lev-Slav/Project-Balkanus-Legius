@@ -88,7 +88,7 @@ ideas = {
 				#has_manpower_for_recruit_change_to = { value = 0.05 group = mobilization_laws }
 				OR = { 
 					has_government = paternal_autocrat
-					has_government = fascism
+					has_government = fascist
 					has_government = populist
 					has_government = national_socialist
 					has_government = leninist
@@ -154,7 +154,7 @@ ideas = {
 				#has_manpower_for_recruit_change_to =  { value = 0.1 group = mobilization_laws }
 				OR = { 
 					has_government = paternal_autocrat
-					has_government = fascism
+					has_government = fascist
 					has_government = populist
 					has_government = national_socialist
 					has_government = leninist

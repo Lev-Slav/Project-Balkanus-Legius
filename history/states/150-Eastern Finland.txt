@@ -10,12 +10,12 @@ state={
 		steel=4
 	}
 	history={
-		owner = SWF
+		owner = SWE
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
 		}
-		add_core_of = SWF
+		add_core_of = SWE
 	}
 
 	provinces={

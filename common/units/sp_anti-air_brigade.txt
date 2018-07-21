@@ -23,7 +23,6 @@ sub_units = {
 
 		need = {
 			light_tank_aa_equipment = 15
-			rations = 15
 		}
 		manpower = 500
 		max_organisation = 0
@@ -88,7 +87,6 @@ sub_units = {
 
 		need = {
 			medium_tank_aa_equipment = 12
-			rations = 10
 		}
 		manpower = 500
 		max_organisation = 0
@@ -156,7 +154,6 @@ sub_units = {
 
 		need = {
 			heavy_tank_aa_equipment = 8
-			rations = 4
 		}
 		manpower = 500
 		max_organisation = 0
@@ -221,7 +218,6 @@ sub_units = {
 
 		need = {
 			super_heavy_tank_aa_equipment = 4
-			rations = 2
 		}
 		manpower = 500
 		max_organisation = 0
@@ -288,7 +284,6 @@ sub_units = {
 
 		need = {
 			modern_tank_aa_equipment = 12
-			rations = 6
 		}
 		manpower = 500
 		max_organisation = 0

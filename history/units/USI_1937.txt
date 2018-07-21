@@ -73,7 +73,7 @@ units = {
 		name = "1. Divisione de Fanteria"
 		location = 9904
 		division_template = "Divisione de Fanteria"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "USI" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "USI" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}
@@ -81,7 +81,7 @@ units = {
 		name = "4. Divisione de Fanteria"
 		location = 9904
 		division_template = "Divisione de Fanteria"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "USI" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "USI" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}
@@ -89,7 +89,7 @@ units = {
 		name = "5. Divisione de Fanteria"
 		location = 9904
 		division_template = "Divisione de Fanteria"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "USI" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "USI" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}
@@ -97,7 +97,7 @@ units = {
 		name = "7. Divisione de Fanteria"
 		location = 9904
 		division_template = "Divisione de Fanteria"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "USI" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "USI" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}
@@ -105,7 +105,7 @@ units = {
 		name = "3. Divisione de Fanteria"
 		location = 10074
 		division_template = "Divisione de Fanteria"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "USI" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "USI" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}
@@ -113,7 +113,7 @@ units = {
 		name = "6. Divisione de Fanteria"
 		location = 10074
 		division_template = "Divisione de Fanteria"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "USI" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "USI" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}
@@ -121,7 +121,7 @@ units = {
 		name = "8. Divisione de Fanteria"
 		location = 4159
 		division_template = "Divisione de Fanteria"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "USI" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "USI" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}
@@ -129,7 +129,7 @@ units = {
 		name = "9. Divisione de Fanteria"
 		location = 819
 		division_template = "Divisione de Fanteria"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "USI" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "USI" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}
@@ -137,7 +137,7 @@ units = {
 		name = "10. Divisione de Fanteria"
 		location = 11837
 		division_template = "Divisione de Fanteria"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "USI" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "USI" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}
@@ -145,7 +145,7 @@ units = {
 		name = "11. Divisione de Fanteria"
 		location = 6606
 		division_template = "Divisione de Fanteria"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "USI" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "USI" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}
@@ -153,7 +153,7 @@ units = {
 		name = "12. Divisione de Fanteria"
 		location = 6780
 		division_template = "Divisione de Fanteria"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "USI" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "USI" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}

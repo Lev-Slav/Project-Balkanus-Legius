@@ -30,18 +30,6 @@ state= {
 				industrial_complex = 5
 			}
 		}
-		1944.1.1 = {
-			controller = ITR
-			owner = KIT
-			ITR = {
-				set_province_controller = 9794
-				set_province_controller = 6862
-			}
-		}
-		1944.12.1 = {
-			controller = KIT
-			owner = KIT
-		}
 	}
 
 	provinces= {

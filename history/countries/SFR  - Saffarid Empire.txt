@@ -1,0 +1,137 @@
+﻿capital = 64
+
+oob = "SAF_1937"
+
+# Starting tech
+set_technology = {
+
+# Infantry
+
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+
+# Artillery
+
+	gw_artillery = 1
+
+# Aircraft
+
+	early_fighter = 1
+	CAS1 = 1
+
+# Navy
+
+	early_submarine = 1
+	basic_submarine = 1
+	early_destroyer = 1
+	basic_destroyer = 1
+	early_light_cruiser = 1
+	basic_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	early_carrier = 1
+	transport = 1
+
+# Random
+
+	rations = 1 
+	# = 1 
+}
+
+
+set_research_slots = 2
+set_convoys = 40
+set_stability = 0.6
+set_war_support = 0.25
+
+add_ideas = {
+	pre_industrial_society
+	minimal_education_investment
+	limited_conscription
+	state_press
+	basic_training
+}
+
+1905.1.1 = {
+	set_politics = {
+	
+		parties = {
+			national_socialist = {
+
+				popularity = 0
+			}
+
+			populist = {
+
+				popularity = 0
+			}
+		
+			fascist = {
+
+				popularity = 0
+			}	
+		
+			paternal_autocrat = {
+
+				popularity = 76
+			}
+
+			social_conservative = {
+
+				popularity = 7
+			}
+		
+			market_liberal = {
+
+				popularity = 4
+			}
+
+			social_liberal = {
+
+				popularity = 5
+			}
+
+			social_democrat = {
+
+				popularity = 0
+			}
+
+			left_wing_radical = {
+
+				popularity = 8
+			}
+
+			leninist = {
+
+				popularity = 0
+			}
+
+			stalinist = {
+
+				popularity = 0
+			}
+
+			anarchist = {
+
+				popularity = 0
+			}
+		}
+
+		ruling_party = paternal_autocrat
+		last_election = "1937.1.1"
+		election_frequency = 60
+		elections_allowed = no
+	}
+}
+
+create_country_leader = {
+	name = "Hussein Shah"
+	desc = "POLITICS_HUSSEIN_SHAH_DESC"
+	picture = "Portrait_SFR_Hussein_Shah.dds"
+	expire = "1964.6.19"
+	ideology = paternal_autocrat
+	traits = {
+		HOS_die_hard_reformer
+	}
+}

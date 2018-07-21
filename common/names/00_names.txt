@@ -1,0 +1,638 @@
+﻿### Names generation for aces ###
+# Surnames can be male/female dependent or general. Fe. in Polish some surnames has different endings depending on the gender.
+# Names and Surnames are randomly picked and will sometimes repeat, but will never repeat in combinations for example there will never be generated another "John Smith".
+# Assigning the callsign is random - may be assigned or not. If we use the callsign, it will never be assigned to anyone again. Callsigns are not obligatory to script.
+# Picking up a gender is random, and is influenced by the amount of names scripted.
+
+default = {
+	male = {
+		names = { "John" "Bob" "Lucas" "Marcus" "Alexander" "Alex" "Peter" "Jonas" "Jim" "Johannes"}
+		surnames = { }
+		callsigns = { }
+	}
+	#female = {
+	#	names = { "Juliette" "Anna" }
+	#	surnames = { }
+	#	callsigns = { "Queen Of The Sky" "The Red Princess" }
+	#}
+	surnames = { "Smith" "Jones" "Taylor" "Brown" "Williams" "Wilson" "Evans" "Walker" "White" "Roberts" }
+	callsigns = { "Easy Kill" "The Lightning" "The Devil" "Grasshopper" "Handsome" "Moose" "Mouse" "Pebbles" "Sunshine" Demon}
+}
+ 
+###############################################################
+# The Majors
+###############################################################
+GER = {
+	male = {
+		names = {  Maximilian Felix Erich Gerhard Gunther Otto Walter Wilhelm Heinz Hermann Heinrich 
+			Theodor Hans Anton Joachim Max Emil Peter Fritz Otto Adolf Tobias Staffan Marco Karl
+		}
+	}
+	female = {
+		names = { Jessica Emma Hanna Sofia Marie }
+	}
+	surnames = { 
+		Muller Schmidt Schneider Fischer Meyer Weber Schulz Wagner Hartmann Rall Barkhorn 
+		Becker Hoffmann Graf Erhler Hafner Lipfert Brendel Stotz Kirschner Lang Sturm 
+		Beisswenger Duttmann Wilbs Berglen Behrmann 
+		}
+	callsigns = { "Bubi" "Assi" "The Black Devil" "The Blond Knight Of Germany" "Dolfo" "Fighter of Libau" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red Knight" "Reeste" }
+}
+
+
+ENG = {
+	male = {
+		names = { Albert Alexander Alfred Archibald Arthur Bernard Charles Colbert
+			Colin Cyril David Donald Douglas Edmund Edward Fairfax  Francis
+			Geoffrey George Graham Henrey Herbert Horatio Hubert Hugh Ian
+			James Jeremy John Leopold Lester Martin Nigel Oswald Max
+			Percy Reginald Richard Robert Russell Stanley Thomas Wallace William Winston Zachary Jake
+		  }
+	}
+	female = {
+		names = { Elizabeth Anne }
+	}
+	surnames = { 	Allenby Battemberg Beatty Beresford Brown Buller Butler Campbell Cardigan Churchill
+			Cochrane Cockburn Dundas Fisher French Gough Grant Grenfell Haig Murphy
+			Hamilton Hardinge Havelock Hope Jellicoe Kitchener Lyons Madden Milne Montgomery
+			Moresby Mundy Napier Plummer Ragland Roberts Seaton Seymour Collin
+			Smith Stewart Thesiger Tyron Tyrwhitt Williams Windsor Wolseley Wood Leiper Roberts
+			
+		}
+	callsigns = { Stubborn Arrow "The King" Eagle Hangover Striker Chase "One Wing" Pickle Thief Thunder Lightning Storm Target Hawk Fox Dog Sparrow Sunrise "Night Owl" Butcher Cocky Hawkeye Killer Mick Brandy "The Baron" }
+}
+
+SOV = {
+	male = {
+		names = { Aleksander Alexei Andrei Anton Boris Dmitry Fyodor Gennady 
+                                 Giorgi Grigoriy Igor Ilya Ivan Kirill Konstantin Lavr Leonid Lev Maxim 
+                                 Mikhail Nikita Nikolai Oleg Pavel Pyotr Roman Semyon Sergei 
+                                 Valery Vasily Viktor Vladimir Vladislav Yegor Yevgeny Yuri
+		}
+	}
+	female = {
+		names = { Jelena Ludmila }
+	}
+	surnames = { 
+			Alexseyev Antonov Azarov Badanov Brusilov Budyonny Chibisov Denikin 
+                        Dragomirov Frolov Golivin Grishin Gurko Ivanov Ivannikov Konev Konstantinov Kornilov 
+                        Kolchak Kuropatkin Lazarev Makarov Menshikov Nakhimov Nebogatov 
+                        Nikolaevich Nikitin Ostrovsky Pavlov Putyatin Romanov Rozhestvensky Skobelev 
+                        Shuvalov Surkov Tukhachevsky Yegorov Yudenich Vorontsov Voroshilov Zavoyko
+	
+	}
+	callsigns = { Anvil Hammer Fury Arrow Storm Bear "White Lily" Devil Eagle Falcon Fox Snowflake Greasy Guardian Gunman Hawk Hardball Howl Blizzard Husky Ice Killer Steel Iron Skull Striker Thunder Warrior Wardog Vodka }
+}
+
+FRA = {
+	male = {
+		names = {  
+		Achille Adolphe Adrien Aimable Alphonse Amédée Antoine Armand August Augustin
+		Charles Daniel Denis Édouard Elie Éttiene Eugène Félicien Félix Fernand
+		François Frédéric Georges Guillaume Gustave Henri Hubert Hugo Jacques Jean
+		Joseph Jules Julien Lazare Léopold Leroy Louis Lucien Matthieu Michel
+		Napoléon Nicolas Patrice Paul Philippe Pierre Robert Thibaut Thierry Thomas
+		
+		 }
+	}
+	female = {
+		names = { Anne Marie }
+	}
+	surnames = {
+		Anthoine "Baraguey d'Hilliers" Bazaine Billot Bosquet "Boué de Lapeyrère" Bouët-Willaumez Boulanger Bourbaki
+		Bugeaud Caillard Canrobert Courbet Cousin-Mountauban Davout "de Castellane" "de Castelnau" 
+		"de Langle de Cary" "de MacMahon" "de Montaignac" "de Saint Arnaud" d'Orleans Dubail Dubois Duchêne Dupetit-Thouars Exelmans
+		Foch Forey "Franchet d'Espèrey" Gallieni Gouraud Guillaumat Hamelin Harispe Hoche Humbert
+		Jaurès Joffre Lebouef Lyautey Murat "Ney d'Elchingen" Nivelle Péllissier Petain Vaillant
+	}
+	callsigns = { "Draco" "Fast" "Tiger" "Sparrow" "Ripper" "Sundance" "Toad" "Twitch" "Farmer" "Weasel" "Target Practice" "Invisible" "Beach Boy" "Princess" "The Mute" "Carpenter"}
+}
+
+ITA = {
+	male = {
+		names = { 
+			Alessandro Alfonso Ambrogio Amedeo Andrea Angelo Antonio Benito Camillo Carlo
+			Cesare Costanzo Davide Enrico Ettore Fabrizio Faustino Federico Felice Ferdinando
+			Fiorenzo Francesco Gaetano Gennaro Girolamo Giulio Giuseppe Guglielmo Innocenzo Leopoldo
+			Luigi Marco Massimo Matteo Nicola Oreste Paolo Pasquale Pietro Prospero
+			Raffaele Roberto Ruggiero Silvio Simone Tancredi Ugo Umberto Vincenzo Vittorio
+		
+		  }
+	}
+	female = {
+		names = { Maria Anna }
+	}
+	surnames = {
+		Acton Albricci Badoglio Baldissera Baratieri Bava-Beccaris Cadorna Cagni Canevaro Capello
+		Caviglia Ceccherini Cialdini Cusani Dezza "di Robilant" "di Savoia"
+		Emo Fanti Fara Filomarino Garibaldi Giardino Govone "La Màrmora" Mambretti 
+		Menabrea Orengo Pallavicino Pecori-Giraldi  Pelloux Perruchetti Pianelli Porro
+		Presbitero Ramorino Ricotti-Magnani Sacchi Saletta Sanna Solari Vaccari Zupelli
+	
+	 }
+	callsigns = { Buzzard Dusty Falcon Hawk Hammer Viper Banshee "The Baron" Lightning Duce Raven "Two Shot" Rosso }
+}
+
+USA = {
+	male = {
+		names = { 
+		
+			Adam Alexander William Henry Michael Samuel Joshua George John Matthew Mark Luke Lucas Jeffrey Ulysses 
+			Joseph Charles Russell Benjamin Robert Christopher Richard Chester Lafayette Nathaniel Francis James Donald Cyrus Ambrose
+			Edward Eugene Augustus Norton Abner Isaac Amos Thomas Randolph
+			Robert Jesse James Nathan George Joseph John Patrick Albert Braxton William Ambrose Jubal Richard 
+			Lewis Edmund Leonida Benjamin Wade Daniel Thomas Jonathan Stonewall Lemual Sterling Raphael Kirby Pierre 
+			Jonas Frank Charles Peter Rand Leslie Howard Malvin Oscar Henry Simon Edward Gideon Isaac Evander Jerome Alfred Cadmus
+			Carnot Ezra Wilton Hamilton Matthew Richard Hiram Thomas Elkanah John William James Albert Wilburn Walter Hinchie Samuel Benjamin 
+			Henry Allison Horace Felix Jerome Lawrence Alexander Louis Steven Zach
+		
+		  }
+	}
+	female = {
+		names = { Mary Jane }
+	}
+	surnames = { 
+		Smith Washington Grant Sherman Chamberlain Powell Clemens Abbott Abercrombie Allen Ames Anderson Barkhauer Andrews Appleton
+		Armstrong Arthur Atkins Asboth Babcock Baker Pope Banks Barnard Barnes Barnum Barry Barstow Bartlett Bates 
+		Baxter Beatty Belknap Benton Blair Blunt Bradley Brown Buell Buford Burnside Butler Caldwell Campbell Carr
+		Chapman Chipman Clayton Coburn Connor Conrad Cook Cooper Crittenden Custer Davies Davis Doubleday Ewing Farnsworth 
+		Ford Forsyth Foster Franklin Fry Gilbert Gregg Griffin Halleck Hamlin Hancock Harrison Hatch Hayes Heintzelman
+		Hooker Howard Hunter Jackson Johnson Jones Keyes Kimball Lyon McArthur McClellan McCook McDowell Meade Mitchell
+		Morgan Paine Phelps Porter Potter Reynolds Rice Rhodes Robinson Rosencrans Saloman Schenck Schofield Scott Sedgwick
+		Seward Sheridan Sickles Sprague Stevens Stevenson Stone Sullivan Taylor Tyler Wade Wadsworth Wallace Ward Warner
+		Wilson Wright Young Lee Jackson Johnson Beauregard Stuart Longstreet Forrest Pickett Mosby Cleburne Hood Breckenridge Bragg 
+		Barksdale Early Hill Ewell Morgan Armistead Semmes Smith Hampton Polk Cheatham Wheeler Pemberton Gordon Hardee Floyd Price 
+		Wise "Van Dorn" Loring Buckner Taylor Williams French Gibbs Hindman Anderson Sibley Garnett Magruder Pillow McLaws Rodes Heth 
+		Pender Trimble Kershaw Wofford Kemper Law Robertson Benning Hays Walker Iverson Wilcox Mahone Wright Pettigrew Archer 
+		Davis Lane Posey Scales Warner Imboden Jenkins Bee Ector Gano Granbury Green Greer Gregg Hardeman Harrison Hood Johnston King Lane Mabry Maxey McCulloch Moore 
+		Nelson Randal Robertson Ross Rosser Scurry Steele Terrell Waterhouse Waul Wharton Whitfield Wigfall Young Bowie Travis Houston
+		Wells Holmgren
+
+	}
+	callsigns = { "Goose" "Iceman" "Maverick" "Apollo" "Animal" "Boom-Boom" "Badger" "Brick" "Cajun" "Challenger" "Chip" "Eagle" "Ghost" "Hawk" "Jaws" "Moses" "Mad Dog"}
+}
+
+JAP = {
+	male = {
+		names = { 
+		Aritomo
+		Goro Gentaro Gonnohyoe
+		Heihachiro Hiroshi Hikonojo Hyoe Hayao
+		Iwao
+		Jiro Jinzaburo
+		Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi
+		Maresuke Masujiro Michisura Masatake Mitsuomi Mitsue Mineo
+		Nariaki Nobuyoshi
+		Rokuro
+		Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku
+		Takayoshi Takamori Toshimichi Tsugumichi Tadakuni Tomonosuke Taro Toshiyoshi Tetsutaro Taruhito Takeaki Tamemoto Tomasaburo
+		Yoshika Yoshinobu Yoshimichi Yoshida Yasukata Yahachi Yusaku Yoshifuru Yoshinori Yasuyoshi
+		 }
+	}
+	female = {
+		names = { Aimi Asami Asuka }
+	}
+	surnames = { 
+		Arisugawa Arichi Akiyama Araki
+		Dewa
+		Enomoto
+		Hasegawa Honjo
+		Ito Inoue Ichinohe Itagaki
+		Kido Kuroda Katsura Kodama Kabayama Kawamura Kuroki Kawakami Kamimura Kataoka Kamio Kato Kanin Katsu
+		Makino Muto Minami Masaki Matsudaira
+		Nakamuta Nogi Nire Nozu
+		Okubo Oyama Omura Oku Okada Osumi
+		Saigo Suzuki Sato Sakura Shibayama Shimamura Shirakawa
+		Togo Takashima Tsuboi Tachibana Terauchi Tamon Takasugi Tokugawa
+		Uehara Uryu Ugaki Ueda
+		Yamagata Yamamoto Yamakawa Yashiro Yui Yamashita Yamaya
+	
+	}
+	callsigns = { Viper Lightning Devil Dragon Fury Bat Beer Sake Demon Dirty Lance Panther Shogun Vampire "War Lord" }
+}
+
+
+
+
+
+
+###############################################################
+# Scandinavia
+###############################################################
+
+SWE = {
+	male = {
+		names = { Dan David Fredrik Gustav Johan Martin Olof Nils Peter Per Dennis Alexander Felix Magnus 
+		Tobias Erik Niklas Björn Emil Robin Jonas John Rikard Daniel Anton Andreas
+		}
+	}
+	female = {
+		names = { Anna Linda Sara Caroline Eira }
+	}
+	
+	surnames = { Andersson Anward Björk Johansson Kiby Lind Norrevik Palmqvist Zetterman Wester Cornelius
+			Hasselström Knubb Sjöman Dahlberg Borg Wendel Sparrhult Oltner Hemmingsson Jenelius
+			Nisshagen Karlsson Bodlund Elgerot Lundström Blomberg Viklund Lindgren Lagerqvist
+			Brolin Cederholm Wickerström Tisander Rickne Ivarsson Åslund Sjöberg Norrevik Ekre
+			Sjöberg Lerström Hargelid Carlberg Ström Hultdin Renström
+	 }
+}
+
+
+DEN = {
+	male = {
+		names = { Aage Adam Alber Anders Asmund Axel Carl Christian Edvard Edvin
+		Erik Folke Frederik Georg Hannibal Hans Henrik Herman Hugo Ivar Jakob
+		Jacob Johan Julius Knud Ludvig Magnus Michael Niels Olav Otto
+		Peter Poul Sigurd Sven Tage Thomas Thorvald Ukrik Valdemar Vilhelm  }
+	}
+	female = {
+		names = { Karen Alma Elsa Else Monica }
+	}
+	surnames = { 
+		Ahlefeldt Asp-Persson Berger Bonde Carlsen Dannemand Danneskjold-Samso  Eberlin Falsen
+		Folsach Güntelberg Gyldenfeldt Haack Hambro Haxthausen Juul Klauman Krogh Laessoe Hansen Have
+		Leuenbach Lovenbalk Michaelsen Mylius Neergaard Obelitz Oxholm Reventlow Rosenkrantz Schack-Schackenborg
+		Stemman Suenson Thygeson Trampe Urne  Wadenstierna Wedel-Heinen Zytphen-Adeler 
+		}
+	callsigns = { }
+}
+
+
+
+###############################################################
+# Eastern Europe
+###############################################################
+
+
+HUN = {
+	male = {
+		names = { 
+			Alajos Albert Álmos Anasztáz András Arisztid Aurél Béla Benedek Béni
+			Bertalan Dániel Dávid Edvárd Éliás Erno Ferencz Gábor Gábriel Gáspár
+			György Gyula Ignác Imre István Izidor János József Kálmán
+			Károly Katalin Kelemen Krisztian Lajos László Manó Mihály Mór Myklós
+			Ödön Ottó Péter Rafael Sándor Simon Tivadar Vilmos Virág Zsigmond
+		}
+	}
+	female = {
+		names = { }
+	}
+	surnames = { 
+		Vajlok Andrássy Apponyi Aulich Bacher Baross Batthyány Beöthy Bothmer Damjanich Dessewffy
+		Egressy Farkas Goldziher Gungl Hauszmann Heller Horthy Izsó
+		Joseffy Katona Kaufman Kéler Kiss Knezich Kogutowicz Lahner Lázár 
+		Liszt Mikszáth Molnár Nagy-Sándor Österreicher Ottinger Perczel Poeltenberg Reményi
+		Rohr Schweidel Széchenyi Szemere Szlávic Tersztyansky Török Varga Vécsey
+	}
+	callsigns = { }
+}
+
+###############################################################
+# Western Europe
+###############################################################
+
+HOL = {
+	male = {
+		names = { 
+			Adriaan Albert Anthony Antonius Berend Bodo Carsten Christiaan Cornelis Dirk Ferdinand Freek Frits Gerard Godfried Govert Hendrik Henri Jacob Jacobus Jan "Jan Willem" Johan Johannes Laurens Mathias Matthijs Nicolaas Peter Petrus Philippus Pieter Quirinus Sijmen Theodorus Tjerk Willem
+		 }
+	}
+	
+	female = {
+		names = { Coba Corrie Frieda Hannie Helena Ina Jet Joke Miep Reina Truus }
+	}
+
+	surnames = { 
+	Boers "'t Mannetje" Best "Bischoff van Heemskerk" "de Visser" "den Hollander" "den Ouden" "Jacometti" "van den Bent" "van den Briel" "van den Hof" "van der Bijl" "van Helsdingen" "van Liempd" "van Setten" "van Voorst tot Voorst" "van Zinnicq Bergmann" "Wittert van Hoogland" Bosch Bruggink Bruinier Buijs Buurman Carstens "den Breejen" Elias Folmer Giesen Ham Harberts Hilberdink Hoogewerff Hoving Jaapies Janssen Jolles Kaak Kraak Krouwel Kuiper Landzaat Leegstra Lukkien Maas Migchelbrink Reijnierse Rijnders Roelofsen Sandberg Scherpenhuijzen Schippers Steen Tebrunsvelt Varwijk Verhoef Visscher Vos Winkelman
+	  }
+}
+
+
+
+IBE = {
+	male = {
+		names = { 
+			Agustín Alberto Alejandro Alfonso Álvaro Antonio Arsenio Augusto Baldomero
+			Baltasar Benito Bernardino Bernardo Calixto Carlos Celestino Claudio Cristobal Dámaso
+			Diego Dionisio Eduardo Emilio Estanislao Federico Felipe Félix Fernando Francisco
+			Gabino Gabriel Gaspar Genaro Gonzalo Ignacio Isidro Jacobo Jaime
+			Joaquín José  Juan Julio Leopoldo Lorenzo 
+			Luis Manuel Marcelo Mariano Mateo Melchor Miguel Nicolás Pablo Pascual
+			Pedro Rafael Raimundo Ramón Ricardo Santiago Sebastián Segismundo Valeriano Vicente 
+		  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { 
+		Blázquez
+		Acuña Aguirre Allendesalazar Alonso Álvarez  Aranda  Asensio
+		Aznar Barradas Bugallal Cabrera Cano Cervera "de Albornoz" 
+		"de Carvajal" "de la Fuente" "de Orleans" Díaz Espartero Fernández   Franco 
+		García  González Heredia Hernández Herrera Hevia  Linares López 
+		Maroto Márquez Martínez-Campos Maura Menéndez Miaja Millán-Astray Mina Mola Muñoz 
+		Narváez O'Donnell Ortega Pavía Pérez  Rodríguez Rojo Ruiz 
+		Sanjurjo Serrano Silvestre Topete Valdés Varela Villapol Villar Weyler Yagüe
+	
+	
+	}
+	callsigns = { }
+}
+
+###############################################################
+# Middle East
+###############################################################
+
+SFR = {
+	male = {
+		names = { Aziz Shams Abbas Abolghasem Abdolhossein Abdolsamad Abdolazim Ahmad Ali Bahram
+			Fazlollah Hamzeh Hasan Karim Mahmoud  Mohammad Murad Muhsin  Nosret Reza  
+			Afshin  Ardashir Aria Arshad Arman Armand Ammar Amir Arash Arvin Atash
+			Bijan Babak Bardia Basir Dalir Dariush Derafsh Ebrahim Ervin Ehsan Esmail Izad
+			Farhad Farbod Farrokh Farshid Hamid Hassan Hossein Hormuzd Jamshid Kamran Kasra Khashayar 
+			Kourosh Khosrow Mazdak Mazdan Maziar Mehran Manuchehr Massoud Mehrdad Marzban Mehdi Milad Mir 
+			Omid Papak Parsa Parviz Payam Pedram Piruz Pouria Ramin Rexa Rostam Sadegh Sassan Sepehr 
+			Shahin Shapour Shahryar Shervin Sohrab Soroush Turan Vahid Vandad Yousef Zand Zartosh Zurvan
+		}
+	}
+	female = {
+		names = { Mehrnaz Farnaz }
+	}
+	surnames = {
+		Faghihinejad Jorjani Airom Ansari Ayrum Buzarjomehri Davallu Farhani Jahanbani Kashani 
+		Khuzai Meshhedi Nakhchevani Pesyan Rokni Shafaei Shahbakhti Tahmasebi Abed Ahura 
+		Ebrahimi Esfahani Esfandiari Farrokhzad Farahmand Ghorbani Ghademi Homayoun Hooshang
+		Jahandar jahangir Jahanshah Jamshidi Kavoosi Khadem Khiabni Khorasani Khorram-din Lajani Madani
+		Mazdaki Mazdani Mehregan Mazandarani Mokri Mohsen Paria Parsi Pouran Rahbar Rajavi Rezaei Rostamian 
+		Sassani Shamshiri Shir-Del Shirazi Tehrani Turani Tabrizi Zahedi
+	}
+	callsigns = { }
+}
+
+SYR = {
+	male = {
+		names = {  
+			"Abd Allah" "Abd al-Karim" "Abd al-Malik" "Abd al-Qadir" "Abd al-Rahman" "Abu Bakr" Ahmad Ali 
+			Fawzi Fuad Halil Hasan Hisham Ibrahim Ishaq Iskandar Ja'far Jamal Kamil Khalid 
+			Muhammad Mustafa "Nur al-Din" "Sa'd al-Din" Salim  Sa'ud Shukri
+			Tawfiq Umar Uthman Yahya Yusuf Zafir 		
+		}
+	}
+	female = {
+		names = { }
+	}
+	surnames = { 
+		"ibn Abd Allah" "ibn Abd al-Qadir" "ibn Abu Bakr" "ibn Ahmad" "ibn Ali"
+			"ibn Fuad" "ibn Halil" "ibn Hasan" "ibn Hisham" "ibn Ishaq" "ibn Ja'far" "ibm Kamil" "ibn Khalid" 
+			"ibn Muhammad" "ibn Mustafa" "ibn Salim"  
+			"ibn Umar" "ibn Uthman" "ibn Yusuf"
+			"al-Najdi" "al-Hijazi"   
+	
+	}
+	callsigns = { }
+}
+
+###############################################################
+# Asia
+###############################################################
+AST = {
+	male = {
+		names = {  
+			John Alf Adrian Louis Hallam Henry Shane Stafford William Frederick Thomas Ronald Lawrence Bruce Ray Stuart Brian Bob Scott Guy
+		 }
+	}
+	female = {
+		names = { }
+	}
+	surnames = {
+		Hope Tennyson Northcote War Thesinger Denman Forster Baird Issac Stewart Fisher Cook Davis Armstrong Anderson Mitchell MacKenzie
+	
+	 }
+	callsigns = { }
+
+	ace = {
+		name = Leslie
+		callsign = Les
+		surname = Clisby
+		type = fighter
+	}
+	ace = {
+		name = "John"
+		callsign = Wad
+		surname = Waddy
+		type = fighter
+	}
+	ace = {
+		name = Keith
+		callsign = Bluey
+		surname = Truscott
+		type = fighter
+	}
+	ace = {
+		name = Paterson
+		callsign = Pat
+		surname = Hughes
+		type = fighter
+	}
+	ace = {
+		name = Adrian
+		callsign = Tim
+		surname = Goldsmith
+		type = fighter
+	}
+	ace = {
+		name = Clive
+		callsign = Killer
+		surname = Caldwell
+		type = fighter
+	}
+}
+NZL = {
+	male = {
+		names = {  
+			John Alf Adrian Louis Hallam Henry Shane Stafford William Frederick Thomas Ronald Lawrence Bruce Ray Stuart Brian Bob Scott Guy
+		 }
+	}
+	female = {
+		names = { }
+	}
+	surnames = {
+		Hope Tennyson Northcote War Thesinger Denman Forster Baird Issac Stewart Fisher Cook Davis Armstrong Anderson Mitchell MacKenzie
+	
+	 }
+	callsigns = { }
+}
+
+
+CHI = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+
+KOR = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+
+
+###############################################################
+# Africa
+###############################################################
+
+###############################################################
+# North America
+###############################################################
+CAN = {
+	male = {
+		names = { 
+			Charles John Frederick Douglas Patrick Leonard Henry Arthur Alexander Campbell Gilbert 
+			Albert Victor Julian Francis James  
+		}
+	}
+	female = {
+		names = { }
+	}
+	surnames = { 
+			Grey Elliot Hamilton Gordon Stanley Campbell Ross Petty-Fitzmaurice Windham Young Doyle 
+			Hastings Blackwood MacDougall 
+	}
+	callsigns = { }
+}
+
+MEX = {
+	male = {
+		names = { 
+			David Adrián Agustín Álvaro Anastasio Andrés Ángel Antonio Bernardo Emiliano Emilio
+			Enrique Ernesto Felipe Félix Francisco "Francisco Javier" Gabriel Gaspar Gregorio Ignacio
+			Jerónimo Joaquín José "José Manuel" "José María" Juan "Juan Bautista" Justo Lázaro Manuel
+			Mariano Martín Melchor Miguel Nicolás Pablo Pascual Pedro Porfirio Ramón
+			Ricardo Rómulo Salvador Sebastián Tomás Valentín Valeriano Venustiano Vicente Victoriano
+		  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { 
+		Martinez Almonte Álvarez Arista Barragán Bocanegra Bravo Bustamante Canalizo Carranza Caserta
+		Cervantes Corona Corra "de Ampudia" "de Cos" "de Itúrbide" Díaz Echeverría Escandón Escobedo
+		Fagoaga "Fernández del Valle" Flores Gómez González Guerrero Huerta Kosterlitzky "López de Santa Ana" Lozada
+		"Martínez del Río" Mejía Miramón Múzquiz Obregón Pedraza Pimentel Reyes "Rincón Gallardo" Robles
+		Ruíz Salas Sánchez "Sarmaniego del Castillo" "Vázquez de la Cadena" Villa Woll Zapata Zaragoza Zuloaga		
+	}
+	callsigns = { }
+}
+
+
+###############################################################
+# South America
+###############################################################
+BRA = {
+	male = {
+		names = { 
+			Afonso Antônio Artur Augusto Aurélio Benjamin Cândido Carlos Celso Custódio
+			Delfim Deodoro Eduardo Emílio Epitácio Ernesto Fábio Fernando Filipe Floriano
+			"Francisco de Paula" "Francisco Xavier" Federico Gaspar Gastão Getúlio Henrique Hermes Humberto Isaías
+			João Joaquim José Júlio Juscelino Luís Manuel "Marco Antônio" Mário Miguel
+			Nereu Nilo Paulo Pedro Prudente Silviano Tancredo Urbano Venceslau Vital
+		  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { 
+		Barreto Bernardes Bittencourt Brandão Bras "Cabral da Silva" Caldwell Constant Costa "da Camara"
+		"da Costa" "da Fonseca" "de Aguiar" "de Barros" "de Beaurepaire-Rohan" "de Bragança" "de Carvalho" "de Itapevi" "de Lima e Silva" "de Melo"
+		"de Noronha" "de Oliveira" "de Orleans" "de Souza Neto" "de Suruf" Dutra Fragoso Frontin Galvão Jordão
+		Labatut Lopes Maciel Mallet Marques "Marques de Sousa" Maurity Moreira Osório Peixoto
+		Pena Pessoa Pinto Rondon "Saldanha da Gama" Santos Soares Tavares Vargas Wandenkolk
+	}
+	callsigns = { }
+}
+
+
+ARG = {
+	male = {
+		names = { 
+			Agustín Antonio Atanasio Baltasar Bartolomé Bernardino Bernardo Cándido Carlos Cecilio
+			Cirilo Claudio Domingo Emiliano Esteban Eugenio Evaristo Facundo Faustino Feliciano
+			Félix Francisco Fructuoso Gabriel Gaspar Guillermo Hipólito Ignacio José "Juan José"
+			"Juan Manuel" "Juan Ramón" Julio Justo Lorenzo Luis Manuel Marcial Máximo Miguel
+			Nicolás Patricio Pedro Ramón Roberto Roque Salvador Santiago Torcuato Venancio
+		  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { 
+		Aguirre Avellaneda Báez Balcarce Bareiro Berro Brown Caballero Cruz "de Alvear"
+		"de la Plaza" "de Rosas" "de Urquiza" Derqui Díaz Ellauri Escobar Flores González Jovellanos
+		Juárez Justo Latorre López Machaín Maza Meza Mitre Paz Pedernera
+		Pellegrini Pereira Quintana Rivarola Rivera Roca "Rodríguez de Francia" Rojas Rondeau Sáenz
+		Santos Sarmineto Solano Tajes Uriburu Viamonte Vidal Williman Wisner Yrigoyen
+	
+	}
+	callsigns = { }
+}
+
+GRA = {
+	male = {
+		names = { 
+			Adolfo Agustín Alejandro Andrés Aníbal Antonio Aureliano Arcadio Bartolomé Bernardo David Diego
+			Domingo Eduardo Emiliano Emilio Enrique Esteban Eusebio Federico Felipe Francisco
+			Germán Hernando Hilarión Ignacio Isidoro Ismael Jorge José "José Miguel" Juan
+			"Juan Antonio" "Juan Francisco" Justo Ladislao Luis Manuel Mariano Miguel Narciso
+			Nicolás Pablo Patricio Pedro Ramón Rufino Ruperto Santiago Sebastián Severino Tomás
+		
+		  }
+	}
+	female = {
+		names = { Amaranta Úrsula Rebeca Remedios Sofía }
+	}
+	surnames = { 
+		Abaroa Ágreda Altamirano Arteaga Ballivián Baquedano Belzú Blanche Blanco Buendía Bulnes
+		Cabrera Calvo Campero Castilla Corrico Daza "de la Cruz" "de Santa Cruz" "de Velasco" "de Vidal"
+		Echenique Errázuriz Fernández Figueroa Franco Freire Gamarra Gorostiaga Grau
+		Guilarte Iguarán "La Mar" Latorre Lynch Melgarejo Monje Montero Montes Montt Orbegoso
+		Pezet Rebolledo Ruíz-Tagle Salaverry "Santa María" Siles Sotomayor Toro Valencia Zañartu Zapata
+	
+	}
+	callsigns = { }
+}
+
+PRU = {
+	male = {
+		names = { 
+			Adolfo Agustín Alejandro Andrés Aníbal Antonio Bartolomé Bernardo David Diego
+			Domingo Eduardo Emiliano Emilio Enrique Esteban Eusebio Federico Felipe Francisco
+			Germán Hernando Hilarión Ignacio Isidoro Ismael Jorge José "José Miguel" Juan
+			"Juan Antonio" "Juan Francisco" Justo Ladislao Luis Manuel Mariano Miguel Narciso
+			Nicolás Pablo Patricio Pedro Ramón Rufino Ruperto Santiago Sebastián Severino Tomás
+		
+		  }
+	}
+	female = {
+		names = { }
+	}
+	surnames = { 
+		Abaroa Ágreda Altamirano Arteaga Ballivián Baquedano Belzú Blanche Blanco Bulnes
+		Cabrera Calvo Campero Castilla Corrico Daza "de la Cruz" "de Santa Cruz" "de Velasco" "de Vidal"
+		Echenique Errázuriz Fernández Figueroa Franco Freire Gamarra Gorostiaga Grau
+		Guilarte "La Mar" Latorre Lynch Melgarejo Monje Montero Montes Montt Orbegoso
+		Pezet Rebolledo Ruíz-Tagle Salaverry "Santa María" Siles Sotomayor Toro Valencia Zañartu Zapata
+	
+	}
+	callsigns = { }
+}

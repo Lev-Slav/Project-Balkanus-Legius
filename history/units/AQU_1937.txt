@@ -79,7 +79,7 @@ units = {
 		name = "1. Division de Infantaria"
 		location = 9737
 		division_template = "Division de Infantaria"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "AQU" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "AQU" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -87,7 +87,7 @@ units = {
 		name = "2. Division de Infantaria"
 		location = 9737
 		division_template = "Division de Infantaria"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "AQU" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "AQU" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -95,7 +95,7 @@ units = {
 		name = "3. Division de Infantaria"
 		location = 9737
 		division_template = "Division de Infantaria"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "AQU" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "AQU" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -103,7 +103,7 @@ units = {
 		name = "1. Division de Cavalaria"
 		location = 9737
 		division_template = "Division de Cavalaria"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "AQU" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "AQU" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -111,7 +111,7 @@ units = {
 		name = "4. Division de Infantaria"
 		location = 6657
 		division_template = "Division de Infantaria"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "AQU" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "AQU" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -119,7 +119,7 @@ units = {
 		name = "5. Division de Infantaria"
 		location = 9909
 		division_template = "Division de Infantaria"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "AQU" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "AQU" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -127,7 +127,7 @@ units = {
 		name = "6. Division de Infantaria"
 		location = 743
 		division_template = "Division de Infantaria"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "AQU" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "AQU" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -135,7 +135,7 @@ units = {
 		name = "7. Division de Infantaria"
 		location = 11834
 		division_template = "Division de Infantaria"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "AQU" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "AQU" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -143,7 +143,7 @@ units = {
 		name = "8. Division de Infantaria"
 		location = 6613
 		division_template = "Division de Infantaria"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "AQU" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "AQU" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
@@ -151,8 +151,101 @@ units = {
 		name = "9. Division de Infantaria"
 		location = 620
 		division_template = "Division de Infantaria"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "AQU" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "AQU" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
+	}
+
+	##### NAVAL UNITS #####
+	navy = {
+		name = "Primera Flota"
+		base = 9737
+		location = 9737 # Bordeaux
+		ship = { name = "ON Dmitar" definition = battleship equipment = { battleship_1 = { amount = 1 owner = AQU } } }
+		ship = { name = "ON Carloman III" definition = destroyer equipment = { light_cruiser_2 = { amount = 1 owner = AQU } } }
+		ship = { name = "ON Toulouse" definition = destroyer equipment = { light_cruiser_1 = { amount = 1 owner = AQU } } }
+		ship = { name = "ON Montpellier" definition = destroyer equipment = { light_cruiser_1 = { amount = 1 owner = AQU } } }
+		ship = { name = "ON Toulon" definition = destroyer equipment = { light_cruiser_1 = { amount = 1 owner = AQU } } }
+		ship = { name = "ON Gat" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AQU } } }
+		ship = { name = "ON Rainal" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AQU } } }
+		ship = { name = "ON Aigla" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AQU } } }
+		ship = { name = "ON Leon" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AQU } } }
+	}
+}
+
+### Air oob
+air_wings = {
+	### I. Ordenar Esquadrilha -- Sofia ###
+	19 = { 
+		# 1 Esquadrilha Avion de Caça
+		fighter_equipment_0 =  {	
+			owner = "AQU" 
+			amount = 100
+		}
+		name = "Esquadrilha Avion de Caca 1"
+	}
+
+	### II. Vazdušna Komanda -- Beograd ###
+	21 = { 
+		# Vazdušna Eskadrila 125		
+		fighter_equipment_0 =  {		
+			owner = "AQU" 
+			amount = 75
+		}
+		name = "Esquadrilha Avion de Caca 2"
+
+		# Bombarder Eskadrila 153	
+		tac_bomber_equipment_0 = {		
+			owner = "AQU" 
+			amount = 50
+		}
+		name = "Esquadrilha Bombardier 1"
+	}
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "AQU"
+		}
+		requested_factories = 3
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "AQU" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "AQU" 
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_1
+			creator = "AQU" 
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 50
 	}
 }

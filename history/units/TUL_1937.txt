@@ -35,7 +35,7 @@ units = {
 		name = "1. Firqat Musha"
 		location = 7011
 		division_template = "Firqat Musha"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "TUL" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "TUL" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}
@@ -43,7 +43,7 @@ units = {
 		name = "1. Firqat Musha"
 		location = 7011
 		division_template = "Firqat Musha"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "TUL" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "TUL" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}
@@ -51,7 +51,7 @@ units = {
 		name = "1. Firqat Alfursan"
 		location = 7011
 		division_template = "Firqat Alfursan"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "TUL" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "TUL" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}
@@ -59,7 +59,7 @@ units = {
 		name = "5. Firqat Musha"
 		location = 4076
 		division_template = "Firqat Musha"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "TUL" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "TUL" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}
@@ -67,7 +67,7 @@ units = {
 		name = "7. Firqat Musha"
 		location = 12725
 		division_template = "Firqat Musha"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "TUL" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "TUL" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}
@@ -75,7 +75,7 @@ units = {
 		name = "3. Firqat Musha"
 		location = 1086
 		division_template = "Firqat Musha"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "TUL" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "TUL" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}
@@ -83,7 +83,7 @@ units = {
 		name = "6. Firqat Musha"
 		location = 1086
 		division_template = "Firqat Musha"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "TUL" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "TUL" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}
@@ -91,7 +91,7 @@ units = {
 		name = "4. Firqat Musha"
 		location = 2097
 		division_template = "Firqat Musha"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "TUL" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "TUL" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}
@@ -99,7 +99,7 @@ units = {
 		name = "9. Firqat Musha"
 		location = 2097
 		division_template = "Firqat Musha"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "TUL" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "TUL" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}
@@ -107,7 +107,7 @@ units = {
 		name = "2. Firqat Alfursan"
 		location = 2097
 		division_template = "Firqat Alfursan"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "TUL" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "TUL" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}
@@ -115,7 +115,7 @@ units = {
 		name = "8. Firqat Musha"
 		location = 12883
 		division_template = "Firqat Musha"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "TUL" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "TUL" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}
@@ -123,7 +123,7 @@ units = {
 		name = "10. Firqat Musha"
 		location = 12727
 		division_template = "Firqat Musha"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "TUL" } }
+		force_equipment_variants = { infantry_equipment_0 = { owner = "TUL" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}

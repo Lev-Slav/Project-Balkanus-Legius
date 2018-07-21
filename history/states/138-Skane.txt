@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		owner = SWF
+		owner = SWE
 		victory_points = {
 			9279 5 
 		}
@@ -31,7 +31,7 @@ state={
 				coastal_bunker = 1
 			}
 		}
-		add_core_of = SWF
+		add_core_of = SWE
 	}
 
 	provinces={

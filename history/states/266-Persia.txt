@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		owner = SAF
+		owner = SFR
 		buildings = {
 			infrastructure = 4
 			arms_factory = 1
@@ -21,7 +21,7 @@ state={
 		victory_points = {
 			10837 10 
 		}
-		add_core_of = SAF
+		add_core_of = SFR
 	}
 
 	provinces={

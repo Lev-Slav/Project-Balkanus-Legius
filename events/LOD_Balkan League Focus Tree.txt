@@ -820,6 +820,7 @@ country_event = {
 	option = {
 		name = balkan_focus.2302.a
 		# Well I guess war it is!
+		set_global_flag = WWII
 		declare_war_on = {
 			target = SGF
 			type = take_state

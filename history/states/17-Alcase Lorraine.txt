@@ -25,7 +25,7 @@ state={
 			air_base = 5
 		}
 		add_core_of = FRA
-		add_core_of = FRF
+		add_core_of = FRA
 		1918.1.1 = {
 			buildings = {
 				11516 = {
@@ -44,8 +44,8 @@ state={
 			owner = NGF
 		}
 		1944.12.1 = {
-			controller = FRF
-			owner = FRF
+			controller = FRA
+			owner = FRA
 		}
 	}
 

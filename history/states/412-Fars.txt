@@ -10,7 +10,7 @@ state={
 
 	state_category = rural
 	history={
-		owner = SAF
+		owner = SFR
 		victory_points = {
 			8117 1 
 		}
@@ -26,7 +26,7 @@ state={
 				naval_base = 2
 			}
 		}
-		add_core_of = SAF
+		add_core_of = SFR
 	}
 
 	provinces={

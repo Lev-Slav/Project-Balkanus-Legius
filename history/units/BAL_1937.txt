@@ -121,7 +121,7 @@ units = {
 		name = "1. Pesadijska Divizija"
 		location = 11586
 		division_template = "Pesadijska Divizija"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "BAL" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "BAL" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
@@ -164,7 +164,7 @@ units = {
 		name = "2. Pesadijska Divizija"
 		location = 949
 		division_template = "Pesadijska Divizija"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "BAL" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "BAL" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
@@ -172,7 +172,7 @@ units = {
 		name = "3. Pesadijska Divizija"
 		location = 4109
 		division_template = "Pesadijska Divizija"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "BAL" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "BAL" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
@@ -180,7 +180,7 @@ units = {
 		name = "4. Pesadijska Divizija"
 		location = 11899
 		division_template = "Pesadijska Divizija"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "BAL" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "BAL" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
@@ -188,7 +188,7 @@ units = {
 		name = "5. Pesadijska Divizija"
 		location = 11818
 		division_template = "Pesadijska Divizija"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "BAL" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "BAL" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
@@ -196,7 +196,7 @@ units = {
 		name = "6. Pesadijska Divizija"
 		location = 9783
 		division_template = "Pesadijska Divizija"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "BAL" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "BAL" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
@@ -204,7 +204,7 @@ units = {
 		name = "7. Pesadijska Divizija"
 		location = 9914
 		division_template = "Pesadijska Divizija"
-		force_equipment_variants = { infantry_equipment_2 = { owner = "BAL" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "BAL" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
@@ -247,8 +247,8 @@ units = {
 	
 	navy = {
 		name = "1. Podmornica Flotila"
-		base = 6389
-		location = 6389  
+		base = 9809
+		location = 9809
 		ship = { name = "P-7" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAL } } }
 		ship = { name = "P-8" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAL } } }
 		ship = { name = "P-9" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAL } } }
@@ -256,8 +256,8 @@ units = {
 	}
 	navy = {
 		name = "4. Podmornica Flotila"
-		base = 6389
-		location = 6389
+		base = 9809
+		location = 9809
 		ship = { name = "P-11" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAL } } }
 		ship = { name = "P-12" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAL } } }
 		ship = { name = "P-13" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BAL } } }

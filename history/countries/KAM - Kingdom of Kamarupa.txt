@@ -14,7 +14,7 @@ set_technology = {
 
 # Rations 
 
-	fuel = 1 
+	# = 1 
 	rations = 1 
 }
 

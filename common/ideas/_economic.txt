@@ -87,7 +87,7 @@ ideas = {
 			available = {
 				OR = { 
 					has_government = paternal_autocrat
-					has_government = fascism
+					has_government = fascist
 					has_government = populist
 					has_government = national_socialist
 					has_government = leninist
@@ -127,7 +127,7 @@ ideas = {
 			available = {
 				OR = { 
 					has_government = paternal_autocrat
-					has_government = fascism
+					has_government = fascist
 					has_government = populist
 					has_government = national_socialist
 					has_government = leninist
@@ -168,7 +168,7 @@ ideas = {
 				threat > 0.15
 				OR = { 
 					has_government = paternal_autocrat
-					has_government = fascism
+					has_government = fascist
 					has_government = populist
 					has_government = national_socialist
 					has_government = leninist
@@ -344,7 +344,7 @@ ideas = {
 				has_war = yes
 				OR = { 
 					has_government = paternal_autocrat
-					has_government = fascism
+					has_government = fascist
 					has_government = populist
 					has_government = national_socialist
 					has_government = leninist
@@ -355,10 +355,6 @@ ideas = {
 				OR = {
 					has_idea = war_economy
 					has_idea = tot_economic_mobilisation
-				}
-				OR = {
-					NOT = {	tag = SOV }
-					NOT = { has_opinion_modifier = MR_pact }
 				}
 			}
 			

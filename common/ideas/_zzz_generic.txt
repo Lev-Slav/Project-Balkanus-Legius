@@ -105,7 +105,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = fascism
+				has_government = fascist
 			}
 
 			removal_cost = -1
@@ -114,7 +114,7 @@ ideas = {
 
 			
 			modifier = {
-				fascism_drift = 0.1
+				fascist_drift = 0.1
 			}
 		}
 
@@ -151,16 +151,16 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = fascism
+				has_government = fascist
 			}
 
 			removal_cost = -1
 
-			picture = generic_fascism_drift_bonus
+			picture = generic_fascist_drift_bonus
 			
 			modifier = {
-				fascism_drift = 0.1
-				fascism_acceptance = 85
+				fascist_drift = 0.1
+				fascist_acceptance = 85
 			}
 		}
 		
@@ -220,38 +220,6 @@ ideas = {
 				social_democrat_acceptance = 85
 				social_conservative_acceptance = 85
 				market_liberal_acceptance = 85
-			}
-		}
-		
-		soviet_german_friendship = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				OR = {
-					AND = {
-						tag = GER
-						has_government = national_socialist
-						SOV = {
-							has_government = stalinist
-						}
-					}
-					AND = {
-						tag = SOV
-						has_government = stalinist
-						GER = {
-							has_government = national_socialist
-						}
-					}
-				}
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				stalinist_acceptance = 100
-				national_socialist_acceptance = 100
 			}
 		}
 		
@@ -345,7 +313,7 @@ ideas = {
 			allowed_civil_war = {
 				has_government = populist
 				has_government = paternal_autocrat
-				has_government = fascism
+				has_government = fascist
 				has_government = national_socialist
 			}
 			
@@ -374,7 +342,7 @@ ideas = {
 					has_government = left_wing_radical
 					has_government = populist
 					has_government = paternal_autocrat
-					has_government = fascism
+					has_government = fascist
 					has_government = national_socialist
 				}
 			}
@@ -403,7 +371,7 @@ ideas = {
 					has_government = left_wing_radical
 					has_government = populist
 					has_government = paternal_autocrat
-					has_government = fascism
+					has_government = fascist
 					has_government = national_socialist
 				}
 			}
@@ -432,7 +400,7 @@ ideas = {
 					has_government = left_wing_radical
 					has_government = populist
 					has_government = paternal_autocrat
-					has_government = fascism
+					has_government = fascist
 					has_government = national_socialist
 				}
 			}
@@ -442,7 +410,7 @@ ideas = {
 			picture = generic_pp_unity_bonus
 	
 			modifier = {
-				unity_factor = 0.05
+				stability_factor = 0.05
 			}
 		}
 	
@@ -466,7 +434,7 @@ ideas = {
 			}
 	
 			modifier = {
-				unity_factor = 0.05
+				stability_factor = 0.05
 				army_core_attack_factor = 0.1
 				army_core_defence_factor = 0.1
 			}
@@ -596,7 +564,7 @@ ideas = {
 			picture = generic_pp_unity_bonus
 			
 			modifier = {
-				unity_factor = 0.10
+				stability_factor = 0.10
 			}
 		}	
 
@@ -641,9 +609,9 @@ ideas = {
 			}
 		}
 
-		fascism_banned = {
+		fascist_banned = {
 
-			picture = generic_fascism_banned
+			picture = generic_fascist_banned
 
 			allowed = {
 				always = no
@@ -651,23 +619,23 @@ ideas = {
 
 			allowed_civil_war = {
 				NOT = {
-					has_government = fascism
+					has_government = fascist
 				}
 			}
 
 			modifier = {
-				fascism_drift = -0.05
+				fascist_drift = -0.05
 				national_socialist_drift = -0.05
 			}
 		}
 	}
 	
-	political_advisor = {
+	foreign_minister = {
 		# POLITICAL	
 		generic_communist_revolutionary = {
 			
 			allowed = {
-				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = AST tag = RAJ tag = CAN tag = SAF tag = CZE} }
+				NOT = { OR = { tag = BAL tag = ENG tag = SGF tag = FRA tag = VIZ tag = NUS tag = USA tag = CSA tag = AST tag = JAP tag = IND tag = IND tag = MOR} }
 				NOT = {
 					has_available_idea_with_traits = { idea = communist_revolutionary limit = 1 }
 				}
@@ -779,7 +747,7 @@ ideas = {
 	
 			do_effect = {
 				NOT = {
-					has_government = fascism
+					has_government = fascist
 				}
 			}
 	
@@ -1076,7 +1044,7 @@ ideas = {
 		}
 	}
 
-	political_advisor = {
+	minister_of_industry = {
 
 		generic_captain_of_industry = {
 

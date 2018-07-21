@@ -1,4 +1,4 @@
-﻿capital = 107
+﻿capital = 607
 
 oob = "BAL_1937"
 
@@ -65,7 +65,7 @@ set_technology = {
 #Random
 
 	rations = 1
-	fuel = 1 
+	# = 1 
 }
 
 
@@ -115,7 +115,7 @@ create_faction = League_Alliance
 
 			social_conservative = {
 
-				popularity = 10
+				popularity = 60
 			}
 		
 			market_liberal = {
@@ -181,7 +181,7 @@ create_field_marshal = {
 	defense_skill = 5
 	planning_skill = 5
 	logistics_skill = 3
-	id = 100
+	id = 600
 }
 
 create_field_marshal = {
@@ -193,7 +193,7 @@ create_field_marshal = {
 	defense_skill = 5
 	planning_skill = 2
 	logistics_skill = 6
-	id = 101
+	id = 601
 }
 
 create_field_marshal = {
@@ -205,7 +205,7 @@ create_field_marshal = {
 	defense_skill = 3
 	planning_skill = 6
 	logistics_skill = 3
-	id = 102
+	id = 602
 }
 
 create_corps_commander = {
@@ -217,7 +217,7 @@ create_corps_commander = {
 	defense_skill = 6
 	planning_skill = 3
 	logistics_skill = 4
-	id = 103
+	id = 603
 }
 
 create_corps_commander = {
@@ -229,7 +229,7 @@ create_corps_commander = {
 	defense_skill = 5
 	planning_skill = 3
 	logistics_skill = 4
-	id = 113
+	id = 613
 }
 
 create_corps_commander = {
@@ -241,7 +241,7 @@ create_corps_commander = {
 	defense_skill = 3
 	planning_skill = 5
 	logistics_skill = 3
-	id = 116
+	id = 616
 }
 
 create_corps_commander = {
@@ -253,7 +253,7 @@ create_corps_commander = {
 	defense_skill = 3
 	planning_skill = 2
 	logistics_skill = 1
-	id = 104
+	id = 604
 }
 
 create_corps_commander = {
@@ -265,7 +265,7 @@ create_corps_commander = {
 	defense_skill = 6
 	planning_skill = 4
 	logistics_skill = 2
-	id = 105
+	id = 605
 }
 
 create_corps_commander = {
@@ -277,7 +277,7 @@ create_corps_commander = {
 	defense_skill = 3
 	planning_skill = 6
 	logistics_skill = 3
-	id = 106
+	id = 606
 }
 
 create_corps_commander = {
@@ -289,7 +289,7 @@ create_corps_commander = {
 	defense_skill = 2
 	planning_skill = 4
 	logistics_skill = 3
-	id = 106
+	id = 606
 }
 
 create_corps_commander = {
@@ -301,7 +301,7 @@ create_corps_commander = {
 	defense_skill = 3
 	planning_skill = 3
 	logistics_skill = 2
-	id = 107
+	id = 607
 }
 
 create_corps_commander = {
@@ -313,7 +313,7 @@ create_corps_commander = {
 	defense_skill = 4
 	planning_skill = 3
 	logistics_skill = 3
-	id = 108
+	id = 608
 }
 
 create_corps_commander = {
@@ -325,7 +325,7 @@ create_corps_commander = {
 	defense_skill = 4
 	planning_skill = 3
 	logistics_skill = 2
-	id = 110
+	id = 610
 }
 
 create_corps_commander = {
@@ -337,7 +337,7 @@ create_corps_commander = {
 	defense_skill = 2
 	planning_skill = 4
 	logistics_skill = 4
-	id = 111
+	id = 611
 }
 
 create_corps_commander = {
@@ -349,7 +349,7 @@ create_corps_commander = {
 	defense_skill = 2
 	planning_skill = 1
 	logistics_skill = 2
-	id = 112
+	id = 612
 }
 
 
@@ -358,7 +358,7 @@ create_navy_leader = {
 	picture = "Portrait_Balkan_League_Nataniyel_Budayev.dds"
 	traits = { ironside }
 	skill = 4
-	id = 109
+	id = 609
 }
 
 create_navy_leader = {
@@ -366,5 +366,5 @@ create_navy_leader = {
 	picture = "Portrait_Balkan_League_Milan_Balasevic.dds"
 	traits = { seawolf }
 	skill = 4
-	id = 114
+	id = 614
 }

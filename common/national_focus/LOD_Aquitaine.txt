@@ -1,0 +1,2518 @@
+focus_tree = {
+	id = Aquitaine
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = AQU
+		}
+	}
+	default = no
+	focus = {
+		id = AQU_occitan_dawn
+		icon = GFX_goal_support_fascism
+		cost = 0.00
+		mutually_exclusive = {
+			focus = AQU_eliminate_eglise
+		}
+		x = 16
+		y = 0
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_global_flag = grantaire_eglise_dictatorship
+				}
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.1
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_eliminate_eglise
+		icon = GFX_goal_generic_secret_weapon
+		cost = 0.00
+		mutually_exclusive = {
+			focus = AQU_occitan_dawn
+		}
+		x = 61
+		y = 0
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_global_flag = no_grantaire_eglise_dictatorship
+				}
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.2
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_socialist_revolution
+		icon = GFX_goal_support_communism
+		cost = 0.00
+		mutually_exclusive = {
+			focus = AQU_restore_the_republic
+			focus = AQU_restore_monarchy
+		}
+		x = 76
+		y = 1
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1937.1.1
+				}
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.43
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_reformed_army
+		icon = GFX_goal_rhineland
+		cost = 0.00
+		x = 27
+		y = 10
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_global_flag = treaty_of_brest
+				}
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.9
+							army_experience = 100
+							add_ideas = reformed_army
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_expansionism
+		icon = GFX_goal_demand_sudetenland
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_occitan_dawn
+		}
+		x = 16
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_global_flag = grantaire_eglise_dictatorship
+				}
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.3
+							add_political_power = 50
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_restore_monarchy
+		icon = GFX_goal_generic_demand_territory
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_eliminate_eglise
+		}
+		mutually_exclusive = {
+			focus = AQU_restore_the_republic
+			focus = AQU_socialist_revolution
+			focus = AQU_restore_the_republic
+		}
+		x = 60
+		y = 1
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1937.1.1
+				}
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.28
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_expansionism
+		icon = GFX_goal_generic_position_armies
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_restore_monarchy
+		}
+		x = 57
+		y = 2
+			ai_will_do = {
+					factor = 5
+				}
+			available = {
+					date > 1938.1.1
+				}
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.29
+							add_ideas = AQU_expansionist_goals
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_restore_occitan_economy
+		icon = GFX_goal_generic_national_unity
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_expansionism
+			focus = AQU_expansionism
+		}
+		x = 16
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_global_flag = occitan_economic_issues
+				}
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.4
+							add_ideas = occitan_economic_solution_1
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_reduce_inflation
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_restore_occitan_economy
+		}
+		x = 10
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_global_flag = occitan_economic_issues
+				}
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.10
+							remove_ideas = high_inflation
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_urban_development
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_reduce_inflation
+		}
+		x = 15
+		y = 5
+			ai_will_do = {
+					factor = 5
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_eglise_line_1
+		icon = GFX_goal_generic_fortify_city
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_restore_occitan_economy
+		}
+		x = 17
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_country_flag = build_line1
+				}
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.5
+							add_ideas = AQU_employment_defense_line
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_anti_french_stance
+		icon = GFX_goal_generic_political_pressure
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_expansionism
+			focus = AQU_expansionism
+		}
+		x = 19
+		y = 3
+			ai_will_do = {
+					factor = 3
+				}
+			available = {
+					date > 1938
+				}
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.7
+							add_political_power = 50
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_join_league_alliance
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_expansionism
+			focus = AQU_expansionism
+		}
+		x = 23
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					date > 1939
+					has_global_flag = serbia_our_friends
+				}
+			completion_reward = {
+					country_event = aquitaine_focus.12
+					BAL = {
+							add_to_faction = AQU
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_assistance_from_serbian_general_staff
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_join_league_alliance
+		}
+		x = 22
+		y = 4
+			ai_will_do = {
+					factor = 5
+				}
+			available = {
+					date > 1940
+				}
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.13
+							add_ideas = AQU_serbian_military_training
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_technological_collaboration
+		icon = GFX_focus_research
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_join_league_alliance
+		}
+		x = 24
+		y = 4
+			ai_will_do = {
+					factor = 3
+				}
+			available = {
+					date > 1940
+					has_global_flag = collaborate_with_serbs_tech
+				}
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.14
+							add_ideas = AQU_serbo_occitan_tech_collab
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_occitan_revionism
+		icon = GFX_goal_generic_territory_or_war
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_expansionism
+			focus = AQU_expansionism
+		}
+		x = 31
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			available = { date  1937.1.1 }
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.23
+							add_political_power = 50
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_encourage_having_children
+		icon = GFX_goal_generic_national_unity
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_occitan_revionism
+		}
+		x = 29
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					date1937.1.1has_global_flag = occitan_population
+				}
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.25
+							add_ideas = AQU_children_benefits
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_marseille_speech
+		icon = GFX_goal_generic_demand_territory
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_occitan_revionism
+		}
+		x = 33
+		y = 4
+			ai_will_do = {
+					factor = 5
+				}
+			available = {
+					has_global_flag = grantaire_eglise_dictatorship
+				}
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.26
+							add_political_power = 50
+							add_ideas = AQU_marseille_speech
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_dmitar_line_1
+		icon = GFX_goal_generic_construct_military
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_expansionism
+		}
+		x = 57
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_country_flag = build_line2
+				}
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.30
+							add_ideas = AQU_employment_defense_line
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_dmitar_line_2
+		icon = GFX_goal_generic_construct_military
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_dmitar_line_1
+		}
+		x = 57
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_country_flag = build_line2
+				}
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.31
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_restore_the_republic
+		icon = GFX_goal_support_democracy
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_eliminate_eglise
+		}
+		mutually_exclusive = {
+			focus = AQU_socialist_revolution
+			focus = AQU_restore_monarchy
+			focus = AQU_restore_monarchy
+		}
+		x = 62
+		y = 1
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1937.1.1
+				}
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.32
+						}
+				}
+
+	}
+	focus = {
+		id = aqu_conservationism
+		icon = GFX_goal_generic_fortify_city
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_restore_the_republic
+		}
+		prerequisite = {
+			focus = AQU_restore_monarchy
+		}
+		x = 65
+		y = 2
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1937.1.1
+				}
+			completion_reward = {
+					AQU = {
+							add_ideas = AQU_defense_of_our_nation
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_neutral_stance
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 0.00
+		prerequisite = {
+			focus = aqu_conservationism
+		}
+		x = 65
+		y = 3
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1938.1.1
+				}
+			completion_reward = {
+					AQU = {
+							add_ideas = neutrality_idea
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_aid_league_alliance
+		icon = GFX_goal_support_fascism
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_neutral_stance
+		}
+		x = 62
+		y = 4
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					has_global_flag = WWII
+				}
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.33
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_join_league
+		icon = GFX_goal_generic_major_alliance
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_aid_league_alliance
+		}
+		mutually_exclusive = {
+			focus = AQU_embargo_allies
+		}
+		x = 61
+		y = 5
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					has_global_flag = WWII
+				}
+			completion_reward = {
+					BAL = {
+							add_to_faction = AQU
+						}
+					AQU = {
+							country_event = aquitaine_focus.34
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_embargo_allies
+		icon = GFX_goal_generic_trade
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_aid_league_alliance
+		}
+		mutually_exclusive = {
+			focus = AQU_join_league
+		}
+		x = 63
+		y = 5
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					has_global_flag = WWII
+				}
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.39
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_aid_allies
+		icon = GFX_goal_support_democracy
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_neutral_stance
+		}
+		x = 68
+		y = 4
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					has_global_flag = WWII
+				}
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.37
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_join_allies
+		icon = GFX_goal_generic_major_alliance
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_aid_allies
+		}
+		mutually_exclusive = {
+			focus = AQU_embargo_league
+		}
+		x = 67
+		y = 5
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					has_global_flag = WWII
+				}
+			completion_reward = {
+					SGF = {
+							add_to_faction = AQU
+						}
+					AQU = {
+							country_event = aquitaine_focus.38
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_ask_for_claims2
+		icon = GFX_goal_generic_position_armies
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_join_allies
+		}
+		x = 67
+		y = 6
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					has_global_flag = WWII
+				}
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.40
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_embargo_league
+		icon = GFX_goal_generic_trade
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_aid_allies
+		}
+		mutually_exclusive = {
+			focus = AQU_join_allies
+		}
+		x = 69
+		y = 5
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					has_global_flag = WWII
+				}
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.41
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_send_volunteer_division
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_embargo_league
+		}
+		x = 69
+		y = 6
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					has_global_flag = WWII
+				}
+			completion_reward = {
+					ENG = {
+							load_oob = occitan_volunteers_allies
+						}
+					AQU = {
+							country_event = aquitaine_focus.42
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_distribute_books
+		icon = GFX_goal_generic_propaganda
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_socialist_revolution
+		}
+		x = 74
+		y = 2
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1937.1.1
+				}
+			completion_reward = {
+					AQU = {
+							add_political_power = 100
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_propaganda_effort
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_socialist_revolution
+		}
+		x = 76
+		y = 2
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1937.1.1
+				}
+			completion_reward = {
+					AQU = {
+							add_ideas = left_wing_radical_propaganda
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_rehabilitate_military
+		icon = GFX_goal_generic_small_arms
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_propaganda_effort
+		}
+		x = 76
+		y = 3
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1938.1.1
+				}
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.46
+							add_ideas = AQU_rehabilitated_military
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_spread_revolution
+		icon = GFX_goal_generic_political_pressure
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_rehabilitate_military
+		}
+		x = 76
+		y = 4
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1940.1.1
+				}
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.48
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_war_with_italy
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_spread_revolution
+		}
+		x = 74
+		y = 5
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1940.1.1
+				}
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.47
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_war_with_france
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_spread_revolution
+		}
+		x = 76
+		y = 5
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1940.1.1
+				}
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.49
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_ally_USIR
+		icon = GFX_goal_generic_major_alliance
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_socialist_revolution
+		}
+		x = 78
+		y = 2
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1937.1.1
+				}
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.44
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_war_with_spain
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_spread_revolution
+		}
+		x = 78
+		y = 5
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1940.1.1
+				}
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.50
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_eglise_line_2
+		icon = GFX_goal_generic_fortify_city
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_eglise_line_1
+		}
+		x = 17
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_country_flag = build_line1
+				}
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.6
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_send_volunteer_division
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_embargo_allies
+		}
+		x = 63
+		y = 6
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					has_global_flag = WWII
+				}
+			completion_reward = {
+					BAL = {
+							load_oob = occitan_volunteers_league
+						}
+					AQU = {
+							country_event = aquitaine_focus.35
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_ask_for_claims
+		icon = GFX_goal_generic_position_armies
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_join_league
+		}
+		x = 61
+		y = 6
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					has_global_flag = WWII
+					has_global_flag = treaty_of_paris
+				}
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.36
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_end_to_brest
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_anti_french_stance
+		}
+		x = 19
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_global_flag = treaty_of_brest
+				}
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.7
+							remove_ideas = treaty_of_brest
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_begin_remilitarization
+		icon = GFX_goal_rhineland
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_end_to_brest
+		}
+		x = 19
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_global_flag = treaty_of_brest
+				}
+			completion_reward = {
+					AQU = {
+							add_ideas = occitan_remilitarization
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_countryside_development
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_reduce_inflation
+		}
+		x = 10
+		y = 5
+			ai_will_do = {
+					factor = 5
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_expand_farm_output
+		icon = GFX_goal_generic_construction2
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_countryside_development
+		}
+		x = 11
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					date > 1939.1.1
+				}
+			completion_reward = {
+					add_resource = {
+							type = grain
+							amount = 5
+							state = 20
+						}
+					add_resource = {
+							type = grain
+							amount = 6
+							state = 32
+						}
+					add_resource = {
+							type = grain
+							amount = 4
+							state = 31
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_modernize_occitan_railway_system
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_urban_development
+		}
+		x = 15
+		y = 6
+			ai_will_do = {
+					factor = 3
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_expand_industrial_output
+		icon = GFX_goal_generic_production2
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_expand_farm_output
+		}
+		x = 11
+		y = 7
+			ai_will_do = {
+					factor = 5
+				}
+			available = {
+					date > 1941.1.1
+				}
+			completion_reward = {
+					AQU = {
+							add_ideas = AQU_more_factory_effiency
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_occitan_products_only
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_modernize_occitan_railway_system
+		}
+		x = 14
+		y = 7
+			ai_will_do = {
+					factor = 7
+				}
+			available = {
+					has_global_flag = occitan_products_only
+				}
+			completion_reward = {
+					AQU = {
+							add_ideas = AQU_occitan_products_only
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_state_funded_corporations
+		icon = GFX_goal_generic_national_unity
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_modernize_occitan_railway_system
+		}
+		x = 16
+		y = 7
+			ai_will_do = {
+					factor = 7
+				}
+			available = {
+					has_global_flag = occitan_products_only
+				}
+			completion_reward = {
+					AQU = {
+							add_ideas = AQU_state_funded_corporations
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_expand_resource_output
+		icon = GFX_goal_generic_construction
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_countryside_development
+		}
+		x = 9
+		y = 6
+			ai_will_do = {
+					factor = 5
+				}
+			available = {
+					date > 1939.1.1
+				}
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.11
+							add_ideas = AQU_expanded_resource_production
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_reform_the_army
+		icon = GFX_goal_generic_army_doctrines
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_begin_remilitarization
+		}
+		x = 27
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_global_flag = treaty_of_brest
+				}
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.8
+							army_experience = 25
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_mobile_warfare
+		icon = GFX_goal_generic_army_tanks
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_reform_the_army
+		}
+		mutually_exclusive = {
+			focus = AQU_superior_firepower
+			focus = AQU_grand_battleplan
+		}
+		x = 25
+		y = 7
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_country_flag = mobile_warfare
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = doctrine_bonus
+							bonus = 0.25
+							uses = 4
+							category = cat_mobile_warfare
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_superior_firepower
+		icon = GFX_goal_generic_army_artillery2
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_reform_the_army
+		}
+		mutually_exclusive = {
+			focus = AQU_grand_battleplan
+			focus = AQU_mobile_warfare
+		}
+		x = 27
+		y = 7
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_country_flag = superior_firepower
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = doctrine_bonus
+							bonus = 0.25
+							uses = 4
+							category = cat_superior_firepower
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_grand_battleplan
+		icon = GFX_goal_generic_small_arms
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_reform_the_army
+		}
+		mutually_exclusive = {
+			focus = AQU_superior_firepower
+			focus = AQU_mobile_warfare
+		}
+		x = 29
+		y = 7
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_country_flag = grand_battleplan
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = doctrine_bonus
+							bonus = 0.25
+							uses = 4
+							category = cat_grand_battle_plan
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_mobile_warfare_2
+		icon = GFX_goal_generic_army_motorized
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_mobile_warfare
+		}
+		x = 25
+		y = 8
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_country_flag = mobile_warfare
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = mech_bonus
+							bonus = 0.5
+							uses = 1
+							category = cat_mechanized_equipment
+						}
+					add_tech_bonus = {
+							name = motorized_bonus
+							bonus = 0.5
+							category = cat_mechanized_equipment
+							ahead_reduction = 1
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_mobile_warfare_3
+		icon = GFX_goal_generic_army_tanks
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_mobile_warfare_2
+		}
+		x = 25
+		y = 9
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_country_flag = mobile_warfare
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = armor_bonus
+							bonus = 0.25
+							uses = 2
+							category = armor
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_superior_firepowder_2
+		icon = GFX_goal_generic_army_artillery
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_superior_firepower
+		}
+		x = 27
+		y = 8
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_country_flag = superior_firepower
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = artillery_bonus
+							bonus = 0.5
+							uses = 3
+							category = artillery
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_superior_firepowder_3
+		icon = GFX_goal_generic_occupy_start_war
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_superior_firepowder_2
+		}
+		x = 27
+		y = 9
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_country_flag = superior_firepower
+				}
+			completion_reward = {
+					log = "[GetDateText]:[Root.GetName]:FocusAUS_rockets"
+					add_tech_bonus = {
+							name = rocket_bonus
+							bonus = 0.5
+							uses = 2
+							category = rocketry
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_grand_battleplan_2
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_grand_battleplan
+		}
+		x = 29
+		y = 8
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_country_flag = grand_battleplan
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = infantry_bonus
+							bonus = 0.5
+							uses = 2
+							category = infantry_weapons
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_grand_battleplan_3
+		icon = GFX_goal_generic_small_arms
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_grand_battleplan_2
+		}
+		x = 29
+		y = 9
+			ai_will_do = {
+					factor = 10
+				}
+			available = {
+					has_country_flag = grand_battleplan
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = artillery_bonus
+							bonus = 0.5
+							uses = 2
+							category = artillery
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_occitan_tank_designs
+		icon = GFX_goal_generic_army_tanks
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_occitan_products_only
+			focus = AQU_state_funded_corporations
+		}
+		mutually_exclusive = {
+			focus = AQU_occitan_rifle_design
+			focus = AQU_occitan_artilley_designs
+			focus = AQU_occitan_vehicles_design
+		}
+		x = 12
+		y = 8
+			ai_will_do = {
+					factor = 7
+				}
+			available = {
+					has_global_flag = occitan_products_only
+				}
+			completion_reward = {
+					AQU = {
+							add_ideas = AQU_tank_speciality
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_occitan_rifle_design
+		icon = GFX_goal_generic_small_arms
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_occitan_products_only
+			focus = AQU_state_funded_corporations
+		}
+		mutually_exclusive = {
+			focus = AQU_occitan_artilley_designs
+			focus = AQU_occitan_tank_designs
+			focus = AQU_occitan_vehicles_design
+		}
+		x = 14
+		y = 8
+			ai_will_do = {
+					factor = 7
+				}
+			available = {
+					has_global_flag = occitan_products_only
+				}
+			completion_reward = {
+					AQU = {
+							add_ideas = AQU_rifle_speciality
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_occitan_artilley_designs
+		icon = GFX_goal_generic_army_artillery2
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_state_funded_corporations
+			focus = AQU_occitan_products_only
+		}
+		mutually_exclusive = {
+			focus = AQU_occitan_rifle_design
+			focus = AQU_occitan_tank_designs
+			focus = AQU_occitan_vehicles_design
+		}
+		x = 16
+		y = 8
+			ai_will_do = {
+					factor = 7
+				}
+			available = {
+					has_global_flag = occitan_products_only
+				}
+			completion_reward = {
+					AQU = {
+							add_ideas = AQU_artillery_speciality
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_occitan_airforce
+		icon = GFX_goal_generic_air_doctrine
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_begin_remilitarization
+		}
+		x = 39
+		y = 6
+			ai_will_do = {
+					factor = 5
+				}
+			available = {
+					has_global_flag = treaty_of_brest
+				}
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.16
+							army_experience = 25
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_fund_bordeux_air_school
+		icon = GFX_goal_generic_air_fighter
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_light_bomber_designs
+			focus = AQU_heavy_bomber_designs
+			focus = AQU_CAS_trials
+			focus = AQU_light_aircraft_trials
+			focus = AQU_heavy_aircraft_trials
+		}
+		x = 39
+		y = 9
+			ai_will_do = {
+					factor = 5
+				}
+			available = {
+					has_country_flag = air_schools
+					owns_state = 25
+					owns_state = 19
+					owns_state = 735
+				}
+			completion_reward = {
+					25 = {
+							add_building_construction = {
+									type = air_base
+									level = 3
+									instant_build = yes
+								}
+						}
+					19 = {
+							add_building_construction = {
+									type = air_base
+									level = 3
+									instant_build = yes
+								}
+						}
+					735 = {
+							add_building_construction = {
+									type = air_base
+									level = 3
+									instant_build = yes
+								}
+						}
+					air_experience = 50
+					AQU = {
+							add_ideas = experienced_pilots
+						}
+					add_tech_bonus = {
+							name = air_doctrine_bonus
+							bonus = 0.35
+							uses = 2
+							category = air_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_strategic_destruction_focus
+		icon = GFX_goal_generic_air_bomber
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_occitan_airforce
+		}
+		mutually_exclusive = {
+			focus = AQU_operational_integrity
+			focus = AQU_battlefield_support
+			focus = AQU_operational_integrity
+		}
+		x = 35
+		y = 7
+			ai_will_do = {
+					factor = 2
+				}
+			available = {
+					has_country_flag = strategic_destruction
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = doctrine_bonus
+							bonus = 0.25
+							uses = 4
+							category = cat_strategic_destruction
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_operational_integrity
+		icon = GFX_goal_generic_air_fighter
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_occitan_airforce
+		}
+		mutually_exclusive = {
+			focus = AQU_battlefield_support
+			focus = AQU_strategic_destruction_focus
+			focus = AQU_strategic_destruction_focus
+		}
+		x = 43
+		y = 7
+			ai_will_do = {
+					factor = 5
+				}
+			available = {
+					has_country_flag = operational_integrity
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 0.25
+							uses = 4
+							category = cat_operational_integrity
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_battlefield_support
+		icon = GFX_goal_generic_CAS
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_occitan_airforce
+		}
+		mutually_exclusive = {
+			focus = AQU_operational_integrity
+			focus = AQU_strategic_destruction_focus
+		}
+		x = 39
+		y = 7
+			ai_will_do = {
+					factor = 5
+				}
+			available = {
+					has_country_flag = battlefield_support
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 0.25
+							uses = 4
+							category = cat_battlefield_support
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_light_bomber_designs
+		icon = GFX_goal_poland_goal
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_strategic_destruction_focus
+		}
+		mutually_exclusive = {
+			focus = AQU_heavy_bomber_designs
+		}
+		x = 34
+		y = 8
+			ai_will_do = {
+					factor = 5
+				}
+			available = {
+					has_country_flag = strategic_destruction
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = bomber_bonus
+							bonus = 0.25
+							uses = 2
+							category = cas_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_heavy_bomber_designs
+		icon = GFX_goal_generic_occupy_start_war
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_strategic_destruction_focus
+		}
+		mutually_exclusive = {
+			focus = AQU_light_bomber_designs
+		}
+		x = 36
+		y = 8
+			ai_will_do = {
+					factor = 5
+				}
+			available = {
+					has_country_flag = strategic_destruction
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = bomber_bonus
+							bonus = 0.25
+							uses = 2
+							category = cat_strategic_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_CAS_trials
+		icon = GFX_goal_generic_air_fighter2
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_battlefield_support
+		}
+		x = 39
+		y = 8
+			ai_will_do = {
+					factor = 5
+				}
+			available = {
+					has_country_flag = battlefield_support
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = bomber_bonus
+							bonus = 0.25
+							uses = 2
+							category = cas_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_light_aircraft_trials
+		icon = GFX_goal_generic_air_fighter2
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_operational_integrity
+		}
+		mutually_exclusive = {
+			focus = AQU_heavy_aircraft_trials
+		}
+		x = 42
+		y = 8
+			ai_will_do = {
+					factor = 5
+				}
+			available = {
+					has_country_flag = opertional_integrity
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = fighter_bonus
+							bonus = 0.25
+							uses = 2
+							category = light_fighter
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_heavy_aircraft_trials
+		icon = GFX_goal_generic_air_fighter2
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_operational_integrity
+		}
+		mutually_exclusive = {
+			focus = AQU_light_aircraft_trials
+		}
+		x = 44
+		y = 8
+			ai_will_do = {
+					factor = 5
+				}
+			available = {
+					has_country_flag = opertional_integrity
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = fighter_bonus
+							bonus = 0.25
+							uses = 2
+							category = cat_heavy_fighter
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_cooperation_with_balkan_league
+		icon = GFX_goal_generic_air_doctrine
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_fund_bordeux_air_school
+		}
+		x = 38
+		y = 10
+			ai_will_do = {
+					factor = 3
+				}
+			available = {
+					has_country_flag = air_schools
+				}
+			completion_reward = {
+					country_event = aquitaine_focus.17
+					air_experience = 25
+					add_tech_bonus = {
+							name = air_doctrine_bonus
+							bonus = 0.50
+							uses = 1
+							category = air_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_promote_pilots
+		icon = GFX_goal_generic_national_unity
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_fund_bordeux_air_school
+		}
+		x = 40
+		y = 10
+			ai_will_do = {
+					factor = 3
+				}
+			available = {
+					has_country_flag = air_schools
+				}
+			completion_reward = {
+					country_event = aquitaine_focus.18
+					add_manpower = 25000
+					add_tech_bonus = {
+							name = air_doctrine_bonus
+							bonus = 0.25
+							uses = 1
+							category = air_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_restore_navy
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_begin_remilitarization
+		}
+		x = 50
+		y = 6
+			ai_will_do = {
+					factor = 5
+				}
+			available = {
+					has_global_flag = treaty_of_brest
+					has_country_flag = former_occitan_fleet
+				}
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.19
+							navy_experience = 25
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_small_navy
+		icon = GFX_goal_generic_navy_submarine
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_restore_navy
+		}
+		mutually_exclusive = {
+			focus = AQU_large_navy
+		}
+		x = 48
+		y = 7
+			ai_will_do = {
+					factor = 7
+				}
+			available = {
+					has_country_flag = small_navy
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = small_navy
+							bonus = 0.35
+							uses = 3
+							technology = convoy_interdiction_ti
+							technology = unrestricted_submarine_warfare
+							technology = wolfpacks
+							technology = advanced_submarine_warfare
+							technology = combined_operations_raiding
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_large_navy
+		icon = GFX_goal_generic_navy_battleship
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_restore_navy
+		}
+		mutually_exclusive = {
+			focus = AQU_small_navy
+		}
+		x = 52
+		y = 7
+			ai_will_do = {
+					factor = 7
+				}
+			available = {
+					has_country_flag = large_navy
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = fleet_in_being_bonus
+							bonus = 0.35
+							uses = 3
+							category = fleet_in_being_tree
+						}
+					add_tech_bonus = {
+							name = bb_bonus
+							bonus = 0.25
+							uses = 3
+							category = bb_tech
+						}
+					add_tech_bonus = {
+							name = bc_bonus
+							bonus = 0.25
+							uses = 3
+							category = bc_tech
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_sub_focus
+		icon = GFX_goal_generic_navy_anti_submarine
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_small_navy
+		}
+		mutually_exclusive = {
+			focus = AQU_small_ships_focus
+		}
+		x = 47
+		y = 8
+			ai_will_do = {
+					factor = 5
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = sub_bonus
+							bonus = 0.25
+							uses = 3
+							category = ss_tech
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_small_ships_focus
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_small_navy
+		}
+		mutually_exclusive = {
+			focus = AQU_sub_focus
+		}
+		x = 49
+		y = 8
+			ai_will_do = {
+					factor = 5
+				}
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = cl_bonus
+							bonus = 0.25
+							uses = 3
+							category = cl_tech
+						}
+					add_tech_bonus = {
+							name = dd_bonus
+							bonus = 0.25
+							uses = 3
+							category = dd_tech
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_expand_occitan_naval_yards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_large_navy
+		}
+		x = 52
+		y = 8
+			ai_will_do = {
+					factor = 2
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							NOT = {
+									any_owned_state = {
+											is_in_home_area = yes
+											free_building_slots = {
+													building = dockyard
+													size > 1
+													include_locked = yes
+												}
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					random_state = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = dockyard
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+			completion_reward = {
+					random_owned_state = {
+							limit = {
+									is_in_home_area = yes
+									free_building_slots = {
+											building = dockyard
+											size > 1
+											include_locked = yes
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = dockyard
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_La_Fontaine_plan
+		icon = GFX_goal_generic_navy_submarine
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_sub_focus
+		}
+		x = 47
+		y = 9
+			ai_will_do = {
+					factor = 5
+				}
+			available = {
+					has_country_flag = la_fontaine_plan
+				}
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.20
+							add_ideas = submarine_construction
+							navy_experience = 25
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_Lafont_plan
+		icon = GFX_goal_generic_navy_battleship
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_expand_occitan_naval_yards
+		}
+		x = 52
+		y = 9
+			ai_will_do = {
+					factor = 8
+				}
+			available = {
+					has_country_flag = lafont_plan
+				}
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.22
+							add_ideas = AQU_bb_bc_construction
+							navy_experience = 25
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_Couderc_Plan
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_small_ships_focus
+		}
+		x = 49
+		y = 9
+			ai_will_do = {
+					factor = 5
+				}
+			available = {
+					has_country_flag = couderc_plan
+				}
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.21
+							add_ideas = AQU_dd_cl_construction
+							navy_experience = 25
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_develop_countryside_2
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_expand_resource_output
+		}
+		x = 9
+		y = 7
+			ai_will_do = {
+					factor = 5
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_form_military_youth
+		icon = GFX_goal_generic_propaganda
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_mix_in_military_education
+		}
+		x = 31
+		y = 5
+			ai_will_do = {
+					factor = 7
+				}
+			available = {
+					has_global_flag = grantaire_eglise_dictatorship
+				}
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.27
+							add_ideas = AQU_military_youth_organization
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_mix_in_military_education
+		icon = GFX_goal_rhineland
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_occitan_revionism
+		}
+		x = 31
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			available = { date  1939.1.1 }
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.24
+							add_ideas = AQU_military_education
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_serbo_occitan_nuclear_effort
+		icon = GFX_focus_wonderweapons
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_technological_collaboration
+		}
+		x = 24
+		y = 5
+			ai_will_do = {
+					factor = 5
+				}
+			available = {
+					date > 1940
+					has_country_flag = lets_work_together
+				}
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.15
+							add_ideas = AQU_serbo_occitan_nuclear_collab
+						}
+					BAL = {
+							country_event = aquitaine_focus.15
+							add_ideas = AQU_serbo_occitan_nuclear_collab
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_ally_russia
+		icon = GFX_goal_generic_major_alliance
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_socialist_revolution
+		}
+		x = 80
+		y = 2
+			ai_will_do = {
+					factor = 1
+				}
+			available = {
+					date > 1937.1.1
+					RUS = {
+							has_government = stalinist
+						}
+				}
+			completion_reward = {
+					AQU = {
+							country_event = aquitaine_focus.45
+						}
+				}
+
+	}
+	focus = {
+		id = AQU_occitan_vehicles_design
+		icon = GFX_goal_generic_army_motorized
+		cost = 0.00
+		prerequisite = {
+			focus = AQU_state_funded_corporations
+			focus = AQU_occitan_products_only
+		}
+		mutually_exclusive = {
+			focus = AQU_occitan_artilley_designs
+			focus = AQU_occitan_rifle_design
+			focus = AQU_occitan_tank_designs
+		}
+		x = 18
+		y = 8
+			ai_will_do = {
+					factor = 7
+				}
+			available = {
+					has_global_flag = occitan_products_only
+				}
+			completion_reward = {
+					AQU = {
+							add_ideas = AQU_vehicles_speciality
+						}
+				}
+
+	}
+}

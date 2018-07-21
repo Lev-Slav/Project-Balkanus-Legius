@@ -48,7 +48,7 @@ set_technology = {
 #Random
 
 	rations = 1
-	fuel = 1 
+	# = 1 
 }
 
 
@@ -144,7 +144,7 @@ create_country_leader = {
 	expire = "1953.1.20"
 	ideology = paternal_autocrat
 	traits = {
-		indomitable_perseverance
+		HOS_popular_figurehead
 	}
 }
 

@@ -1,0 +1,836 @@
+###########################
+# Occitan Focus Events
+###########################
+
+add_namespace = aquitaine
+
+# Occitan Dawn: Eglise Speech
+country_event = {
+	id = aquitaine_focus.1
+	title = aquitaine_focus.1.t
+	desc = aquitaine_focus.1.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.1.a
+	}
+}
+
+# Eglise Assassinated
+country_event = {
+	id = aquitaine_focus.2
+	title = aquitaine_focus.2.t
+	desc = aquitaine_focus.2.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.2.a
+		add_global_flag = grantaire_eglise_dead
+	}
+}
+
+# Eglise Expansionist policy
+country_event = {
+	id = aquitaine_focus.3
+	title = aquitaine_focus.3.t
+	desc = aquitaine_focus.3.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.3.a
+	}
+}
+
+# Occitan Economic Issues help
+country_event = {
+	id = aquitaine_focus.4
+	title = aquitaine_focus.4.t
+	desc = aquitaine_focus.4.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.4.a
+	}
+}
+
+# Eglise Line 1 
+country_event = {
+	id = aquitaine_focus.5
+	title = aquitaine_focus.5.t
+	desc = aquitaine_focus.5.d
+	picture = GFX_report_event_
+	
+	trigger = {
+		NOT = { has_global_flag = 
+	}
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.5.a
+		set_global_flag = occitan_french_border
+	}
+}
+
+# Eglise Line 2 
+country_event = {
+	id = aquitaine_focus.6
+	title = aquitaine_focus.6.t
+	desc = aquitaine_focus.6.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.6.a
+	}
+}
+
+# Treaty of Brest bypassed
+country_event = {
+	id = aquitaine_focus.7
+	title = aquitaine_focus.7.t
+	desc = aquitaine_focus.7.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.7.a
+	}
+}
+
+# Reforming the Army
+country_event = {
+	id = aquitaine_focus.8
+	title = aquitaine_focus.8.t
+	desc = aquitaine_focus.8.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	# Mobile Warfare (add general)
+	option = {
+		name = aquitaine_focus.8.a
+		set_country_flag = mobile_warfare
+	}
+	# Superior Firepower (add general)
+	option = {
+		name = aquitaine_focus.8.b
+		set_country_flag = superior_firepower
+	}
+	# Grand Battleplan (add general)
+	option = {
+		name = aquitaine_focus.8.c
+		set_country_flag = grand_battleplan
+	}
+}
+
+# Reformed Military
+country_event = {
+	id = aquitaine_focus.9
+	title = aquitaine_focus.9.t
+	desc = aquitaine_focus.9.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.9.a
+	}
+}
+
+# Inflation decreased
+country_event = {
+	id = aquitaine_focus.10
+	title = aquitaine_focus.10.t
+	desc = aquitaine_focus.10.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.10.a
+	}
+}
+
+# Resources Production Expanded
+country_event = {
+	id = aquitaine_focus.11
+	title = aquitaine_focus.11.t
+	desc = aquitaine_focus.11.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.11.a
+	}
+}
+
+# Joining the League Alliance 
+country_event = {
+	id = aquitaine_focus.12
+	title = aquitaine_focus.12.t
+	desc = aquitaine_focus.12.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.12.a
+	}
+}
+
+# Serbian Generals Help Train Occitan Army
+country_event = {
+	id = aquitaine_focus.13
+	title = aquitaine_focus.13.t
+	desc = aquitaine_focus.13.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.13.a
+	}
+}
+
+# Serbo-Occitan Military Collaboration
+country_event = {
+	id = aquitaine_focus.14
+	title = aquitaine_focus.14.t
+	desc = aquitaine_focus.14.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.14.a
+	}
+}
+
+# Serbo-Occitan Nuclear Collaboration
+country_event = {
+	id = aquitaine_focus.15
+	title = aquitaine_focus.15.t
+	desc = aquitaine_focus.15.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.15.a
+	}
+}
+
+# Airforce
+country_event = {
+	id = aquitaine_focus.16
+	title = aquitaine_focus.16.t
+	desc = aquitaine_focus.16.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.16.a
+		set_global_flag = strategic_destruction
+	}
+	option = {
+		name = aquitaine_focus.16.b
+		set_global_flag = battlefield_support
+	}
+	option = {
+		name = aquitaine_focus.16.c
+		set_global_flag = operational_integrity
+	}
+}
+
+# Occitan-Serbo Air Cooperation
+country_event = {
+	id = aquitaine_focus.17
+	title = aquitaine_focus.17.t
+	desc = aquitaine_focus.17.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.17.a
+	}
+}
+
+# Promoting Pilots
+country_event = {
+	id = aquitaine_focus.18
+	title = aquitaine_focus.18.t
+	desc = aquitaine_focus.18.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.18.a
+	}
+}
+
+# Restoring the Navy
+country_event = {
+	id = aquitaine_focus.19
+	title = aquitaine_focus.19.t
+	desc = aquitaine_focus.19.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.19.a
+		set_global_flag = large_navy
+	}
+	option = {
+		name = aquitaine_focus.19.b
+		set_global_flag = small_navy
+	}
+}
+
+# La Fontaine Plan Adopted
+country_event = {
+	id = aquitaine_focus.20
+	title = aquitaine_focus.20.t
+	desc = aquitaine_focus.20.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.20.a
+	}
+}
+
+# Couderc Plan Adopted
+country_event = {
+	id = aquitaine_focus.21
+	title = aquitaine_focus.21.t
+	desc = aquitaine_focus.21.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.21.a
+	}
+}
+
+# Lafont Plan Adopted
+country_event = {
+	id = aquitaine_focus.22
+	title = aquitaine_focus.22.t
+	desc = aquitaine_focus.22.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.22.a
+	}
+}
+
+# Occitan Revisionism
+country_event = {
+	id = aquitaine_focus.23
+	title = aquitaine_focus.23.t
+	desc = aquitaine_focus.23.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.23.a
+	}
+}
+
+# Military Education Paramilitary bascly
+country_event = {
+	id = aquitaine_focus.24
+	title = aquitaine_focus.24.t
+	desc = aquitaine_focus.24.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.24.a
+	}
+}
+
+# Encourage having children
+country_event = {
+	id = aquitaine_focus.25
+	title = aquitaine_focus.25.t
+	desc = aquitaine_focus.25.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.25.a
+	}
+}
+
+# Speech at Marseille by Eglise-eye
+country_event = {
+	id = aquitaine_focus.26
+	title = aquitaine_focus.26.t
+	desc = aquitaine_focus.26.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.26.a
+	}
+}
+
+# Military Youth Organization Formed
+country_event = {
+	id = aquitaine_focus.27
+	title = aquitaine_focus.27.t
+	desc = aquitaine_focus.27.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.27.a
+	}
+}
+
+# Dmitar VII seizes power
+country_event = {
+	id = aquitaine_focus.28
+	title = aquitaine_focus.28.t
+	desc = aquitaine_focus.28.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.28.a
+		set_country_flag = monarchy_restored
+	}
+}
+
+# Occitan Expansionism
+country_event = {
+	id = aquitaine_focus.29
+	title = aquitaine_focus.29.t
+	desc = aquitaine_focus.29.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.29.a
+	}
+}
+
+# Occitan-French Fortification Construction 1
+country_event = {
+	id = aquitaine_focus.30
+	title = aquitaine_focus.30.t
+	desc = aquitaine_focus.30.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.30.a
+	}
+}
+
+# Occitan-French Fortification Construction 2
+country_event = {
+	id = aquitaine_focus.31
+	title = aquitaine_focus.31.t
+	desc = aquitaine_focus.31.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.31.a
+	}
+}
+
+# The Republic is Restored
+country_event = {
+	id = aquitaine_focus.32
+	title = aquitaine_focus.32.t
+	desc = aquitaine_focus.32.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.3.a
+	}
+}
+
+# Aid League Alliance
+country_event = {
+	id = aquitaine_focus.33
+	title = aquitaine_focus.33.t
+	desc = aquitaine_focus.33.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.33.a
+	}
+}
+
+# Aquitaine Joins League Alliance
+country_event = {
+	id = aquitaine_focus.34
+	title = aquitaine_focus.34.t
+	desc = aquitaine_focus.34.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.34.a
+	}
+}
+
+# Volunteer Divisions to League Sent
+country_event = {
+	id = aquitaine_focus.35
+	title = aquitaine_focus.35.t
+	desc = aquitaine_focus.35.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.35.a
+	}
+}
+
+# Ask for Claims France has
+country_event = {
+	id = aquitaine_focus.36
+	title = aquitaine_focus.36.t
+	desc = aquitaine_focus.36.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.36.a
+	}
+}
+
+# Aquitaine Aids Allies
+country_event = {
+	id = aquitaine_focus.37
+	title = aquitaine_focus.37.t
+	desc = aquitaine_focus.37.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.37.a
+	}
+}
+
+# Aquitaine Joins Allies
+country_event = {
+	id = aquitaine_focus.38
+	title = aquitaine_focus.38.t
+	desc = aquitaine_focus.38.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.38.a
+	}
+}
+
+# Embargo on Allies
+country_event = {
+	id = aquitaine_focus.39
+	title = aquitaine_focus.39.t
+	desc = aquitaine_focus.39.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.39.a
+	}
+}
+
+# Ask for Claims Allies
+country_event = {
+	id = aquitaine_focus.40
+	title = aquitaine_focus.40.t
+	desc = aquitaine_focus.40.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.40.a
+	}
+}
+
+# Embargo Balkan League
+country_event = {
+	id = aquitaine_focus.41
+	title = aquitaine_focus.41.t
+	desc = aquitaine_focus.41.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.41.a
+	}
+}
+
+# Send Volunteer Divisions to Britain
+country_event = {
+	id = aquitaine_focus.42
+	title = aquitaine_focus.42.t
+	desc = aquitaine_focus.42.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.42.a
+	}
+}
+
+# Communist Revolution in Aquitaine
+country_event = {
+	id = aquitaine_focus.43
+	title = aquitaine_focus.43.t
+	desc = aquitaine_focus.43.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.43.a
+	}
+}
+
+# Ally USIR
+country_event = {
+	id = aquitaine_focus.44
+	title = aquitaine_focus.44.t
+	desc = aquitaine_focus.44.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.44.a
+	}
+}
+
+# Ally Communist Russia
+country_event = {
+	id = aquitaine_focus.45
+	title = aquitaine_focus.45.t
+	desc = aquitaine_focus.45.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.45.a
+	}
+}
+
+# Military Rehabilitated
+country_event = {
+	id = aquitaine_focus.46
+	title = aquitaine_focus.46.t
+	desc = aquitaine_focus.46.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.46.a
+	}
+}
+
+# War with USIR
+country_event = {
+	id = aquitaine_focus.47
+	title = aquitaine_focus.47.t
+	desc = aquitaine_focus.47.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.47.a
+	}
+}
+
+# Spread the Revolution
+country_event = {
+	id = aquitaine_focus.48
+	title = aquitaine_focus.48.t
+	desc = aquitaine_focus.48.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.48.a
+	}
+}
+
+# War with France
+country_event = {
+	id = aquitaine_focus.49
+	title = aquitaine_focus.49.t
+	desc = aquitaine_focus.49.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.49.a
+	}
+}
+
+# War With Spain
+country_event = {
+	id = aquitaine_focus.50
+	title = aquitaine_focus.50.t
+	desc = aquitaine_focus.50.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine_focus.50.a
+	}
+}

@@ -26,8 +26,6 @@ sub_units = {
 
 		need = {
 			modern_tank_equipment = 50
-			rations = 50
-			fuel = 90
 		}
 		manpower = 500
 		max_organisation = 10
@@ -39,7 +37,7 @@ sub_units = {
 		supply_consumption = 0.25
 
 		#Tanks are awesome
-		soft_attack = 0.5
+		# soft_attack = 0.5
 
 		forest = {
 		    attack = -0.3

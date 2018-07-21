@@ -1,0 +1,866 @@
+###########################
+# Occitan Events
+###########################
+
+add_namespace = aquitaine
+
+# Welcome to the Mod: Aquitaine
+country_event = {
+	id = aquitaine.1
+	title = aquitaine.1.t
+	desc = aquitaine.1.d
+	picture = GFX_report_event_welcome_to_mod
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.1.a
+	}
+}
+
+# Legacy of the Dictatorship
+country_event = {
+	id = aquitaine.2
+	title = aquitaine.2.t
+	desc = aquitaine.2.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	# Eglise will bring us toward a better future
+	option = {
+		name = aquitaine.2.a
+		set_global_flag = grantaire_eglise_dictatorship
+	}
+	# Eglise ought to be eliminated
+	option = {
+		name = aquitaine.2.b
+		set_global_flag = no_grantaire_eglise_dictatorship
+	}
+}
+
+# Occitan Economic Issues
+country_event = {
+	id = aquitaine.3
+	title = aquitaine.3.t
+	desc = aquitaine.3.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.3.a
+		set_global_flag = occitan_economic_issues
+	}
+}
+
+# Treaty of Brest Consequences
+country_event = {
+	id = aquitaine.4
+	title = aquitaine.4.t
+	desc = aquitaine.4.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.4.a
+		set_global_flag = treaty_of_brest
+	}
+}
+
+# Occitan-French Border Issue 
+country_event = {
+	id = aquitaine.5
+	title = aquitaine.5.t
+	desc = aquitaine.5.d
+	picture = GFX_report_event_
+	
+	trigger = {
+		NOT = { has_global_flag = grantaire_eglise_dead }
+		date > 1938.1.1 
+	}
+	
+	mean_time_to_happen = { days = 1 }
+	
+	# Build Defense Line
+	option = {
+		name = aquitaine.5.a
+		set_country_flag = build_line1
+	}
+	# Don't Build Defense Line
+	option = {
+		name = aquitaine.5.a
+	}
+}
+
+# Occitan Products or Buy from someone else?
+country_event = {
+	id = aquitaine.6
+	title = aquitaine.6.t
+	desc = aquitaine.6.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.6.a
+		set_global_flag = occitan_products_only
+	}
+	option = {
+		name = aquitaine.6.b
+		set_global_flag = someone_elses_products
+	}
+}
+
+# Our former allies serbia
+country_event = {
+	id = aquitaine.7
+	title = aquitaine.7.t
+	desc = aquitaine.7.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.7.a
+		set_global_flag = serbia_our_friends
+	}	
+	option = {
+		name = aquitaine.7.b
+		set_global_flag = serbia_not_friends
+	}
+}
+
+# Collaborate With Serbia on Tech?
+country_event = {
+	id = aquitaine.8
+	title = aquitaine.8.t
+	desc = aquitaine.8.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.8.a
+		set_global_flag = collaborate_with_serbs_tech
+	}	
+	option = {
+		name = aquitaine.8.b
+		set_global_flag = no_collaborate_with_serbs_tech
+	}
+}
+
+# Serbo-Occitan Nuclear Effort?
+country_event = {
+	id = aquitaine.9
+	title = aquitaine.9.t
+	desc = aquitaine.9.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.9.a
+		set_country_flag = lets_work_together
+	}
+	option = {
+		name = aquitaine.9.b
+		set_country_flag = lets_keep_this_to_ourselves
+	}
+}
+
+# Help Fund Air Schools?
+country_event = {
+	id = aquitaine.10
+	title = aquitaine.10.t
+	desc = aquitaine.10.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.10.a
+		set_country_flag = fund_air_schools
+	}	
+	option = {
+		name = aquitaine.10.b
+		set_country_flag = dont_fund_air_schools
+	}
+}
+
+# Strength of the former fleet
+country_event = {
+	id = aquitaine.11
+	title = aquitaine.11.t
+	desc = aquitaine.11.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.11.a
+		set_global_flag = former_occitan_fleet
+	}
+}
+
+# Naval Plan?
+country_event = {
+	id = aquitaine.12
+	title = aquitaine.12.t
+	desc = aquitaine.12.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.12.a
+		set_country_flag = la_fontaine_plan
+	}
+	option = {
+		name = aquitaine.12.b
+		set_country_flag = couderc_plan
+	}
+	option = {
+		name = aquitaine.12.c
+		set_country_flag = lafont_plan
+	}
+}
+
+# Low Occitan Population
+country_event = {
+	id = aquitaine.13
+	title = aquitaine.13.t
+	desc = aquitaine.13.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.13.a
+		set_global_flag = occitan_population
+	}
+}
+
+# Occitan-French Border Issue 2
+country_event = {
+	id = aquitaine.14
+	title = aquitaine.14.t
+	desc = aquitaine.14.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	# Build Defense Line
+	option = {
+		name = aquitaine.14.a
+		set_country_flag = build_line2
+	}
+	# Don't Build Defense Line
+	option = {
+		name = aquitaine.14.a
+	}
+}
+
+
+# 
+country_event = {
+	id = aquitaine.15
+	title = aquitaine.15.t
+	desc = aquitaine.15.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.15.a
+	}
+}
+
+# 
+country_event = {
+	id = aquitaine.16
+	title = aquitaine.16.t
+	desc = aquitaine.16.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.16.a
+	}
+}
+
+# 
+country_event = {
+	id = aquitaine.17
+	title = aquitaine.17.t
+	desc = aquitaine.17.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.17.a
+	}
+}
+
+# 
+country_event = {
+	id = aquitaine.18
+	title = aquitaine.18.t
+	desc = aquitaine.18.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.18.a
+	}
+}
+
+# 
+country_event = {
+	id = aquitaine.19
+	title = aquitaine.19.t
+	desc = aquitaine.19.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.19.a
+	}
+}
+
+# 
+country_event = {
+	id = aquitaine.20
+	title = aquitaine.20.t
+	desc = aquitaine.20.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.20.a
+	}
+}
+
+# 
+country_event = {
+	id = aquitaine.21
+	title = aquitaine.21.t
+	desc = aquitaine.21.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.21.a
+	}
+}
+
+# 
+country_event = {
+	id = aquitaine.22
+	title = aquitaine.22.t
+	desc = aquitaine.22.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.22.a
+	}
+}
+
+# 
+country_event = {
+	id = aquitaine.23
+	title = aquitaine.23.t
+	desc = aquitaine.23.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.23.a
+	}
+}
+
+# 
+country_event = {
+	id = aquitaine.24
+	title = aquitaine.24.t
+	desc = aquitaine.24.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.24.a
+	}
+}
+
+# 
+country_event = {
+	id = aquitaine.25
+	title = aquitaine.25.t
+	desc = aquitaine.25.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.25.a
+	}
+}
+
+# 
+country_event = {
+	id = aquitaine.26
+	title = aquitaine.26.t
+	desc = aquitaine.26.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.26.a
+	}
+}
+
+# 
+country_event = {
+	id = aquitaine.27
+	title = aquitaine.27.t
+	desc = aquitaine.27.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.27.a
+	}
+}
+
+# 
+country_event = {
+	id = aquitaine.28
+	title = aquitaine.28.t
+	desc = aquitaine.28.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.28.a
+	}
+}
+
+# 
+country_event = {
+	id = aquitaine.29
+	title = aquitaine.29.t
+	desc = aquitaine.29.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.29.a
+	}
+}
+
+# 
+country_event = {
+	id = aquitaine.30
+	title = aquitaine.30.t
+	desc = aquitaine.30.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.30.a
+	}
+}
+
+# 
+country_event = {
+	id = aquitaine.31
+	title = aquitaine.31.t
+	desc = aquitaine.31.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.31.a
+	}
+}
+
+# 
+country_event = {
+	id = aquitaine.32
+	title = aquitaine.32.t
+	desc = aquitaine.32.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.3.a
+	}
+}
+
+# 
+country_event = {
+	id = aquitaine.33
+	title = aquitaine.33.t
+	desc = aquitaine.33.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.33.a
+	}
+}
+
+# 
+country_event = {
+	id = aquitaine.34
+	title = aquitaine.34.t
+	desc = aquitaine.34.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.34.a
+	}
+}
+
+# 
+country_event = {
+	id = aquitaine.35
+	title = aquitaine.35.t
+	desc = aquitaine.35.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.35.a
+	}
+}
+
+# 
+country_event = {
+	id = aquitaine.36
+	title = aquitaine.36.t
+	desc = aquitaine.36.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.36.a
+	}
+}
+
+# 
+country_event = {
+	id = aquitaine.37
+	title = aquitaine.37.t
+	desc = aquitaine.37.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.37.a
+	}
+}
+
+# 
+country_event = {
+	id = aquitaine.38
+	title = aquitaine.38.t
+	desc = aquitaine.38.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.38.a
+	}
+}
+
+# 
+country_event = {
+	id = aquitaine.39
+	title = aquitaine.39.t
+	desc = aquitaine.39.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.39.a
+	}
+}
+
+# 
+country_event = {
+	id = aquitaine.40
+	title = aquitaine.40.t
+	desc = aquitaine.40.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.40.a
+	}
+}
+
+# 
+country_event = {
+	id = aquitaine.41
+	title = aquitaine.41.t
+	desc = aquitaine.41.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.41.a
+	}
+}
+
+# 
+country_event = {
+	id = aquitaine.42
+	title = aquitaine.42.t
+	desc = aquitaine.42.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.42.a
+	}
+}
+
+# 
+country_event = {
+	id = aquitaine.43
+	title = aquitaine.43.t
+	desc = aquitaine.43.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.43.a
+	}
+}
+
+# 
+country_event = {
+	id = aquitaine.44
+	title = aquitaine.44.t
+	desc = aquitaine.44.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.44.a
+	}
+}
+
+# 
+country_event = {
+	id = aquitaine.45
+	title = aquitaine.45.t
+	desc = aquitaine.45.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.45.a
+	}
+}
+
+# 
+country_event = {
+	id = aquitaine.46
+	title = aquitaine.46.t
+	desc = aquitaine.46.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.46.a
+	}
+}
+
+# 
+country_event = {
+	id = aquitaine.47
+	title = aquitaine.47.t
+	desc = aquitaine.47.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.47.a
+	}
+}
+
+# 
+country_event = {
+	id = aquitaine.48
+	title = aquitaine.48.t
+	desc = aquitaine.48.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.48.a
+	}
+}
+
+# 
+country_event = {
+	id = aquitaine.49
+	title = aquitaine.49.t
+	desc = aquitaine.49.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.49.a
+	}
+}
+
+# 
+country_event = {
+	id = aquitaine.50
+	title = aquitaine.50.t
+	desc = aquitaine.50.d
+	picture = GFX_report_event_
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = aquitaine.50.a
+	}
+}

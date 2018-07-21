@@ -29,7 +29,6 @@ sub_units = {
 
 		need = {
 			anti_air_equipment = 20
-			rations = 5 
 		}
 
 		can_be_parachuted = yes

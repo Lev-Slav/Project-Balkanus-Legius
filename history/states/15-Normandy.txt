@@ -37,26 +37,6 @@ state={
 			}
 		}
 		add_core_of = FRA
-		add_core_of = FRF
-		1941.6.20 = {
-			controller = NGF
-			owner = NGF
-		}
-		1944.1.1 = {
-			controller = FRF
-			owner = NGF
-			FRF = {
-				set_province_controller = 6599
-				set_province_controller = 11535
-				set_province_controller = 539
-				set_province_controller = 3579
-				set_province_controller = 9550
-			}
-		}
-		1944.12.1 = {
-			controller = FRF
-			owner = FRF
-		}
 	}
 
 	provinces={

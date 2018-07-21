@@ -31,7 +31,7 @@ set_technology = {
 # Random
 
 	rations = 1
-	fuel = 1 
+	# = 1 
 	transport = 1
 }
 

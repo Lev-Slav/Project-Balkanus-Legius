@@ -25,6 +25,15 @@ country_event = {
 	option = {
 		name = britain.1.a
 		set_global_flag = offer_north_africa
+		ai_chance = {
+			factor = 95
+		}
+	}
+	option = {
+		name = britain.2.b
+		ai_chance = {
+			factor = 5
+		}
 	}
 }
 

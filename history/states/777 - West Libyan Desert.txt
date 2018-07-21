@@ -2,20 +2,24 @@
 state={
 	id=777
 	name="STATE_777" 
-	manpower = 2643
+	manpower = 156735
 	
 	state_category = town
-	impassable = yes
 
 	history={
-		owner = MAG
-		buildings = {
-			infrastructure = 5
+		owner = ITA
+		victory_points = {
+			8038 3 
 		}
-		add_core_of = MAG
+		buildings = {
+			infrastructure = 4
+			
+		}
+		add_core_of = ITA
+		add_claim_by = UMA
 	}
 
 	provinces={
-		10884 12082 4962 12022 5004
+		5012 7992 10875 
 	}
 }

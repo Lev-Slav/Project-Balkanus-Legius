@@ -1,6 +1,6 @@
 ﻿capital = 2
 
-oob = "USI_1937"
+oob = "ITA_1937"
 
 # Starting tech
 set_technology = {

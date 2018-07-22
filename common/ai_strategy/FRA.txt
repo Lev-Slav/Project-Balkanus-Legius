@@ -12,8 +12,23 @@
 
 # Removed
 
-add_ai_strategy = {
-    type = alliance
-    id = "SGF"
-    value = 1000
+protect_poland_against_germany = {
+	enable = {
+		tag = FRA
+		country_exists = SGF
+	}
+	abort = {
+		NOT = { country_exists = SGF }
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "SGF"			
+		value = 200
+	}
+	ai_strategy = {
+		type = alliance
+		id = "POL"			
+		value = 1000
+	}	
 }

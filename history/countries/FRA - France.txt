@@ -106,7 +106,7 @@ puppet = ITA	 #
 
 			social_conservative = {
 
-				popularity = 15
+				popularity = 52
 			}
 		
 			market_liberal = {
@@ -121,7 +121,7 @@ puppet = ITA	 #
 
 			social_democrat = {
 
-				popularity = 52
+				popularity = 15
 			}
 
 			left_wing_radical = {
@@ -145,7 +145,7 @@ puppet = ITA	 #
 			}
 		}
 
-		ruling_party = social_democrat
+		ruling_party = social_conservative
 		last_election = "1937.1.1"
 		election_frequency = 60
 		elections_allowed = yes
@@ -157,7 +157,7 @@ create_country_leader = {
 	desc = "POLITICS_HENRI_I_DESC"
 	picture = "Portrait_France_King_Henri.dds"
 	expire = "1953.1.20"
-	ideology = social_democrat
+	ideology = social_conservative
 	traits = {
 		HOS_popular_figurehead
 	}

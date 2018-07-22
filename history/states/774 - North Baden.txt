@@ -2,21 +2,23 @@
 state={
 	id=774
 	name="STATE_774"
-	manpower = 1254264
+	manpower = 325674
 	
-	state_category = town
+	state_category = city
 
 	history={
 		owner = BAD
 		buildings = {
-			infrastructure = 5
+			infrastructure = 6
 			industrial_complex = 2
-			arms_factory = 1
+		}
+		victory_points = {
+			6712 5
 		}
 		add_core_of = BAD
 	}
 
 	provinces={
-		636 3692 6712 9587 9618 9620 9638 11604 11640  
+		3692 6712 11640  
 	}
 }

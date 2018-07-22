@@ -1,4 +1,4 @@
-﻿capital = 335
+﻿capital = 595
 
 oob = "NIN_1937"
 

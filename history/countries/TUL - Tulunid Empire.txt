@@ -1,4 +1,4 @@
-﻿capital = 64
+﻿capital = 447
 
 oob = "TUL_1937"
 

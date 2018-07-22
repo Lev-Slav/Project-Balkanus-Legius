@@ -1,4 +1,4 @@
-﻿capital = 64
+﻿capital = 9
 
 oob = "POM_1937"
 

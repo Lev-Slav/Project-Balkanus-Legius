@@ -1,4 +1,4 @@
-﻿capital = 64
+﻿capital = 126
 
 oob = "ENG_1937"
 
@@ -152,6 +152,17 @@ puppet = CAN
 }
 
 create_country_leader = {
+	name = "William Conger"
+	desc = "POLITICS_WILLIAM_CONGER_DESC"
+	picture = "Portrait_Britain_William_Conger.dds"
+	expire = "1969.5.6"
+	ideology = social_conservative
+	traits = {
+		HOG_respected_war_hero
+	}
+}
+
+create_country_leader = {
 	name = "Robert Walpole"
 	desc = "POLITICS_ROBERT_WALPOLE_DESC"
 	picture = "Portrait_Britain_Robert_Walpole.dds"
@@ -162,14 +173,5 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "William Conger"
-	desc = "POLITICS_WILLIAM_CONGER_DESC"
-	picture = "Portrait_Britain_William_Conger.dds"
-	expire = "1969.5.6"
-	ideology = social_conservative
-	traits = {
-		HOG_respected_war_hero
-	}
-}
+
 

@@ -1,4 +1,4 @@
-﻿capital = 64
+﻿capital = 2
 
 oob = "USI_1937"
 

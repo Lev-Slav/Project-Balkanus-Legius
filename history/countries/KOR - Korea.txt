@@ -1,4 +1,4 @@
-﻿capital = 64
+﻿capital = 525
 
 oob = "KOR_1937"
 

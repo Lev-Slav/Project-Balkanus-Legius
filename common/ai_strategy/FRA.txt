@@ -11,3 +11,9 @@
 # influence
 
 # Removed
+
+add_ai_strategy = {
+    type = alliance
+    id = "SGF"
+    value = 1000
+}

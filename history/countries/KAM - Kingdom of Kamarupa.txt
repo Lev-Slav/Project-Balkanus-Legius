@@ -1,4 +1,4 @@
-﻿capital = 64
+﻿capital = 757
 
 oob = "KAM_1937"
 

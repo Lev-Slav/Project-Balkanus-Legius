@@ -1,4 +1,4 @@
-﻿capital = 64
+﻿capital = 419
 
 oob = "AZR_1937"
 

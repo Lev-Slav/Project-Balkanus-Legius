@@ -1,4 +1,4 @@
-﻿capital = 753
+﻿capital = 306
 
 oob = "GRA_1937"
 

@@ -1,4 +1,4 @@
-﻿capital = 64
+﻿capital = 37
 
 oob = "DEN_1937"
 
@@ -113,5 +113,60 @@ add_ideas = {
 		last_election = "1937.1.1"
 		election_frequency = 60
 		elections_allowed = yes
+	}
+}
+
+create_country_leader = {
+	name = "Frederick IV"
+	desc = "POLITICS_FREDERICK_IV_DESC"
+	picture = "Portrait_Denmark_Frederick_IV.dds"
+	expire = "1961.12.20"
+	ideology = paternal_autocrat
+	traits = {
+		HOS_weary_stiffneck
+	}
+}
+
+create_country_leader = {
+	name = "Frederick IV"
+	desc = "POLITICS_FREDERICK_IV_DESC"
+	picture = "Portrait_Denmark_Frederick_IV.dds"
+	expire = "1961.12.20"
+	ideology = social_conservative
+	traits = {
+		HOS_weary_stiffneck
+	}
+}
+
+create_country_leader = {
+	name = "Frederick IV"
+	desc = "POLITICS_FREDERICK_IV_DESC"
+	picture = "Portrait_Denmark_Frederick_IV.dds"
+	expire = "1961.12.20"
+	ideology = social_democrat
+	traits = {
+		HOS_weary_stiffneck
+	}
+}
+
+create_country_leader = {
+	name = "Frederick IV"
+	desc = "POLITICS_FREDERICK_IV_DESC"
+	picture = "Portrait_Denmark_Frederick_IV.dds"
+	expire = "1961.12.20"
+	ideology = social_liberal
+	traits = {
+		HOS_weary_stiffneck
+	}
+}
+
+create_country_leader = {
+	name = "Frederick IV"
+	desc = "POLITICS_FREDERICK_IV_DESC"
+	picture = "Portrait_Denmark_Frederick_IV.dds"
+	expire = "1961.12.20"
+	ideology = market_liberal
+	traits = {
+		HOS_weary_stiffneck
 	}
 }

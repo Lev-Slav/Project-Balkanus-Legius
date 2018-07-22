@@ -1,4 +1,4 @@
-﻿capital = 64
+﻿capital = 462
 
 oob = "UMA_1937"
 

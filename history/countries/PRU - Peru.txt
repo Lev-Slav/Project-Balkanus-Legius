@@ -1,4 +1,4 @@
-﻿capital = 753
+﻿capital = 303
 
 oob = "PRU_1937"
 

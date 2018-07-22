@@ -1,4 +1,4 @@
-﻿capital = 64
+﻿capital = 619
 
 oob = "YAR_1937"
 

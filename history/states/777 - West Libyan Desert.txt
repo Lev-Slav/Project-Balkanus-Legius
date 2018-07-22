@@ -9,11 +9,13 @@ state={
 	history={
 		owner = ITA
 		victory_points = {
-			8038 3 
+			10875 5
 		}
 		buildings = {
 			infrastructure = 4
-			
+			10875 = {
+				naval_base = 4
+			}
 		}
 		add_core_of = ITA
 		add_claim_by = UMA

@@ -1,4 +1,4 @@
-﻿capital = 335
+﻿capital = 671
 
 oob = "LAN_1937"
 
